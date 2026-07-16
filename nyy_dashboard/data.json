@@ -1,0 +1,2708 @@
+{
+  "generated_at": "2026-07-16T17:00:00Z",
+  "as_of_date": "2026-07-19",
+  "team": {
+    "month_splits": {
+      "April": {
+        "avg": 0.251,
+        "obp": 0.302,
+        "slg": 0.399
+      },
+      "May": {
+        "avg": 0.218,
+        "obp": 0.297,
+        "slg": 0.406
+      },
+      "June": {
+        "avg": 0.271,
+        "obp": 0.324,
+        "slg": 0.433
+      },
+      "July (to date)": {
+        "avg": 0.202,
+        "obp": 0.261,
+        "slg": 0.373
+      }
+    },
+    "season": {
+      "avg": 0.202,
+      "obp": 0.26,
+      "slg": 0.387
+    },
+    "last_30_days": {
+      "avg": 0.244,
+      "obp": 0.303,
+      "slg": 0.423
+    },
+    "last_15_days": {
+      "avg": 0.255,
+      "obp": 0.305,
+      "slg": 0.456
+    },
+    "last_7_days": {
+      "avg": 0.266,
+      "obp": 0.33,
+      "slg": 0.402
+    }
+  },
+  "players": {
+    "Ben Rice": {
+      "mlb_id": 600000,
+      "month_splits": {
+        "April": {
+          "avg": 0.273,
+          "obp": 0.327,
+          "slg": 0.403
+        },
+        "May": {
+          "avg": 0.314,
+          "obp": 0.388,
+          "slg": 0.515
+        },
+        "June": {
+          "avg": 0.305,
+          "obp": 0.376,
+          "slg": 0.522
+        },
+        "July (to date)": {
+          "avg": 0.276,
+          "obp": 0.348,
+          "slg": 0.479
+        }
+      },
+      "season": {
+        "avg": 0.296,
+        "obp": 0.38,
+        "slg": 0.474
+      },
+      "last_30_games": {
+        "avg": 0.303,
+        "obp": 0.355,
+        "slg": 0.446
+      },
+      "last_15_games": {
+        "avg": 0.269,
+        "obp": 0.322,
+        "slg": 0.412
+      },
+      "last_7_games": {
+        "avg": 0.254,
+        "obp": 0.315,
+        "slg": 0.438
+      }
+    },
+    "Paul Goldschmidt": {
+      "mlb_id": 600001,
+      "month_splits": {
+        "April": {
+          "avg": 0.222,
+          "obp": 0.28,
+          "slg": 0.369
+        },
+        "May": {
+          "avg": 0.268,
+          "obp": 0.344,
+          "slg": 0.449
+        },
+        "June": {
+          "avg": 0.207,
+          "obp": 0.286,
+          "slg": 0.343
+        },
+        "July (to date)": {
+          "avg": 0.223,
+          "obp": 0.313,
+          "slg": 0.407
+        }
+      },
+      "season": {
+        "avg": 0.237,
+        "obp": 0.314,
+        "slg": 0.441
+      },
+      "last_30_games": {
+        "avg": 0.255,
+        "obp": 0.314,
+        "slg": 0.378
+      },
+      "last_15_games": {
+        "avg": 0.218,
+        "obp": 0.279,
+        "slg": 0.359
+      },
+      "last_7_games": {
+        "avg": 0.268,
+        "obp": 0.353,
+        "slg": 0.419
+      }
+    },
+    "Jose Caballero": {
+      "mlb_id": 600002,
+      "month_splits": {
+        "April": {
+          "avg": 0.251,
+          "obp": 0.338,
+          "slg": 0.417
+        },
+        "May": {
+          "avg": 0.24,
+          "obp": 0.3,
+          "slg": 0.416
+        },
+        "June": {
+          "avg": 0.24,
+          "obp": 0.313,
+          "slg": 0.45
+        },
+        "July (to date)": {
+          "avg": 0.251,
+          "obp": 0.31,
+          "slg": 0.471
+        }
+      },
+      "season": {
+        "avg": 0.26,
+        "obp": 0.314,
+        "slg": 0.385
+      },
+      "last_30_games": {
+        "avg": 0.228,
+        "obp": 0.303,
+        "slg": 0.427
+      },
+      "last_15_games": {
+        "avg": 0.253,
+        "obp": 0.306,
+        "slg": 0.411
+      },
+      "last_7_games": {
+        "avg": 0.299,
+        "obp": 0.37,
+        "slg": 0.516
+      }
+    },
+    "Jazz Chisholm Jr.": {
+      "mlb_id": 600003,
+      "month_splits": {
+        "April": {
+          "avg": 0.238,
+          "obp": 0.317,
+          "slg": 0.426
+        },
+        "May": {
+          "avg": 0.28,
+          "obp": 0.341,
+          "slg": 0.464
+        },
+        "June": {
+          "avg": 0.246,
+          "obp": 0.313,
+          "slg": 0.411
+        },
+        "July (to date)": {
+          "avg": 0.314,
+          "obp": 0.399,
+          "slg": 0.46
+        }
+      },
+      "season": {
+        "avg": 0.278,
+        "obp": 0.335,
+        "slg": 0.489
+      },
+      "last_30_games": {
+        "avg": 0.307,
+        "obp": 0.369,
+        "slg": 0.491
+      },
+      "last_15_games": {
+        "avg": 0.286,
+        "obp": 0.342,
+        "slg": 0.482
+      },
+      "last_7_games": {
+        "avg": 0.281,
+        "obp": 0.362,
+        "slg": 0.454
+      }
+    },
+    "Cody Bellinger": {
+      "mlb_id": 600004,
+      "month_splits": {
+        "April": {
+          "avg": 0.186,
+          "obp": 0.237,
+          "slg": 0.399
+        },
+        "May": {
+          "avg": 0.23,
+          "obp": 0.313,
+          "slg": 0.381
+        },
+        "June": {
+          "avg": 0.165,
+          "obp": 0.25,
+          "slg": 0.38
+        },
+        "July (to date)": {
+          "avg": 0.167,
+          "obp": 0.236,
+          "slg": 0.294
+        }
+      },
+      "season": {
+        "avg": 0.221,
+        "obp": 0.302,
+        "slg": 0.354
+      },
+      "last_30_games": {
+        "avg": 0.198,
+        "obp": 0.27,
+        "slg": 0.345
+      },
+      "last_15_games": {
+        "avg": 0.23,
+        "obp": 0.297,
+        "slg": 0.371
+      },
+      "last_7_games": {
+        "avg": 0.203,
+        "obp": 0.282,
+        "slg": 0.343
+      }
+    },
+    "Jasson Dominguez": {
+      "mlb_id": 600005,
+      "month_splits": {
+        "April": {
+          "avg": 0.268,
+          "obp": 0.344,
+          "slg": 0.432
+        },
+        "May": {
+          "avg": 0.229,
+          "obp": 0.284,
+          "slg": 0.371
+        },
+        "June": {
+          "avg": 0.215,
+          "obp": 0.289,
+          "slg": 0.358
+        },
+        "July (to date)": {
+          "avg": 0.206,
+          "obp": 0.259,
+          "slg": 0.389
+        }
+      },
+      "season": {
+        "avg": 0.206,
+        "obp": 0.292,
+        "slg": 0.412
+      },
+      "last_30_games": {
+        "avg": 0.194,
+        "obp": 0.254,
+        "slg": 0.381
+      },
+      "last_15_games": {
+        "avg": 0.205,
+        "obp": 0.26,
+        "slg": 0.419
+      },
+      "last_7_games": {
+        "avg": 0.234,
+        "obp": 0.303,
+        "slg": 0.432
+      }
+    },
+    "Anthony Volpe": {
+      "mlb_id": 600006,
+      "month_splits": {
+        "April": {
+          "avg": 0.248,
+          "obp": 0.302,
+          "slg": 0.411
+        },
+        "May": {
+          "avg": 0.267,
+          "obp": 0.336,
+          "slg": 0.46
+        },
+        "June": {
+          "avg": 0.287,
+          "obp": 0.376,
+          "slg": 0.417
+        },
+        "July (to date)": {
+          "avg": 0.265,
+          "obp": 0.329,
+          "slg": 0.471
+        }
+      },
+      "season": {
+        "avg": 0.253,
+        "obp": 0.311,
+        "slg": 0.418
+      },
+      "last_30_games": {
+        "avg": 0.266,
+        "obp": 0.327,
+        "slg": 0.411
+      },
+      "last_15_games": {
+        "avg": 0.307,
+        "obp": 0.375,
+        "slg": 0.513
+      },
+      "last_7_games": {
+        "avg": 0.277,
+        "obp": 0.329,
+        "slg": 0.497
+      }
+    },
+    "Trent Grisham": {
+      "mlb_id": 600007,
+      "month_splits": {
+        "April": {
+          "avg": 0.313,
+          "obp": 0.4,
+          "slg": 0.518
+        },
+        "May": {
+          "avg": 0.249,
+          "obp": 0.318,
+          "slg": 0.39
+        },
+        "June": {
+          "avg": 0.267,
+          "obp": 0.319,
+          "slg": 0.425
+        },
+        "July (to date)": {
+          "avg": 0.314,
+          "obp": 0.375,
+          "slg": 0.512
+        }
+      },
+      "season": {
+        "avg": 0.272,
+        "obp": 0.339,
+        "slg": 0.488
+      },
+      "last_30_games": {
+        "avg": 0.315,
+        "obp": 0.387,
+        "slg": 0.507
+      },
+      "last_15_games": {
+        "avg": 0.248,
+        "obp": 0.31,
+        "slg": 0.465
+      },
+      "last_7_games": {
+        "avg": 0.282,
+        "obp": 0.354,
+        "slg": 0.477
+      }
+    },
+    "Ryan McMahon": {
+      "mlb_id": 600008,
+      "month_splits": {
+        "April": {
+          "avg": 0.212,
+          "obp": 0.282,
+          "slg": 0.417
+        },
+        "May": {
+          "avg": 0.178,
+          "obp": 0.266,
+          "slg": 0.306
+        },
+        "June": {
+          "avg": 0.18,
+          "obp": 0.254,
+          "slg": 0.368
+        },
+        "July (to date)": {
+          "avg": 0.184,
+          "obp": 0.239,
+          "slg": 0.393
+        }
+      },
+      "season": {
+        "avg": 0.185,
+        "obp": 0.259,
+        "slg": 0.367
+      },
+      "last_30_games": {
+        "avg": 0.199,
+        "obp": 0.272,
+        "slg": 0.371
+      },
+      "last_15_games": {
+        "avg": 0.24,
+        "obp": 0.298,
+        "slg": 0.432
+      },
+      "last_7_games": {
+        "avg": 0.184,
+        "obp": 0.25,
+        "slg": 0.371
+      }
+    },
+    "Amed Rosario": {
+      "mlb_id": 600009,
+      "month_splits": {
+        "April": {
+          "avg": 0.212,
+          "obp": 0.292,
+          "slg": 0.339
+        },
+        "May": {
+          "avg": 0.224,
+          "obp": 0.314,
+          "slg": 0.444
+        },
+        "June": {
+          "avg": 0.193,
+          "obp": 0.252,
+          "slg": 0.34
+        },
+        "July (to date)": {
+          "avg": 0.262,
+          "obp": 0.347,
+          "slg": 0.47
+        }
+      },
+      "season": {
+        "avg": 0.217,
+        "obp": 0.273,
+        "slg": 0.42
+      },
+      "last_30_games": {
+        "avg": 0.243,
+        "obp": 0.317,
+        "slg": 0.462
+      },
+      "last_15_games": {
+        "avg": 0.239,
+        "obp": 0.289,
+        "slg": 0.441
+      },
+      "last_7_games": {
+        "avg": 0.211,
+        "obp": 0.288,
+        "slg": 0.425
+      }
+    },
+    "Austin Wells": {
+      "mlb_id": 600010,
+      "month_splits": {
+        "April": {
+          "avg": 0.181,
+          "obp": 0.235,
+          "slg": 0.356
+        },
+        "May": {
+          "avg": 0.194,
+          "obp": 0.268,
+          "slg": 0.386
+        },
+        "June": {
+          "avg": 0.188,
+          "obp": 0.263,
+          "slg": 0.334
+        },
+        "July (to date)": {
+          "avg": 0.211,
+          "obp": 0.297,
+          "slg": 0.416
+        }
+      },
+      "season": {
+        "avg": 0.179,
+        "obp": 0.246,
+        "slg": 0.327
+      },
+      "last_30_games": {
+        "avg": 0.172,
+        "obp": 0.253,
+        "slg": 0.356
+      },
+      "last_15_games": {
+        "avg": 0.193,
+        "obp": 0.273,
+        "slg": 0.368
+      },
+      "last_7_games": {
+        "avg": 0.206,
+        "obp": 0.256,
+        "slg": 0.334
+      }
+    }
+  },
+  "game_log": [
+    {
+      "gamePk": 800001,
+      "date": "2026-03-26",
+      "opponent": "HOU",
+      "home_away": "@",
+      "result": "W",
+      "runs_scored": 9,
+      "runs_allowed": 8,
+      "game_num": 1,
+      "AB": 32,
+      "H": 13,
+      "cum_avg": 0.406,
+      "cum_obp": 0.424,
+      "cum_slg": 0.562
+    },
+    {
+      "gamePk": 800002,
+      "date": "2026-03-28",
+      "opponent": "TOR",
+      "home_away": "@",
+      "result": "L",
+      "runs_scored": 3,
+      "runs_allowed": 3,
+      "game_num": 2,
+      "AB": 34,
+      "H": 10,
+      "cum_avg": 0.348,
+      "cum_obp": 0.368,
+      "cum_slg": 0.5
+    },
+    {
+      "gamePk": 800003,
+      "date": "2026-03-29",
+      "opponent": "SEA",
+      "home_away": "@",
+      "result": "W",
+      "runs_scored": 3,
+      "runs_allowed": 2,
+      "game_num": 3,
+      "AB": 36,
+      "H": 14,
+      "cum_avg": 0.363,
+      "cum_obp": 0.409,
+      "cum_slg": 0.48
+    },
+    {
+      "gamePk": 800004,
+      "date": "2026-03-31",
+      "opponent": "TOR",
+      "home_away": "@",
+      "result": "W",
+      "runs_scored": 4,
+      "runs_allowed": 2,
+      "game_num": 4,
+      "AB": 35,
+      "H": 11,
+      "cum_avg": 0.35,
+      "cum_obp": 0.411,
+      "cum_slg": 0.46
+    },
+    {
+      "gamePk": 800005,
+      "date": "2026-04-01",
+      "opponent": "ATH",
+      "home_away": "",
+      "result": "W",
+      "runs_scored": 5,
+      "runs_allowed": 4,
+      "game_num": 5,
+      "AB": 37,
+      "H": 8,
+      "cum_avg": 0.322,
+      "cum_obp": 0.379,
+      "cum_slg": 0.448
+    },
+    {
+      "gamePk": 800006,
+      "date": "2026-04-03",
+      "opponent": "CWS",
+      "home_away": "@",
+      "result": "L",
+      "runs_scored": 1,
+      "runs_allowed": 4,
+      "game_num": 6,
+      "AB": 33,
+      "H": 11,
+      "cum_avg": 0.324,
+      "cum_obp": 0.381,
+      "cum_slg": 0.449
+    },
+    {
+      "gamePk": 800007,
+      "date": "2026-04-04",
+      "opponent": "TEX",
+      "home_away": "",
+      "result": "W",
+      "runs_scored": 4,
+      "runs_allowed": 2,
+      "game_num": 7,
+      "AB": 38,
+      "H": 10,
+      "cum_avg": 0.314,
+      "cum_obp": 0.366,
+      "cum_slg": 0.424
+    },
+    {
+      "gamePk": 800008,
+      "date": "2026-04-06",
+      "opponent": "NYM",
+      "home_away": "",
+      "result": "L",
+      "runs_scored": 6,
+      "runs_allowed": 9,
+      "game_num": 8,
+      "AB": 36,
+      "H": 10,
+      "cum_avg": 0.31,
+      "cum_obp": 0.368,
+      "cum_slg": 0.423
+    },
+    {
+      "gamePk": 800009,
+      "date": "2026-04-07",
+      "opponent": "NYM",
+      "home_away": "",
+      "result": "W",
+      "runs_scored": 6,
+      "runs_allowed": 0,
+      "game_num": 9,
+      "AB": 39,
+      "H": 8,
+      "cum_avg": 0.297,
+      "cum_obp": 0.355,
+      "cum_slg": 0.397
+    },
+    {
+      "gamePk": 800010,
+      "date": "2026-04-08",
+      "opponent": "NYM",
+      "home_away": "@",
+      "result": "L",
+      "runs_scored": 1,
+      "runs_allowed": 4,
+      "game_num": 10,
+      "AB": 31,
+      "H": 10,
+      "cum_avg": 0.299,
+      "cum_obp": 0.361,
+      "cum_slg": 0.405
+    },
+    {
+      "gamePk": 800011,
+      "date": "2026-04-09",
+      "opponent": "LAA",
+      "home_away": "@",
+      "result": "W",
+      "runs_scored": 8,
+      "runs_allowed": 2,
+      "game_num": 11,
+      "AB": 35,
+      "H": 11,
+      "cum_avg": 0.301,
+      "cum_obp": 0.366,
+      "cum_slg": 0.407
+    },
+    {
+      "gamePk": 800012,
+      "date": "2026-04-10",
+      "opponent": "PHI",
+      "home_away": "",
+      "result": "L",
+      "runs_scored": 4,
+      "runs_allowed": 6,
+      "game_num": 12,
+      "AB": 36,
+      "H": 7,
+      "cum_avg": 0.291,
+      "cum_obp": 0.36,
+      "cum_slg": 0.41
+    },
+    {
+      "gamePk": 800013,
+      "date": "2026-04-11",
+      "opponent": "MIA",
+      "home_away": "@",
+      "result": "L",
+      "runs_scored": 5,
+      "runs_allowed": 7,
+      "game_num": 13,
+      "AB": 33,
+      "H": 11,
+      "cum_avg": 0.295,
+      "cum_obp": 0.364,
+      "cum_slg": 0.424
+    },
+    {
+      "gamePk": 800014,
+      "date": "2026-04-12",
+      "opponent": "NYM",
+      "home_away": "@",
+      "result": "L",
+      "runs_scored": 1,
+      "runs_allowed": 4,
+      "game_num": 14,
+      "AB": 38,
+      "H": 12,
+      "cum_avg": 0.296,
+      "cum_obp": 0.368,
+      "cum_slg": 0.42
+    },
+    {
+      "gamePk": 800015,
+      "date": "2026-04-14",
+      "opponent": "TBR",
+      "home_away": "",
+      "result": "W",
+      "runs_scored": 2,
+      "runs_allowed": 0,
+      "game_num": 15,
+      "AB": 33,
+      "H": 9,
+      "cum_avg": 0.295,
+      "cum_obp": 0.365,
+      "cum_slg": 0.416
+    },
+    {
+      "gamePk": 800016,
+      "date": "2026-04-15",
+      "opponent": "CLE",
+      "home_away": "@",
+      "result": "W",
+      "runs_scored": 9,
+      "runs_allowed": 3,
+      "game_num": 16,
+      "AB": 39,
+      "H": 6,
+      "cum_avg": 0.285,
+      "cum_obp": 0.356,
+      "cum_slg": 0.409
+    },
+    {
+      "gamePk": 800017,
+      "date": "2026-04-16",
+      "opponent": "NYM",
+      "home_away": "@",
+      "result": "W",
+      "runs_scored": 3,
+      "runs_allowed": 2,
+      "game_num": 17,
+      "AB": 32,
+      "H": 5,
+      "cum_avg": 0.278,
+      "cum_obp": 0.347,
+      "cum_slg": 0.405
+    },
+    {
+      "gamePk": 800018,
+      "date": "2026-04-18",
+      "opponent": "PHI",
+      "home_away": "@",
+      "result": "L",
+      "runs_scored": 7,
+      "runs_allowed": 8,
+      "game_num": 18,
+      "AB": 33,
+      "H": 6,
+      "cum_avg": 0.273,
+      "cum_obp": 0.343,
+      "cum_slg": 0.397
+    },
+    {
+      "gamePk": 800019,
+      "date": "2026-04-19",
+      "opponent": "MIA",
+      "home_away": "",
+      "result": "L",
+      "runs_scored": 6,
+      "runs_allowed": 8,
+      "game_num": 19,
+      "AB": 37,
+      "H": 14,
+      "cum_avg": 0.279,
+      "cum_obp": 0.35,
+      "cum_slg": 0.408
+    },
+    {
+      "gamePk": 800020,
+      "date": "2026-04-20",
+      "opponent": "WSN",
+      "home_away": "",
+      "result": "L",
+      "runs_scored": 4,
+      "runs_allowed": 8,
+      "game_num": 20,
+      "AB": 37,
+      "H": 12,
+      "cum_avg": 0.281,
+      "cum_obp": 0.351,
+      "cum_slg": 0.408
+    },
+    {
+      "gamePk": 800021,
+      "date": "2026-04-21",
+      "opponent": "PHI",
+      "home_away": "",
+      "result": "L",
+      "runs_scored": 5,
+      "runs_allowed": 5,
+      "game_num": 21,
+      "AB": 31,
+      "H": 9,
+      "cum_avg": 0.282,
+      "cum_obp": 0.351,
+      "cum_slg": 0.408
+    },
+    {
+      "gamePk": 800022,
+      "date": "2026-04-23",
+      "opponent": "DET",
+      "home_away": "@",
+      "result": "W",
+      "runs_scored": 3,
+      "runs_allowed": 1,
+      "game_num": 22,
+      "AB": 33,
+      "H": 11,
+      "cum_avg": 0.284,
+      "cum_obp": 0.354,
+      "cum_slg": 0.408
+    },
+    {
+      "gamePk": 800023,
+      "date": "2026-04-24",
+      "opponent": "BOS",
+      "home_away": "@",
+      "result": "L",
+      "runs_scored": 6,
+      "runs_allowed": 6,
+      "game_num": 23,
+      "AB": 37,
+      "H": 11,
+      "cum_avg": 0.284,
+      "cum_obp": 0.353,
+      "cum_slg": 0.406
+    },
+    {
+      "gamePk": 800024,
+      "date": "2026-04-25",
+      "opponent": "ATH",
+      "home_away": "@",
+      "result": "L",
+      "runs_scored": 8,
+      "runs_allowed": 8,
+      "game_num": 24,
+      "AB": 35,
+      "H": 9,
+      "cum_avg": 0.283,
+      "cum_obp": 0.352,
+      "cum_slg": 0.407
+    },
+    {
+      "gamePk": 800025,
+      "date": "2026-04-26",
+      "opponent": "SEA",
+      "home_away": "@",
+      "result": "L",
+      "runs_scored": 5,
+      "runs_allowed": 6,
+      "game_num": 25,
+      "AB": 36,
+      "H": 12,
+      "cum_avg": 0.285,
+      "cum_obp": 0.352,
+      "cum_slg": 0.411
+    },
+    {
+      "gamePk": 800026,
+      "date": "2026-04-27",
+      "opponent": "BOS",
+      "home_away": "",
+      "result": "L",
+      "runs_scored": 9,
+      "runs_allowed": 9,
+      "game_num": 26,
+      "AB": 39,
+      "H": 13,
+      "cum_avg": 0.287,
+      "cum_obp": 0.352,
+      "cum_slg": 0.414
+    },
+    {
+      "gamePk": 800027,
+      "date": "2026-04-28",
+      "opponent": "MIN",
+      "home_away": "",
+      "result": "L",
+      "runs_scored": 4,
+      "runs_allowed": 6,
+      "game_num": 27,
+      "AB": 32,
+      "H": 12,
+      "cum_avg": 0.29,
+      "cum_obp": 0.354,
+      "cum_slg": 0.413
+    },
+    {
+      "gamePk": 800028,
+      "date": "2026-04-29",
+      "opponent": "WSN",
+      "home_away": "",
+      "result": "W",
+      "runs_scored": 4,
+      "runs_allowed": 1,
+      "game_num": 28,
+      "AB": 35,
+      "H": 11,
+      "cum_avg": 0.291,
+      "cum_obp": 0.354,
+      "cum_slg": 0.415
+    },
+    {
+      "gamePk": 800029,
+      "date": "2026-04-30",
+      "opponent": "BOS",
+      "home_away": "",
+      "result": "W",
+      "runs_scored": 1,
+      "runs_allowed": 0,
+      "game_num": 29,
+      "AB": 30,
+      "H": 10,
+      "cum_avg": 0.292,
+      "cum_obp": 0.355,
+      "cum_slg": 0.423
+    },
+    {
+      "gamePk": 800030,
+      "date": "2026-05-01",
+      "opponent": "TOR",
+      "home_away": "",
+      "result": "L",
+      "runs_scored": 2,
+      "runs_allowed": 7,
+      "game_num": 30,
+      "AB": 30,
+      "H": 14,
+      "cum_avg": 0.298,
+      "cum_obp": 0.359,
+      "cum_slg": 0.427
+    },
+    {
+      "gamePk": 800031,
+      "date": "2026-05-02",
+      "opponent": "SEA",
+      "home_away": "@",
+      "result": "W",
+      "runs_scored": 9,
+      "runs_allowed": 1,
+      "game_num": 31,
+      "AB": 34,
+      "H": 10,
+      "cum_avg": 0.297,
+      "cum_obp": 0.358,
+      "cum_slg": 0.431
+    },
+    {
+      "gamePk": 800032,
+      "date": "2026-05-04",
+      "opponent": "LAA",
+      "home_away": "",
+      "result": "L",
+      "runs_scored": 6,
+      "runs_allowed": 6,
+      "game_num": 32,
+      "AB": 30,
+      "H": 9,
+      "cum_avg": 0.297,
+      "cum_obp": 0.359,
+      "cum_slg": 0.437
+    },
+    {
+      "gamePk": 800033,
+      "date": "2026-05-05",
+      "opponent": "TBR",
+      "home_away": "@",
+      "result": "W",
+      "runs_scored": 9,
+      "runs_allowed": 1,
+      "game_num": 33,
+      "AB": 40,
+      "H": 8,
+      "cum_avg": 0.294,
+      "cum_obp": 0.355,
+      "cum_slg": 0.432
+    },
+    {
+      "gamePk": 800034,
+      "date": "2026-05-06",
+      "opponent": "DET",
+      "home_away": "@",
+      "result": "W",
+      "runs_scored": 5,
+      "runs_allowed": 0,
+      "game_num": 34,
+      "AB": 40,
+      "H": 10,
+      "cum_avg": 0.293,
+      "cum_obp": 0.352,
+      "cum_slg": 0.433
+    },
+    {
+      "gamePk": 800035,
+      "date": "2026-05-08",
+      "opponent": "NYM",
+      "home_away": "@",
+      "result": "W",
+      "runs_scored": 6,
+      "runs_allowed": 2,
+      "game_num": 35,
+      "AB": 35,
+      "H": 12,
+      "cum_avg": 0.294,
+      "cum_obp": 0.355,
+      "cum_slg": 0.432
+    },
+    {
+      "gamePk": 800036,
+      "date": "2026-05-09",
+      "opponent": "MIN",
+      "home_away": "",
+      "result": "W",
+      "runs_scored": 9,
+      "runs_allowed": 4,
+      "game_num": 36,
+      "AB": 38,
+      "H": 12,
+      "cum_avg": 0.295,
+      "cum_obp": 0.356,
+      "cum_slg": 0.433
+    },
+    {
+      "gamePk": 800037,
+      "date": "2026-05-10",
+      "opponent": "CLE",
+      "home_away": "@",
+      "result": "L",
+      "runs_scored": 7,
+      "runs_allowed": 9,
+      "game_num": 37,
+      "AB": 31,
+      "H": 9,
+      "cum_avg": 0.295,
+      "cum_obp": 0.356,
+      "cum_slg": 0.432
+    },
+    {
+      "gamePk": 800038,
+      "date": "2026-05-12",
+      "opponent": "MIN",
+      "home_away": "@",
+      "result": "W",
+      "runs_scored": 5,
+      "runs_allowed": 4,
+      "game_num": 38,
+      "AB": 35,
+      "H": 7,
+      "cum_avg": 0.292,
+      "cum_obp": 0.354,
+      "cum_slg": 0.428
+    },
+    {
+      "gamePk": 800039,
+      "date": "2026-05-13",
+      "opponent": "ATH",
+      "home_away": "@",
+      "result": "W",
+      "runs_scored": 3,
+      "runs_allowed": 1,
+      "game_num": 39,
+      "AB": 34,
+      "H": 13,
+      "cum_avg": 0.294,
+      "cum_obp": 0.355,
+      "cum_slg": 0.433
+    },
+    {
+      "gamePk": 800040,
+      "date": "2026-05-14",
+      "opponent": "BAL",
+      "home_away": "@",
+      "result": "W",
+      "runs_scored": 7,
+      "runs_allowed": 0,
+      "game_num": 40,
+      "AB": 33,
+      "H": 12,
+      "cum_avg": 0.296,
+      "cum_obp": 0.358,
+      "cum_slg": 0.436
+    },
+    {
+      "gamePk": 800041,
+      "date": "2026-05-15",
+      "opponent": "PHI",
+      "home_away": "@",
+      "result": "L",
+      "runs_scored": 5,
+      "runs_allowed": 7,
+      "game_num": 41,
+      "AB": 33,
+      "H": 9,
+      "cum_avg": 0.295,
+      "cum_obp": 0.358,
+      "cum_slg": 0.439
+    },
+    {
+      "gamePk": 800042,
+      "date": "2026-05-16",
+      "opponent": "TEX",
+      "home_away": "",
+      "result": "L",
+      "runs_scored": 4,
+      "runs_allowed": 4,
+      "game_num": 42,
+      "AB": 38,
+      "H": 10,
+      "cum_avg": 0.295,
+      "cum_obp": 0.357,
+      "cum_slg": 0.439
+    },
+    {
+      "gamePk": 800043,
+      "date": "2026-05-18",
+      "opponent": "LAA",
+      "home_away": "@",
+      "result": "L",
+      "runs_scored": 2,
+      "runs_allowed": 3,
+      "game_num": 43,
+      "AB": 33,
+      "H": 10,
+      "cum_avg": 0.295,
+      "cum_obp": 0.357,
+      "cum_slg": 0.441
+    },
+    {
+      "gamePk": 800044,
+      "date": "2026-05-19",
+      "opponent": "KCR",
+      "home_away": "",
+      "result": "L",
+      "runs_scored": 1,
+      "runs_allowed": 3,
+      "game_num": 44,
+      "AB": 39,
+      "H": 13,
+      "cum_avg": 0.296,
+      "cum_obp": 0.358,
+      "cum_slg": 0.441
+    },
+    {
+      "gamePk": 800045,
+      "date": "2026-05-20",
+      "opponent": "TBR",
+      "home_away": "",
+      "result": "L",
+      "runs_scored": 2,
+      "runs_allowed": 4,
+      "game_num": 45,
+      "AB": 34,
+      "H": 5,
+      "cum_avg": 0.293,
+      "cum_obp": 0.356,
+      "cum_slg": 0.44
+    },
+    {
+      "gamePk": 800046,
+      "date": "2026-05-21",
+      "opponent": "WSN",
+      "home_away": "@",
+      "result": "W",
+      "runs_scored": 9,
+      "runs_allowed": 4,
+      "game_num": 46,
+      "AB": 32,
+      "H": 12,
+      "cum_avg": 0.294,
+      "cum_obp": 0.357,
+      "cum_slg": 0.438
+    },
+    {
+      "gamePk": 800047,
+      "date": "2026-05-22",
+      "opponent": "CLE",
+      "home_away": "@",
+      "result": "L",
+      "runs_scored": 1,
+      "runs_allowed": 1,
+      "game_num": 47,
+      "AB": 32,
+      "H": 5,
+      "cum_avg": 0.291,
+      "cum_obp": 0.354,
+      "cum_slg": 0.437
+    },
+    {
+      "gamePk": 800048,
+      "date": "2026-05-24",
+      "opponent": "BAL",
+      "home_away": "",
+      "result": "W",
+      "runs_scored": 9,
+      "runs_allowed": 4,
+      "game_num": 48,
+      "AB": 40,
+      "H": 5,
+      "cum_avg": 0.288,
+      "cum_obp": 0.35,
+      "cum_slg": 0.431
+    },
+    {
+      "gamePk": 800049,
+      "date": "2026-05-26",
+      "opponent": "CLE",
+      "home_away": "@",
+      "result": "L",
+      "runs_scored": 3,
+      "runs_allowed": 8,
+      "game_num": 49,
+      "AB": 36,
+      "H": 14,
+      "cum_avg": 0.29,
+      "cum_obp": 0.353,
+      "cum_slg": 0.435
+    },
+    {
+      "gamePk": 800050,
+      "date": "2026-05-27",
+      "opponent": "TBR",
+      "home_away": "",
+      "result": "L",
+      "runs_scored": 9,
+      "runs_allowed": 9,
+      "game_num": 50,
+      "AB": 34,
+      "H": 14,
+      "cum_avg": 0.292,
+      "cum_obp": 0.355,
+      "cum_slg": 0.437
+    },
+    {
+      "gamePk": 800051,
+      "date": "2026-05-28",
+      "opponent": "ATH",
+      "home_away": "",
+      "result": "L",
+      "runs_scored": 1,
+      "runs_allowed": 2,
+      "game_num": 51,
+      "AB": 33,
+      "H": 8,
+      "cum_avg": 0.291,
+      "cum_obp": 0.354,
+      "cum_slg": 0.439
+    },
+    {
+      "gamePk": 800052,
+      "date": "2026-05-29",
+      "opponent": "KCR",
+      "home_away": "",
+      "result": "W",
+      "runs_scored": 9,
+      "runs_allowed": 7,
+      "game_num": 52,
+      "AB": 32,
+      "H": 5,
+      "cum_avg": 0.289,
+      "cum_obp": 0.352,
+      "cum_slg": 0.438
+    },
+    {
+      "gamePk": 800053,
+      "date": "2026-05-30",
+      "opponent": "LAA",
+      "home_away": "@",
+      "result": "L",
+      "runs_scored": 3,
+      "runs_allowed": 4,
+      "game_num": 53,
+      "AB": 34,
+      "H": 12,
+      "cum_avg": 0.29,
+      "cum_obp": 0.352,
+      "cum_slg": 0.442
+    },
+    {
+      "gamePk": 800054,
+      "date": "2026-06-01",
+      "opponent": "SEA",
+      "home_away": "@",
+      "result": "W",
+      "runs_scored": 1,
+      "runs_allowed": 0,
+      "game_num": 54,
+      "AB": 33,
+      "H": 7,
+      "cum_avg": 0.289,
+      "cum_obp": 0.351,
+      "cum_slg": 0.439
+    },
+    {
+      "gamePk": 800055,
+      "date": "2026-06-02",
+      "opponent": "CLE",
+      "home_away": "@",
+      "result": "W",
+      "runs_scored": 7,
+      "runs_allowed": 4,
+      "game_num": 55,
+      "AB": 39,
+      "H": 9,
+      "cum_avg": 0.287,
+      "cum_obp": 0.35,
+      "cum_slg": 0.435
+    },
+    {
+      "gamePk": 800056,
+      "date": "2026-06-03",
+      "opponent": "MIN",
+      "home_away": "@",
+      "result": "L",
+      "runs_scored": 0,
+      "runs_allowed": 6,
+      "game_num": 56,
+      "AB": 37,
+      "H": 12,
+      "cum_avg": 0.288,
+      "cum_obp": 0.35,
+      "cum_slg": 0.438
+    },
+    {
+      "gamePk": 800057,
+      "date": "2026-06-05",
+      "opponent": "TBR",
+      "home_away": "",
+      "result": "L",
+      "runs_scored": 4,
+      "runs_allowed": 9,
+      "game_num": 57,
+      "AB": 33,
+      "H": 14,
+      "cum_avg": 0.29,
+      "cum_obp": 0.353,
+      "cum_slg": 0.438
+    },
+    {
+      "gamePk": 800058,
+      "date": "2026-06-06",
+      "opponent": "WSN",
+      "home_away": "",
+      "result": "W",
+      "runs_scored": 9,
+      "runs_allowed": 6,
+      "game_num": 58,
+      "AB": 40,
+      "H": 12,
+      "cum_avg": 0.291,
+      "cum_obp": 0.353,
+      "cum_slg": 0.436
+    },
+    {
+      "gamePk": 800059,
+      "date": "2026-06-07",
+      "opponent": "MIN",
+      "home_away": "@",
+      "result": "L",
+      "runs_scored": 1,
+      "runs_allowed": 2,
+      "game_num": 59,
+      "AB": 36,
+      "H": 10,
+      "cum_avg": 0.29,
+      "cum_obp": 0.352,
+      "cum_slg": 0.438
+    },
+    {
+      "gamePk": 800060,
+      "date": "2026-06-08",
+      "opponent": "MIN",
+      "home_away": "@",
+      "result": "W",
+      "runs_scored": 7,
+      "runs_allowed": 1,
+      "game_num": 60,
+      "AB": 34,
+      "H": 11,
+      "cum_avg": 0.291,
+      "cum_obp": 0.353,
+      "cum_slg": 0.436
+    },
+    {
+      "gamePk": 800061,
+      "date": "2026-06-09",
+      "opponent": "DET",
+      "home_away": "",
+      "result": "W",
+      "runs_scored": 8,
+      "runs_allowed": 7,
+      "game_num": 61,
+      "AB": 36,
+      "H": 13,
+      "cum_avg": 0.292,
+      "cum_obp": 0.354,
+      "cum_slg": 0.439
+    },
+    {
+      "gamePk": 800062,
+      "date": "2026-06-10",
+      "opponent": "LAA",
+      "home_away": "@",
+      "result": "W",
+      "runs_scored": 7,
+      "runs_allowed": 0,
+      "game_num": 62,
+      "AB": 35,
+      "H": 14,
+      "cum_avg": 0.294,
+      "cum_obp": 0.355,
+      "cum_slg": 0.443
+    },
+    {
+      "gamePk": 800063,
+      "date": "2026-06-11",
+      "opponent": "ATH",
+      "home_away": "",
+      "result": "W",
+      "runs_scored": 1,
+      "runs_allowed": 0,
+      "game_num": 63,
+      "AB": 34,
+      "H": 12,
+      "cum_avg": 0.295,
+      "cum_obp": 0.357,
+      "cum_slg": 0.445
+    },
+    {
+      "gamePk": 800064,
+      "date": "2026-06-12",
+      "opponent": "MIA",
+      "home_away": "",
+      "result": "W",
+      "runs_scored": 3,
+      "runs_allowed": 1,
+      "game_num": 64,
+      "AB": 30,
+      "H": 13,
+      "cum_avg": 0.297,
+      "cum_obp": 0.359,
+      "cum_slg": 0.445
+    },
+    {
+      "gamePk": 800065,
+      "date": "2026-06-13",
+      "opponent": "DET",
+      "home_away": "@",
+      "result": "W",
+      "runs_scored": 8,
+      "runs_allowed": 4,
+      "game_num": 65,
+      "AB": 32,
+      "H": 12,
+      "cum_avg": 0.298,
+      "cum_obp": 0.361,
+      "cum_slg": 0.446
+    },
+    {
+      "gamePk": 800066,
+      "date": "2026-06-14",
+      "opponent": "NYM",
+      "home_away": "",
+      "result": "W",
+      "runs_scored": 6,
+      "runs_allowed": 3,
+      "game_num": 66,
+      "AB": 33,
+      "H": 12,
+      "cum_avg": 0.299,
+      "cum_obp": 0.362,
+      "cum_slg": 0.446
+    },
+    {
+      "gamePk": 800067,
+      "date": "2026-06-15",
+      "opponent": "KCR",
+      "home_away": "@",
+      "result": "W",
+      "runs_scored": 4,
+      "runs_allowed": 0,
+      "game_num": 67,
+      "AB": 34,
+      "H": 11,
+      "cum_avg": 0.299,
+      "cum_obp": 0.362,
+      "cum_slg": 0.448
+    },
+    {
+      "gamePk": 800068,
+      "date": "2026-06-16",
+      "opponent": "CWS",
+      "home_away": "@",
+      "result": "W",
+      "runs_scored": 8,
+      "runs_allowed": 7,
+      "game_num": 68,
+      "AB": 39,
+      "H": 12,
+      "cum_avg": 0.299,
+      "cum_obp": 0.362,
+      "cum_slg": 0.448
+    },
+    {
+      "gamePk": 800069,
+      "date": "2026-06-17",
+      "opponent": "CLE",
+      "home_away": "",
+      "result": "L",
+      "runs_scored": 3,
+      "runs_allowed": 3,
+      "game_num": 69,
+      "AB": 38,
+      "H": 11,
+      "cum_avg": 0.299,
+      "cum_obp": 0.362,
+      "cum_slg": 0.448
+    },
+    {
+      "gamePk": 800070,
+      "date": "2026-06-18",
+      "opponent": "HOU",
+      "home_away": "@",
+      "result": "L",
+      "runs_scored": 6,
+      "runs_allowed": 6,
+      "game_num": 70,
+      "AB": 36,
+      "H": 5,
+      "cum_avg": 0.297,
+      "cum_obp": 0.36,
+      "cum_slg": 0.446
+    },
+    {
+      "gamePk": 800071,
+      "date": "2026-06-19",
+      "opponent": "TOR",
+      "home_away": "@",
+      "result": "L",
+      "runs_scored": 1,
+      "runs_allowed": 7,
+      "game_num": 71,
+      "AB": 32,
+      "H": 13,
+      "cum_avg": 0.298,
+      "cum_obp": 0.361,
+      "cum_slg": 0.448
+    },
+    {
+      "gamePk": 800072,
+      "date": "2026-06-21",
+      "opponent": "TEX",
+      "home_away": "@",
+      "result": "L",
+      "runs_scored": 1,
+      "runs_allowed": 7,
+      "game_num": 72,
+      "AB": 32,
+      "H": 11,
+      "cum_avg": 0.299,
+      "cum_obp": 0.362,
+      "cum_slg": 0.447
+    },
+    {
+      "gamePk": 800073,
+      "date": "2026-06-22",
+      "opponent": "MIN",
+      "home_away": "@",
+      "result": "W",
+      "runs_scored": 8,
+      "runs_allowed": 6,
+      "game_num": 73,
+      "AB": 36,
+      "H": 6,
+      "cum_avg": 0.297,
+      "cum_obp": 0.361,
+      "cum_slg": 0.447
+    },
+    {
+      "gamePk": 800074,
+      "date": "2026-06-23",
+      "opponent": "BAL",
+      "home_away": "@",
+      "result": "W",
+      "runs_scored": 4,
+      "runs_allowed": 3,
+      "game_num": 74,
+      "AB": 30,
+      "H": 14,
+      "cum_avg": 0.299,
+      "cum_obp": 0.362,
+      "cum_slg": 0.448
+    },
+    {
+      "gamePk": 800075,
+      "date": "2026-06-24",
+      "opponent": "TBR",
+      "home_away": "@",
+      "result": "W",
+      "runs_scored": 4,
+      "runs_allowed": 0,
+      "game_num": 75,
+      "AB": 40,
+      "H": 6,
+      "cum_avg": 0.296,
+      "cum_obp": 0.36,
+      "cum_slg": 0.445
+    },
+    {
+      "gamePk": 800076,
+      "date": "2026-06-25",
+      "opponent": "NYM",
+      "home_away": "@",
+      "result": "L",
+      "runs_scored": 2,
+      "runs_allowed": 3,
+      "game_num": 76,
+      "AB": 34,
+      "H": 10,
+      "cum_avg": 0.296,
+      "cum_obp": 0.36,
+      "cum_slg": 0.445
+    },
+    {
+      "gamePk": 800077,
+      "date": "2026-06-26",
+      "opponent": "ATH",
+      "home_away": "@",
+      "result": "W",
+      "runs_scored": 9,
+      "runs_allowed": 6,
+      "game_num": 77,
+      "AB": 32,
+      "H": 7,
+      "cum_avg": 0.295,
+      "cum_obp": 0.359,
+      "cum_slg": 0.443
+    },
+    {
+      "gamePk": 800078,
+      "date": "2026-06-27",
+      "opponent": "TEX",
+      "home_away": "",
+      "result": "L",
+      "runs_scored": 4,
+      "runs_allowed": 7,
+      "game_num": 78,
+      "AB": 32,
+      "H": 8,
+      "cum_avg": 0.295,
+      "cum_obp": 0.358,
+      "cum_slg": 0.444
+    },
+    {
+      "gamePk": 800079,
+      "date": "2026-06-28",
+      "opponent": "MIA",
+      "home_away": "@",
+      "result": "W",
+      "runs_scored": 2,
+      "runs_allowed": 1,
+      "game_num": 79,
+      "AB": 37,
+      "H": 9,
+      "cum_avg": 0.294,
+      "cum_obp": 0.358,
+      "cum_slg": 0.444
+    },
+    {
+      "gamePk": 800080,
+      "date": "2026-06-29",
+      "opponent": "LAA",
+      "home_away": "@",
+      "result": "W",
+      "runs_scored": 7,
+      "runs_allowed": 4,
+      "game_num": 80,
+      "AB": 34,
+      "H": 11,
+      "cum_avg": 0.295,
+      "cum_obp": 0.359,
+      "cum_slg": 0.444
+    },
+    {
+      "gamePk": 800081,
+      "date": "2026-06-30",
+      "opponent": "KCR",
+      "home_away": "@",
+      "result": "L",
+      "runs_scored": 5,
+      "runs_allowed": 9,
+      "game_num": 81,
+      "AB": 31,
+      "H": 8,
+      "cum_avg": 0.294,
+      "cum_obp": 0.359,
+      "cum_slg": 0.445
+    },
+    {
+      "gamePk": 800082,
+      "date": "2026-07-02",
+      "opponent": "WSN",
+      "home_away": "@",
+      "result": "W",
+      "runs_scored": 9,
+      "runs_allowed": 0,
+      "game_num": 82,
+      "AB": 40,
+      "H": 11,
+      "cum_avg": 0.294,
+      "cum_obp": 0.359,
+      "cum_slg": 0.443
+    },
+    {
+      "gamePk": 800083,
+      "date": "2026-07-03",
+      "opponent": "TEX",
+      "home_away": "",
+      "result": "L",
+      "runs_scored": 3,
+      "runs_allowed": 9,
+      "game_num": 83,
+      "AB": 33,
+      "H": 14,
+      "cum_avg": 0.295,
+      "cum_obp": 0.36,
+      "cum_slg": 0.444
+    },
+    {
+      "gamePk": 800084,
+      "date": "2026-07-04",
+      "opponent": "CWS",
+      "home_away": "",
+      "result": "L",
+      "runs_scored": 0,
+      "runs_allowed": 9,
+      "game_num": 84,
+      "AB": 40,
+      "H": 5,
+      "cum_avg": 0.293,
+      "cum_obp": 0.357,
+      "cum_slg": 0.442
+    },
+    {
+      "gamePk": 800085,
+      "date": "2026-07-06",
+      "opponent": "HOU",
+      "home_away": "@",
+      "result": "L",
+      "runs_scored": 2,
+      "runs_allowed": 3,
+      "game_num": 85,
+      "AB": 34,
+      "H": 10,
+      "cum_avg": 0.293,
+      "cum_obp": 0.358,
+      "cum_slg": 0.442
+    },
+    {
+      "gamePk": 800086,
+      "date": "2026-07-07",
+      "opponent": "TOR",
+      "home_away": "@",
+      "result": "L",
+      "runs_scored": 4,
+      "runs_allowed": 5,
+      "game_num": 86,
+      "AB": 34,
+      "H": 7,
+      "cum_avg": 0.292,
+      "cum_obp": 0.357,
+      "cum_slg": 0.442
+    },
+    {
+      "gamePk": 800087,
+      "date": "2026-07-08",
+      "opponent": "CWS",
+      "home_away": "",
+      "result": "L",
+      "runs_scored": 6,
+      "runs_allowed": 8,
+      "game_num": 87,
+      "AB": 32,
+      "H": 8,
+      "cum_avg": 0.292,
+      "cum_obp": 0.357,
+      "cum_slg": 0.443
+    },
+    {
+      "gamePk": 800088,
+      "date": "2026-07-09",
+      "opponent": "TEX",
+      "home_away": "@",
+      "result": "W",
+      "runs_scored": 7,
+      "runs_allowed": 5,
+      "game_num": 88,
+      "AB": 30,
+      "H": 9,
+      "cum_avg": 0.292,
+      "cum_obp": 0.358,
+      "cum_slg": 0.442
+    },
+    {
+      "gamePk": 800089,
+      "date": "2026-07-10",
+      "opponent": "PHI",
+      "home_away": "@",
+      "result": "W",
+      "runs_scored": 7,
+      "runs_allowed": 0,
+      "game_num": 89,
+      "AB": 35,
+      "H": 6,
+      "cum_avg": 0.29,
+      "cum_obp": 0.357,
+      "cum_slg": 0.44
+    },
+    {
+      "gamePk": 800090,
+      "date": "2026-07-11",
+      "opponent": "TOR",
+      "home_away": "",
+      "result": "L",
+      "runs_scored": 4,
+      "runs_allowed": 6,
+      "game_num": 90,
+      "AB": 33,
+      "H": 6,
+      "cum_avg": 0.289,
+      "cum_obp": 0.356,
+      "cum_slg": 0.439
+    },
+    {
+      "gamePk": 800091,
+      "date": "2026-07-13",
+      "opponent": "PHI",
+      "home_away": "",
+      "result": "L",
+      "runs_scored": 1,
+      "runs_allowed": 3,
+      "game_num": 91,
+      "AB": 30,
+      "H": 9,
+      "cum_avg": 0.289,
+      "cum_obp": 0.357,
+      "cum_slg": 0.438
+    },
+    {
+      "gamePk": 800092,
+      "date": "2026-07-14",
+      "opponent": "TOR",
+      "home_away": "@",
+      "result": "L",
+      "runs_scored": 2,
+      "runs_allowed": 6,
+      "game_num": 92,
+      "AB": 35,
+      "H": 13,
+      "cum_avg": 0.29,
+      "cum_obp": 0.357,
+      "cum_slg": 0.441
+    },
+    {
+      "gamePk": 800093,
+      "date": "2026-07-15",
+      "opponent": "MIA",
+      "home_away": "",
+      "result": "L",
+      "runs_scored": 3,
+      "runs_allowed": 7,
+      "game_num": 93,
+      "AB": 34,
+      "H": 5,
+      "cum_avg": 0.289,
+      "cum_obp": 0.356,
+      "cum_slg": 0.439
+    },
+    {
+      "gamePk": 800094,
+      "date": "2026-07-16",
+      "opponent": "CLE",
+      "home_away": "@",
+      "result": "W",
+      "runs_scored": 5,
+      "runs_allowed": 0,
+      "game_num": 94,
+      "AB": 31,
+      "H": 10,
+      "cum_avg": 0.289,
+      "cum_obp": 0.357,
+      "cum_slg": 0.441
+    },
+    {
+      "gamePk": 800095,
+      "date": "2026-07-17",
+      "opponent": "BOS",
+      "home_away": "",
+      "result": "L",
+      "runs_scored": 3,
+      "runs_allowed": 9,
+      "game_num": 95,
+      "AB": 31,
+      "H": 12,
+      "cum_avg": 0.29,
+      "cum_obp": 0.357,
+      "cum_slg": 0.443
+    },
+    {
+      "gamePk": 800096,
+      "date": "2026-07-18",
+      "opponent": "LAA",
+      "home_away": "",
+      "result": "L",
+      "runs_scored": 1,
+      "runs_allowed": 8,
+      "game_num": 96,
+      "AB": 33,
+      "H": 7,
+      "cum_avg": 0.289,
+      "cum_obp": 0.357,
+      "cum_slg": 0.442
+    },
+    {
+      "gamePk": 800097,
+      "date": "2026-07-19",
+      "opponent": "HOU",
+      "home_away": "",
+      "result": "L",
+      "runs_scored": 0,
+      "runs_allowed": 4,
+      "game_num": 97,
+      "AB": 33,
+      "H": 10,
+      "cum_avg": 0.289,
+      "cum_obp": 0.357,
+      "cum_slg": 0.443
+    }
+  ],
+  "rolling10": [
+    {
+      "game_num": 10,
+      "date": "2026-04-08",
+      "runs_per_game": 4.2,
+      "runs_allowed_per_game": 3.8,
+      "run_diff": 0.4,
+      "avg": 0.299
+    },
+    {
+      "game_num": 11,
+      "date": "2026-04-09",
+      "runs_per_game": 4.1,
+      "runs_allowed_per_game": 3.2,
+      "run_diff": 0.9,
+      "avg": 0.291
+    },
+    {
+      "game_num": 12,
+      "date": "2026-04-10",
+      "runs_per_game": 4.2,
+      "runs_allowed_per_game": 3.5,
+      "run_diff": 0.7,
+      "avg": 0.281
+    },
+    {
+      "game_num": 13,
+      "date": "2026-04-11",
+      "runs_per_game": 4.4,
+      "runs_allowed_per_game": 4.0,
+      "run_diff": 0.4,
+      "avg": 0.275
+    },
+    {
+      "game_num": 14,
+      "date": "2026-04-12",
+      "runs_per_game": 4.1,
+      "runs_allowed_per_game": 4.2,
+      "run_diff": -0.1,
+      "avg": 0.275
+    },
+    {
+      "game_num": 15,
+      "date": "2026-04-14",
+      "runs_per_game": 3.8,
+      "runs_allowed_per_game": 3.8,
+      "run_diff": 0.0,
+      "avg": 0.281
+    },
+    {
+      "game_num": 16,
+      "date": "2026-04-15",
+      "runs_per_game": 4.6,
+      "runs_allowed_per_game": 3.7,
+      "run_diff": 0.9,
+      "avg": 0.263
+    },
+    {
+      "game_num": 17,
+      "date": "2026-04-16",
+      "runs_per_game": 4.5,
+      "runs_allowed_per_game": 3.7,
+      "run_diff": 0.8,
+      "avg": 0.253
+    },
+    {
+      "game_num": 18,
+      "date": "2026-04-18",
+      "runs_per_game": 4.6,
+      "runs_allowed_per_game": 3.6,
+      "run_diff": 1.0,
+      "avg": 0.244
+    },
+    {
+      "game_num": 19,
+      "date": "2026-04-19",
+      "runs_per_game": 4.6,
+      "runs_allowed_per_game": 4.4,
+      "run_diff": 0.2,
+      "avg": 0.262
+    },
+    {
+      "game_num": 20,
+      "date": "2026-04-20",
+      "runs_per_game": 4.9,
+      "runs_allowed_per_game": 4.8,
+      "run_diff": 0.1,
+      "avg": 0.263
+    },
+    {
+      "game_num": 21,
+      "date": "2026-04-21",
+      "runs_per_game": 4.6,
+      "runs_allowed_per_game": 5.1,
+      "run_diff": -0.5,
+      "avg": 0.261
+    },
+    {
+      "game_num": 22,
+      "date": "2026-04-23",
+      "runs_per_game": 4.5,
+      "runs_allowed_per_game": 4.6,
+      "run_diff": -0.1,
+      "avg": 0.275
+    },
+    {
+      "game_num": 23,
+      "date": "2026-04-24",
+      "runs_per_game": 4.6,
+      "runs_allowed_per_game": 4.5,
+      "run_diff": 0.1,
+      "avg": 0.271
+    },
+    {
+      "game_num": 24,
+      "date": "2026-04-25",
+      "runs_per_game": 5.3,
+      "runs_allowed_per_game": 4.9,
+      "run_diff": 0.4,
+      "avg": 0.265
+    },
+    {
+      "game_num": 25,
+      "date": "2026-04-26",
+      "runs_per_game": 5.6,
+      "runs_allowed_per_game": 5.5,
+      "run_diff": 0.1,
+      "avg": 0.271
+    },
+    {
+      "game_num": 26,
+      "date": "2026-04-27",
+      "runs_per_game": 5.6,
+      "runs_allowed_per_game": 6.1,
+      "run_diff": -0.5,
+      "avg": 0.291
+    },
+    {
+      "game_num": 27,
+      "date": "2026-04-28",
+      "runs_per_game": 5.7,
+      "runs_allowed_per_game": 6.5,
+      "run_diff": -0.8,
+      "avg": 0.311
+    },
+    {
+      "game_num": 28,
+      "date": "2026-04-29",
+      "runs_per_game": 5.4,
+      "runs_allowed_per_game": 5.8,
+      "run_diff": -0.4,
+      "avg": 0.324
+    },
+    {
+      "game_num": 29,
+      "date": "2026-04-30",
+      "runs_per_game": 4.9,
+      "runs_allowed_per_game": 5.0,
+      "run_diff": -0.1,
+      "avg": 0.319
+    },
+    {
+      "game_num": 30,
+      "date": "2026-05-01",
+      "runs_per_game": 4.7,
+      "runs_allowed_per_game": 4.9,
+      "run_diff": -0.2,
+      "avg": 0.331
+    },
+    {
+      "game_num": 31,
+      "date": "2026-05-02",
+      "runs_per_game": 5.1,
+      "runs_allowed_per_game": 4.5,
+      "run_diff": 0.6,
+      "avg": 0.331
+    },
+    {
+      "game_num": 32,
+      "date": "2026-05-04",
+      "runs_per_game": 5.4,
+      "runs_allowed_per_game": 5.0,
+      "run_diff": 0.4,
+      "avg": 0.328
+    },
+    {
+      "game_num": 33,
+      "date": "2026-05-05",
+      "runs_per_game": 5.7,
+      "runs_allowed_per_game": 4.5,
+      "run_diff": 1.2,
+      "avg": 0.317
+    },
+    {
+      "game_num": 34,
+      "date": "2026-05-06",
+      "runs_per_game": 5.4,
+      "runs_allowed_per_game": 3.7,
+      "run_diff": 1.7,
+      "avg": 0.315
+    },
+    {
+      "game_num": 35,
+      "date": "2026-05-08",
+      "runs_per_game": 5.5,
+      "runs_allowed_per_game": 3.3,
+      "run_diff": 2.2,
+      "avg": 0.316
+    },
+    {
+      "game_num": 36,
+      "date": "2026-05-09",
+      "runs_per_game": 5.5,
+      "runs_allowed_per_game": 2.8,
+      "run_diff": 2.7,
+      "avg": 0.314
+    },
+    {
+      "game_num": 37,
+      "date": "2026-05-10",
+      "runs_per_game": 5.8,
+      "runs_allowed_per_game": 3.1,
+      "run_diff": 2.7,
+      "avg": 0.306
+    },
+    {
+      "game_num": 38,
+      "date": "2026-05-12",
+      "runs_per_game": 5.9,
+      "runs_allowed_per_game": 3.4,
+      "run_diff": 2.5,
+      "avg": 0.294
+    },
+    {
+      "game_num": 39,
+      "date": "2026-05-13",
+      "runs_per_game": 6.1,
+      "runs_allowed_per_game": 3.5,
+      "run_diff": 2.6,
+      "avg": 0.3
+    },
+    {
+      "game_num": 40,
+      "date": "2026-05-14",
+      "runs_per_game": 6.6,
+      "runs_allowed_per_game": 2.8,
+      "run_diff": 3.8,
+      "avg": 0.291
+    },
+    {
+      "game_num": 41,
+      "date": "2026-05-15",
+      "runs_per_game": 6.2,
+      "runs_allowed_per_game": 3.4,
+      "run_diff": 2.8,
+      "avg": 0.289
+    },
+    {
+      "game_num": 42,
+      "date": "2026-05-16",
+      "runs_per_game": 6.0,
+      "runs_allowed_per_game": 3.2,
+      "run_diff": 2.8,
+      "avg": 0.286
+    },
+    {
+      "game_num": 43,
+      "date": "2026-05-18",
+      "runs_per_game": 5.3,
+      "runs_allowed_per_game": 3.4,
+      "run_diff": 1.9,
+      "avg": 0.297
+    },
+    {
+      "game_num": 44,
+      "date": "2026-05-19",
+      "runs_per_game": 4.9,
+      "runs_allowed_per_game": 3.7,
+      "run_diff": 1.2,
+      "avg": 0.307
+    },
+    {
+      "game_num": 45,
+      "date": "2026-05-20",
+      "runs_per_game": 4.5,
+      "runs_allowed_per_game": 3.9,
+      "run_diff": 0.6,
+      "avg": 0.287
+    },
+    {
+      "game_num": 46,
+      "date": "2026-05-21",
+      "runs_per_game": 4.5,
+      "runs_allowed_per_game": 3.9,
+      "run_diff": 0.6,
+      "avg": 0.292
+    },
+    {
+      "game_num": 47,
+      "date": "2026-05-22",
+      "runs_per_game": 3.9,
+      "runs_allowed_per_game": 3.1,
+      "run_diff": 0.8,
+      "avg": 0.28
+    },
+    {
+      "game_num": 48,
+      "date": "2026-05-24",
+      "runs_per_game": 4.3,
+      "runs_allowed_per_game": 3.1,
+      "run_diff": 1.2,
+      "avg": 0.27
+    },
+    {
+      "game_num": 49,
+      "date": "2026-05-26",
+      "runs_per_game": 4.3,
+      "runs_allowed_per_game": 3.8,
+      "run_diff": 0.5,
+      "avg": 0.271
+    },
+    {
+      "game_num": 50,
+      "date": "2026-05-27",
+      "runs_per_game": 4.5,
+      "runs_allowed_per_game": 4.7,
+      "run_diff": -0.2,
+      "avg": 0.276
+    },
+    {
+      "game_num": 51,
+      "date": "2026-05-28",
+      "runs_per_game": 4.1,
+      "runs_allowed_per_game": 4.2,
+      "run_diff": -0.1,
+      "avg": 0.274
+    },
+    {
+      "game_num": 52,
+      "date": "2026-05-29",
+      "runs_per_game": 4.6,
+      "runs_allowed_per_game": 4.5,
+      "run_diff": 0.1,
+      "avg": 0.264
+    },
+    {
+      "game_num": 53,
+      "date": "2026-05-30",
+      "runs_per_game": 4.7,
+      "runs_allowed_per_game": 4.6,
+      "run_diff": 0.1,
+      "avg": 0.269
+    },
+    {
+      "game_num": 54,
+      "date": "2026-06-01",
+      "runs_per_game": 4.7,
+      "runs_allowed_per_game": 4.3,
+      "run_diff": 0.4,
+      "avg": 0.256
+    },
+    {
+      "game_num": 55,
+      "date": "2026-06-02",
+      "runs_per_game": 5.2,
+      "runs_allowed_per_game": 4.3,
+      "run_diff": 0.9,
+      "avg": 0.264
+    },
+    {
+      "game_num": 56,
+      "date": "2026-06-03",
+      "runs_per_game": 4.3,
+      "runs_allowed_per_game": 4.5,
+      "run_diff": -0.2,
+      "avg": 0.26
+    },
+    {
+      "game_num": 57,
+      "date": "2026-06-05",
+      "runs_per_game": 4.6,
+      "runs_allowed_per_game": 5.3,
+      "run_diff": -0.7,
+      "avg": 0.285
+    },
+    {
+      "game_num": 58,
+      "date": "2026-06-06",
+      "runs_per_game": 4.6,
+      "runs_allowed_per_game": 5.5,
+      "run_diff": -0.9,
+      "avg": 0.305
+    },
+    {
+      "game_num": 59,
+      "date": "2026-06-07",
+      "runs_per_game": 4.4,
+      "runs_allowed_per_game": 4.9,
+      "run_diff": -0.5,
+      "avg": 0.293
+    },
+    {
+      "game_num": 60,
+      "date": "2026-06-08",
+      "runs_per_game": 4.2,
+      "runs_allowed_per_game": 4.1,
+      "run_diff": 0.1,
+      "avg": 0.285
+    },
+    {
+      "game_num": 61,
+      "date": "2026-06-09",
+      "runs_per_game": 4.9,
+      "runs_allowed_per_game": 4.6,
+      "run_diff": 0.3,
+      "avg": 0.297
+    },
+    {
+      "game_num": 62,
+      "date": "2026-06-10",
+      "runs_per_game": 4.7,
+      "runs_allowed_per_game": 3.9,
+      "run_diff": 0.8,
+      "avg": 0.319
+    },
+    {
+      "game_num": 63,
+      "date": "2026-06-11",
+      "runs_per_game": 4.5,
+      "runs_allowed_per_game": 3.5,
+      "run_diff": 1.0,
+      "avg": 0.319
+    },
+    {
+      "game_num": 64,
+      "date": "2026-06-12",
+      "runs_per_game": 4.7,
+      "runs_allowed_per_game": 3.6,
+      "run_diff": 1.1,
+      "avg": 0.339
+    },
+    {
+      "game_num": 65,
+      "date": "2026-06-13",
+      "runs_per_game": 4.8,
+      "runs_allowed_per_game": 3.6,
+      "run_diff": 1.2,
+      "avg": 0.354
+    },
+    {
+      "game_num": 66,
+      "date": "2026-06-14",
+      "runs_per_game": 5.4,
+      "runs_allowed_per_game": 3.3,
+      "run_diff": 2.1,
+      "avg": 0.359
+    },
+    {
+      "game_num": 67,
+      "date": "2026-06-15",
+      "runs_per_game": 5.4,
+      "runs_allowed_per_game": 2.4,
+      "run_diff": 3.0,
+      "avg": 0.349
+    },
+    {
+      "game_num": 68,
+      "date": "2026-06-16",
+      "runs_per_game": 5.3,
+      "runs_allowed_per_game": 2.5,
+      "run_diff": 2.8,
+      "avg": 0.35
+    },
+    {
+      "game_num": 69,
+      "date": "2026-06-17",
+      "runs_per_game": 5.5,
+      "runs_allowed_per_game": 2.6,
+      "run_diff": 2.9,
+      "avg": 0.351
+    },
+    {
+      "game_num": 70,
+      "date": "2026-06-18",
+      "runs_per_game": 5.4,
+      "runs_allowed_per_game": 3.1,
+      "run_diff": 2.3,
+      "avg": 0.331
+    },
+    {
+      "game_num": 71,
+      "date": "2026-06-19",
+      "runs_per_game": 4.7,
+      "runs_allowed_per_game": 3.1,
+      "run_diff": 1.6,
+      "avg": 0.335
+    },
+    {
+      "game_num": 72,
+      "date": "2026-06-21",
+      "runs_per_game": 4.1,
+      "runs_allowed_per_game": 3.8,
+      "run_diff": 0.3,
+      "avg": 0.329
+    },
+    {
+      "game_num": 73,
+      "date": "2026-06-22",
+      "runs_per_game": 4.8,
+      "runs_allowed_per_game": 4.4,
+      "run_diff": 0.4,
+      "avg": 0.31
+    },
+    {
+      "game_num": 74,
+      "date": "2026-06-23",
+      "runs_per_game": 4.9,
+      "runs_allowed_per_game": 4.6,
+      "run_diff": 0.3,
+      "avg": 0.313
+    },
+    {
+      "game_num": 75,
+      "date": "2026-06-24",
+      "runs_per_game": 4.5,
+      "runs_allowed_per_game": 4.2,
+      "run_diff": 0.3,
+      "avg": 0.289
+    },
+    {
+      "game_num": 76,
+      "date": "2026-06-25",
+      "runs_per_game": 4.1,
+      "runs_allowed_per_game": 4.2,
+      "run_diff": -0.1,
+      "avg": 0.282
+    },
+    {
+      "game_num": 77,
+      "date": "2026-06-26",
+      "runs_per_game": 4.6,
+      "runs_allowed_per_game": 4.8,
+      "run_diff": -0.2,
+      "avg": 0.272
+    },
+    {
+      "game_num": 78,
+      "date": "2026-06-27",
+      "runs_per_game": 4.2,
+      "runs_allowed_per_game": 4.8,
+      "run_diff": -0.6,
+      "avg": 0.266
+    },
+    {
+      "game_num": 79,
+      "date": "2026-06-28",
+      "runs_per_game": 4.1,
+      "runs_allowed_per_game": 4.6,
+      "run_diff": -0.5,
+      "avg": 0.261
+    },
+    {
+      "game_num": 80,
+      "date": "2026-06-29",
+      "runs_per_game": 4.2,
+      "runs_allowed_per_game": 4.4,
+      "run_diff": -0.2,
+      "avg": 0.28
+    },
+    {
+      "game_num": 81,
+      "date": "2026-06-30",
+      "runs_per_game": 4.6,
+      "runs_allowed_per_game": 4.6,
+      "run_diff": 0.0,
+      "avg": 0.266
+    },
+    {
+      "game_num": 82,
+      "date": "2026-07-02",
+      "runs_per_game": 5.4,
+      "runs_allowed_per_game": 3.9,
+      "run_diff": 1.5,
+      "avg": 0.26
+    },
+    {
+      "game_num": 83,
+      "date": "2026-07-03",
+      "runs_per_game": 4.9,
+      "runs_allowed_per_game": 4.2,
+      "run_diff": 0.7,
+      "avg": 0.286
+    },
+    {
+      "game_num": 84,
+      "date": "2026-07-04",
+      "runs_per_game": 4.5,
+      "runs_allowed_per_game": 4.8,
+      "run_diff": -0.3,
+      "avg": 0.252
+    },
+    {
+      "game_num": 85,
+      "date": "2026-07-06",
+      "runs_per_game": 4.3,
+      "runs_allowed_per_game": 5.1,
+      "run_diff": -0.8,
+      "avg": 0.268
+    },
+    {
+      "game_num": 86,
+      "date": "2026-07-07",
+      "runs_per_game": 4.5,
+      "runs_allowed_per_game": 5.3,
+      "run_diff": -0.8,
+      "avg": 0.259
+    },
+    {
+      "game_num": 87,
+      "date": "2026-07-08",
+      "runs_per_game": 4.2,
+      "runs_allowed_per_game": 5.5,
+      "run_diff": -1.3,
+      "avg": 0.262
+    },
+    {
+      "game_num": 88,
+      "date": "2026-07-09",
+      "runs_per_game": 4.5,
+      "runs_allowed_per_game": 5.3,
+      "run_diff": -0.8,
+      "avg": 0.267
+    },
+    {
+      "game_num": 89,
+      "date": "2026-07-10",
+      "runs_per_game": 5.0,
+      "runs_allowed_per_game": 5.2,
+      "run_diff": -0.2,
+      "avg": 0.259
+    },
+    {
+      "game_num": 90,
+      "date": "2026-07-11",
+      "runs_per_game": 4.7,
+      "runs_allowed_per_game": 5.4,
+      "run_diff": -0.7,
+      "avg": 0.246
+    },
+    {
+      "game_num": 91,
+      "date": "2026-07-13",
+      "runs_per_game": 4.3,
+      "runs_allowed_per_game": 4.8,
+      "run_diff": -0.5,
+      "avg": 0.249
+    },
+    {
+      "game_num": 92,
+      "date": "2026-07-14",
+      "runs_per_game": 3.6,
+      "runs_allowed_per_game": 5.4,
+      "run_diff": -1.8,
+      "avg": 0.259
+    },
+    {
+      "game_num": 93,
+      "date": "2026-07-15",
+      "runs_per_game": 3.6,
+      "runs_allowed_per_game": 5.2,
+      "run_diff": -1.6,
+      "avg": 0.231
+    },
+    {
+      "game_num": 94,
+      "date": "2026-07-16",
+      "runs_per_game": 4.1,
+      "runs_allowed_per_game": 4.3,
+      "run_diff": -0.2,
+      "avg": 0.253
+    },
+    {
+      "game_num": 95,
+      "date": "2026-07-17",
+      "runs_per_game": 4.2,
+      "runs_allowed_per_game": 4.9,
+      "run_diff": -0.7,
+      "avg": 0.262
+    },
+    {
+      "game_num": 96,
+      "date": "2026-07-18",
+      "runs_per_game": 3.9,
+      "runs_allowed_per_game": 5.2,
+      "run_diff": -1.3,
+      "avg": 0.262
+    },
+    {
+      "game_num": 97,
+      "date": "2026-07-19",
+      "runs_per_game": 3.3,
+      "runs_allowed_per_game": 4.8,
+      "run_diff": -1.5,
+      "avg": 0.268
+    }
+  ]
+}
