@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yankees Dashboard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
+<style>
+  :root {
+    --navy: #0C2340;
+    --navy-dark: #081729;
+    --white: #FFFFFF;
+    --cream: #F0EDE4;
+    --steel: #4A4E58;
+    --steel-light: #8A8E98;
+    --amber: #F2A900;
+    --win: #2E7D5B;
+    --loss: #B3452C;
+    --line: rgba(255,255,255,0.12);
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--cream);
+    color: var(--navy);
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .scoreboard {
+    background: linear-gradient(180deg, var(--navy) 0%, var(--navy-dark) 100%);
+    color: var(--white);
+    padding: 28px 20px 24px;
+    position: relative;
+    overflow: hidden;
+  }
+  .scoreboard::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: repeating-linear-gradient(90deg, rgba(255,255,255,0.035) 0px, rgba(255,255,255,0.035) 2px, transparent 2px, transparent 34px);
+    pointer-events: none;
+  }
+  .scoreboard-inner { max-width: 1100px; margin: 0 auto; position: relative; }
+  .sb-eyebrow {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--amber);
+    margin: 0 0 6px;
+  }
+  .sb-title {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: clamp(28px, 5vw, 44px);
+    letter-spacing: 0.01em;
+    margin: 0 0 18px;
+    text-transform: uppercase;
+  }
+  .sb-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px;
+    align-items: baseline;
+  }
+  .sb-stat { }
+  .sb-stat-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--steel-light);
+    margin-bottom: 4px;
+  }
+  .sb-stat-value {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 700;
+    font-size: clamp(20px, 3.5vw, 32px);
+    color: var(--amber);
+    font-variant-numeric: tabular-nums;
+  }
+  .sb-stat-value.result-W { color: #6FCF97; }
+  .sb-stat-value.result-L { color: #EB9C8A; }
+
+  main { max-width: 1100px; margin: 0 auto; padding: 28px 20px 60px; }
+
+  .panel {
+    background: var(--white);
+    border: 1px solid rgba(12,35,64,0.08);
+    border-radius: 10px;
+    padding: 22px 22px 26px;
+    margin-bottom: 22px;
+  }
+  .panel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 18px;
+  }
+  .panel-title {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    margin: 0;
+  }
+  select {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 8px 14px;
+    border-radius: 6px;
+    border: 1.5px solid var(--navy);
+    background: var(--white);
+    color: var(--navy);
+    cursor: pointer;
+  }
+  .chart-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  @media (max-width: 720px) {
+    .chart-grid { grid-template-columns: 1fr; }
+  }
+  .chart-box { position: relative; height: 280px; }
+  .chart-caption {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: var(--steel-light);
+    text-align: center;
+    margin-top: 8px;
+  }
+  table.stat-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12.5px;
+  }
+  table.stat-table th {
+    text-align: right;
+    padding: 6px 8px;
+    border-bottom: 2px solid var(--navy);
+    color: var(--steel);
+    font-weight: 600;
+  }
+  table.stat-table th:first-child, table.stat-table td:first-child {
+    text-align: left;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+  }
+  table.stat-table td {
+    text-align: right;
+    padding: 5px 8px;
+    border-bottom: 1px solid rgba(12,35,64,0.06);
+  }
+  table.stat-table tr:hover { background: rgba(242,169,0,0.06); }
+
+  details.log {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+  }
+  details.log summary {
+    cursor: pointer;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 4px 0;
+    color: var(--navy);
+  }
+  table.log-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 14px;
+    font-size: 12.5px;
+  }
+  table.log-table th {
+    text-align: left;
+    padding: 6px 8px;
+    border-bottom: 2px solid var(--navy);
+    color: var(--steel);
+    font-weight: 600;
+    position: sticky;
+    top: 0;
+    background: var(--white);
+  }
+  table.log-table td {
+    padding: 5px 8px;
+    border-bottom: 1px solid rgba(12,35,64,0.06);
+  }
+  table.log-table tr:hover { background: rgba(242,169,0,0.06); }
+  .log-scroll { max-height: 360px; overflow-y: auto; margin-top: 4px; }
+  .result-badge {
+    display: inline-block;
+    width: 18px; height: 18px;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 18px;
+    font-weight: 700;
+    color: white;
+    font-size: 11px;
+  }
+  .result-badge.W { background: var(--win); }
+  .result-badge.L { background: var(--loss); }
+
+  .loading, .error {
+    font-family: 'JetBrains Mono', monospace;
+    padding: 40px 20px;
+    text-align: center;
+    color: var(--steel);
+  }
+  .error { color: var(--loss); }
+</style>
+</head>
+<body>
+
+<div class="scoreboard">
+  <div class="scoreboard-inner">
+    <p class="sb-eyebrow" id="asOfLine">Loading...</p>
+    <h1 class="sb-title">Yankees Dashboard</h1>
+    <div class="sb-stats">
+      <div class="sb-stat">
+        <div class="sb-stat-label">Record</div>
+        <div class="sb-stat-value" id="recordValue">—</div>
+      </div>
+      <div class="sb-stat">
+        <div class="sb-stat-label">Last Game</div>
+        <div class="sb-stat-value" id="lastGameValue">—</div>
+      </div>
+      <div class="sb-stat">
+        <div class="sb-stat-label">Team AVG</div>
+        <div class="sb-stat-value" id="teamAvgValue">—</div>
+      </div>
+      <div class="sb-stat">
+        <div class="sb-stat-label">Team OPS</div>
+        <div class="sb-stat-value" id="teamOpsValue">—</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<main>
+  <div id="content" style="display:none;">
+
+    <div class="panel">
+      <div class="panel-header">
+        <h2 class="panel-title">Batting Trends</h2>
+        <select id="playerSelect"></select>
+      </div>
+      <div class="chart-grid">
+        <div>
+          <div class="chart-box"><canvas id="monthChart"></canvas></div>
+        </div>
+        <div>
+          <div class="chart-box"><canvas id="recentChart"></canvas></div>
+        </div>
+      </div>
+      <div class="chart-grid" style="margin-top:24px;">
+        <div><table class="stat-table" id="monthTable"></table></div>
+        <div><table class="stat-table" id="recentTable"></table></div>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-header">
+        <h2 class="panel-title">Season Trends (rolling 10 games)</h2>
+      </div>
+      <div class="chart-box" style="height:340px;"><canvas id="rollingChart"></canvas></div>
+    </div>
+
+    <div class="panel">
+      <details class="log">
+        <summary>Full Game Log</summary>
+        <div class="log-scroll">
+          <table class="log-table">
+            <thead>
+              <tr><th>#</th><th>Date</th><th>Opp</th><th>Result</th><th>Score</th><th>AVG</th><th>OBP</th><th>SLG</th></tr>
+            </thead>
+            <tbody id="logBody"></tbody>
+          </table>
+        </div>
+      </details>
+    </div>
+
+  </div>
+  <div id="loading" class="loading">Loading dashboard data…</div>
+</main>
+
+<script>
+const CHART_COLORS = {
+  avg: '#0C2340', obp: '#F2A900', slg: '#2E7D5B', ops: '#B3452C',
+  runsFor: '#2E7D5B', runsAgainst: '#B3452C', diff: '#F2A900',
+};
+
+function pct(v) { return v == null ? '' : v.toFixed(3).replace(/^0/, ''); }
+
+async function loadData() {
+  try {
+    const res = await fetch('data.json?_=' + Date.now());
+    if (!res.ok) throw new Error('data.json not found (status ' + res.status + ')');
+    const data = await res.json();
+    render(data);
+  } catch (err) {
+    document.getElementById('loading').className = 'error';
+    document.getElementById('loading').textContent =
+      'Could not load data.json — ' + err.message + '. Has the daily update run at least once yet?';
+  }
+}
+
+function render(data) {
+  document.getElementById('loading').style.display = 'none';
+  document.getElementById('content').style.display = 'block';
+
+  document.getElementById('asOfLine').textContent = 'As of ' + data.as_of_date + ' — updated ' + new Date(data.generated_at).toLocaleString();
+
+  const wins = data.game_log.filter(g => g.result === 'W').length;
+  const losses = data.game_log.filter(g => g.result === 'L').length;
+  document.getElementById('recordValue').textContent = wins + '-' + losses;
+
+  const last = data.game_log[data.game_log.length - 1];
+  if (last) {
+    const lg = document.getElementById('lastGameValue');
+    lg.textContent = last.result + ' ' + last.runs_scored + '-' + last.runs_allowed + ' vs ' + last.opponent;
+    lg.classList.add('result-' + last.result);
+  }
+  document.getElementById('teamAvgValue').textContent = pct(data.team.season.avg);
+  const ops = data.team.season.obp + data.team.season.slg;
+  document.getElementById('teamOpsValue').textContent = pct(ops);
+
+  // Player/team selector
+  const select = document.getElementById('playerSelect');
+  select.innerHTML = '<option value="__team__">New York Yankees (Team)</option>' +
+    Object.keys(data.players).map(name => `<option value="${name}">${name}</option>`).join('');
+
+  let monthChart, recentChart;
+  function drawEntityCharts(entity) {
+    const monthSplits = entity.month_splits;
+    const months = Object.keys(monthSplits);
+    const monthData = { avg: [], obp: [], slg: [] };
+    months.forEach(m => {
+      monthData.avg.push(monthSplits[m].avg);
+      monthData.obp.push(monthSplits[m].obp);
+      monthData.slg.push(monthSplits[m].slg);
+    });
+
+    if (monthChart) monthChart.destroy();
+    monthChart = new Chart(document.getElementById('monthChart'), {
+      type: 'line',
+      data: {
+        labels: months,
+        datasets: [
+          { label: 'AVG', data: monthData.avg, borderColor: CHART_COLORS.avg, backgroundColor: CHART_COLORS.avg, tension: 0.25 },
+          { label: 'OBP', data: monthData.obp, borderColor: CHART_COLORS.obp, backgroundColor: CHART_COLORS.obp, tension: 0.25 },
+          { label: 'SLG', data: monthData.slg, borderColor: CHART_COLORS.slg, backgroundColor: CHART_COLORS.slg, tension: 0.25 },
+        ]
+      },
+      options: chartOptions()
+    });
+
+    const isTeam = entity.last_30_days !== undefined;
+    const periodLabels = isTeam ? ['Season', 'Last 30 Days', 'Last 15 Days', 'Last 7 Days']
+                                 : ['Season', 'Last 30 Games', 'Last 15 Games', 'Last 7 Games'];
+    const periodKeys = isTeam ? ['season', 'last_30_days', 'last_15_days', 'last_7_days']
+                               : ['season', 'last_30_games', 'last_15_games', 'last_7_games'];
+    const statLabels = ['AVG', 'OBP', 'SLG', 'OPS'];
+    const periodColors = ['#0C2340', '#F2A900', '#2E7D5B', '#B3452C'];
+
+    if (recentChart) recentChart.destroy();
+    recentChart = new Chart(document.getElementById('recentChart'), {
+      type: 'bar',
+      data: {
+        labels: statLabels,
+        datasets: periodKeys.map((k, i) => {
+          const s = entity[k];
+          return {
+            label: periodLabels[i],
+            data: [s.avg, s.obp, s.slg, s.obp + s.slg],
+            backgroundColor: periodColors[i],
+          };
+        })
+      },
+      options: chartOptions()
+    });
+
+    // Month table
+    const monthTable = document.getElementById('monthTable');
+    monthTable.innerHTML = `
+      <thead><tr><th>Month</th><th>AVG</th><th>OBP</th><th>SLG</th><th>OPS</th></tr></thead>
+      <tbody>${months.map(m => {
+        const s = monthSplits[m];
+        return `<tr><td>${m}</td><td>${pct(s.avg)}</td><td>${pct(s.obp)}</td><td>${pct(s.slg)}</td><td>${pct(s.obp + s.slg)}</td></tr>`;
+      }).join('')}</tbody>`;
+
+    // Recent-form table
+    const recentTable = document.getElementById('recentTable');
+    recentTable.innerHTML = `
+      <thead><tr><th>Period</th><th>AVG</th><th>OBP</th><th>SLG</th><th>OPS</th></tr></thead>
+      <tbody>${periodKeys.map((k, i) => {
+        const s = entity[k];
+        return `<tr><td>${periodLabels[i]}</td><td>${pct(s.avg)}</td><td>${pct(s.obp)}</td><td>${pct(s.slg)}</td><td>${pct(s.obp + s.slg)}</td></tr>`;
+      }).join('')}</tbody>`;
+  }
+
+  function chartOptions() {
+    return {
+      responsive: true, maintainAspectRatio: false,
+      plugins: { legend: { position: 'bottom', labels: { font: { family: 'Inter', size: 11 }, boxWidth: 12 } } },
+      scales: {
+        y: { ticks: { font: { family: 'JetBrains Mono', size: 10 }, callback: v => v.toFixed(3).replace(/^0/, '') },
+             grid: { color: 'rgba(12,35,64,0.06)' } },
+        x: { ticks: { font: { family: 'Inter', size: 11 } }, grid: { display: false } },
+      }
+    };
+  }
+
+  select.addEventListener('change', () => {
+    const val = select.value;
+    drawEntityCharts(val === '__team__' ? data.team : data.players[val]);
+  });
+  drawEntityCharts(data.team);
+
+  // Rolling-10 season trends chart
+  const r = data.rolling10;
+  new Chart(document.getElementById('rollingChart'), {
+    type: 'line',
+    data: {
+      labels: r.map(x => 'G' + x.game_num),
+      datasets: [
+        { label: 'Runs/Game (right)', data: r.map(x => x.runs_per_game), borderColor: CHART_COLORS.runsFor, yAxisID: 'y', tension: 0.2, pointRadius: 0 },
+        { label: 'Runs Allowed/Game (right)', data: r.map(x => x.runs_allowed_per_game), borderColor: CHART_COLORS.runsAgainst, yAxisID: 'y', tension: 0.2, pointRadius: 0 },
+        { label: 'Run Differential (right)', data: r.map(x => x.run_diff), borderColor: CHART_COLORS.diff, yAxisID: 'y', tension: 0.2, pointRadius: 0, borderDash: [4,3] },
+        { label: 'Zero (right)', data: r.map(() => 0), borderColor: '#4A4E58', yAxisID: 'y', tension: 0, pointRadius: 0, borderWidth: 1.5 },
+        { label: 'AVG (left)', data: r.map(x => x.avg), borderColor: CHART_COLORS.avg, yAxisID: 'y1', tension: 0.2, pointRadius: 0 },
+      ]
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      plugins: { legend: { position: 'bottom', labels: { font: { family: 'Inter', size: 11 }, boxWidth: 12,
+                 filter: item => item.text !== 'Zero (right)' } } },
+      scales: {
+        y: { position: 'right', title: { display: true, text: 'RUNS', font: { family: 'Inter', size: 11 } },
+             ticks: { font: { family: 'JetBrains Mono', size: 10 } }, grid: { display: false } },
+        y1: { position: 'left', title: { display: true, text: 'AVG', font: { family: 'Inter', size: 11 } },
+              ticks: { font: { family: 'JetBrains Mono', size: 10 }, callback: v => v.toFixed(3).replace(/^0/, '') },
+              grid: { color: 'rgba(12,35,64,0.06)' } },
+        x: { ticks: { font: { family: 'JetBrains Mono', size: 9 }, maxTicksLimit: 15 }, grid: { display: false } },
+      }
+    }
+  });
+
+  // Game log table
+  const tbody = document.getElementById('logBody');
+  tbody.innerHTML = data.game_log.map(g => `
+    <tr>
+      <td>${g.game_num}</td>
+      <td>${g.date}</td>
+      <td>${g.home_away}${g.opponent}</td>
+      <td><span class="result-badge ${g.result}">${g.result}</span></td>
+      <td>${g.runs_scored}-${g.runs_allowed}</td>
+      <td>${pct(g.cum_avg)}</td>
+      <td>${pct(g.cum_obp)}</td>
+      <td>${pct(g.cum_slg)}</td>
+    </tr>
+  `).join('');
+}
+
+loadData();
+</script>
+</body>
+</html>
