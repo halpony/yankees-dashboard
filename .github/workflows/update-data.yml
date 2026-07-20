@@ -5,7 +5,7 @@ on:
     # 03:00 UTC = 11:00 PM ET during EDT (summer). If EDT ends (clocks fall
     # back to EST in November), this will run at 10:00 PM ET instead --
     # change to '0 4 * * *' at that point if you want to hold exactly at 11 PM.
-    - cron: '0 3 * * *'
+    - cron: '0 0 * * *'
   workflow_dispatch: {}  # lets you also trigger it manually from the Actions tab
 
 permissions:
