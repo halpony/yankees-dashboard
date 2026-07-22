@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-21T02:51:43.358162Z",
-  "as_of_date": "2026-07-20",
+  "generated_at": "2026-07-22T02:49:58.517785Z",
+  "as_of_date": "2026-07-21",
   "team": {
     "month_splits": {
       "April": {
@@ -32,12 +32,12 @@
     "last_30_days": {
       "avg": 0.209,
       "obp": 0.262,
-      "slg": 0.372
+      "slg": 0.374
     },
     "last_15_days": {
-      "avg": 0.267,
-      "obp": 0.313,
-      "slg": 0.454
+      "avg": 0.262,
+      "obp": 0.315,
+      "slg": 0.458
     },
     "last_7_days": {
       "avg": 0.227,
