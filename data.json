@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-28T02:42:17.894845Z",
-  "as_of_date": "2026-07-26",
+  "generated_at": "2026-07-28T03:17:02.392625Z",
+  "as_of_date": "2026-07-27",
   "team": {
     "month_splits": {
       "April": {
@@ -19,30 +19,30 @@
         "slg": 0.392
       },
       "July (to date)": {
-        "avg": 0.225,
+        "avg": 0.226,
         "obp": 0.284,
-        "slg": 0.393
+        "slg": 0.398
       }
     },
     "season": {
       "avg": 0.234,
       "obp": 0.313,
-      "slg": 0.417
+      "slg": 0.418
     },
     "last_30_days": {
-      "avg": 0.216,
+      "avg": 0.217,
       "obp": 0.274,
-      "slg": 0.381
+      "slg": 0.385
     },
     "last_15_days": {
-      "avg": 0.205,
-      "obp": 0.269,
-      "slg": 0.342
+      "avg": 0.208,
+      "obp": 0.27,
+      "slg": 0.352
     },
     "last_7_days": {
-      "avg": 0.191,
-      "obp": 0.263,
-      "slg": 0.314
+      "avg": 0.196,
+      "obp": 0.266,
+      "slg": 0.332
     }
   },
   "players": {
@@ -65,30 +65,30 @@
           "slg": 0.382
         },
         "July (to date)": {
-          "avg": 0.291,
-          "obp": 0.378,
-          "slg": 0.658
+          "avg": 0.3,
+          "obp": 0.385,
+          "slg": 0.663
         }
       },
       "season": {
-        "avg": 0.273,
-        "obp": 0.361,
-        "slg": 0.584
+        "avg": 0.275,
+        "obp": 0.363,
+        "slg": 0.585
       },
       "last_30_games": {
-        "avg": 0.228,
-        "obp": 0.296,
-        "slg": 0.509
+        "avg": 0.235,
+        "obp": 0.302,
+        "slg": 0.513
       },
       "last_15_games": {
-        "avg": 0.276,
-        "obp": 0.344,
-        "slg": 0.621
+        "avg": 0.288,
+        "obp": 0.354,
+        "slg": 0.627
       },
       "last_7_games": {
-        "avg": 0.179,
-        "obp": 0.233,
-        "slg": 0.429
+        "avg": 0.207,
+        "obp": 0.258,
+        "slg": 0.448
       }
     },
     "Paul Goldschmidt": {
@@ -110,30 +110,30 @@
           "slg": 0.564
         },
         "July (to date)": {
-          "avg": 0.19,
-          "obp": 0.242,
-          "slg": 0.31
+          "avg": 0.186,
+          "obp": 0.238,
+          "slg": 0.305
         }
       },
       "season": {
-        "avg": 0.259,
-        "obp": 0.319,
-        "slg": 0.481
+        "avg": 0.258,
+        "obp": 0.318,
+        "slg": 0.48
       },
       "last_30_games": {
-        "avg": 0.192,
-        "obp": 0.236,
-        "slg": 0.356
+        "avg": 0.19,
+        "obp": 0.234,
+        "slg": 0.352
       },
       "last_15_games": {
-        "avg": 0.212,
-        "obp": 0.268,
-        "slg": 0.346
+        "avg": 0.208,
+        "obp": 0.263,
+        "slg": 0.34
       },
       "last_7_games": {
-        "avg": 0.261,
-        "obp": 0.32,
-        "slg": 0.391
+        "avg": 0.25,
+        "obp": 0.308,
+        "slg": 0.375
       }
     },
     "Jose Caballero": {
@@ -290,30 +290,30 @@
           "slg": 0.417
         },
         "July (to date)": {
-          "avg": 0.244,
-          "obp": 0.271,
-          "slg": 0.39
+          "avg": 0.241,
+          "obp": 0.267,
+          "slg": 0.386
         }
       },
       "season": {
-        "avg": 0.233,
-        "obp": 0.267,
-        "slg": 0.395
+        "avg": 0.231,
+        "obp": 0.265,
+        "slg": 0.393
       },
       "last_30_games": {
-        "avg": 0.228,
-        "obp": 0.261,
-        "slg": 0.377
+        "avg": 0.226,
+        "obp": 0.258,
+        "slg": 0.374
       },
       "last_15_games": {
-        "avg": 0.267,
-        "obp": 0.29,
-        "slg": 0.4
+        "avg": 0.262,
+        "obp": 0.286,
+        "slg": 0.393
       },
       "last_7_games": {
-        "avg": 0.25,
-        "obp": 0.276,
-        "slg": 0.393
+        "avg": 0.241,
+        "obp": 0.267,
+        "slg": 0.379
       }
     },
     "Anthony Volpe": {
@@ -2152,6 +2152,21 @@
       "cum_avg": 0.234,
       "cum_obp": 0.313,
       "cum_slg": 0.418
+    },
+    {
+      "gamePk": 824570,
+      "date": "2026-07-27",
+      "opponent": "CWS",
+      "home_away": "@",
+      "result": "W",
+      "runs_scored": 9,
+      "runs_allowed": 5,
+      "game_num": 106,
+      "AB": 37,
+      "H": 10,
+      "cum_avg": 0.234,
+      "cum_obp": 0.313,
+      "cum_slg": 0.418
     }
   ],
   "rolling10": [
@@ -2922,6 +2937,14 @@
       "runs_allowed_per_game": 3.6,
       "run_diff": -0.5,
       "avg": 0.20496894409937888
+    },
+    {
+      "game_num": 106,
+      "date": "2026-07-27",
+      "runs_per_game": 3.5,
+      "runs_allowed_per_game": 3.8,
+      "run_diff": -0.3,
+      "avg": 0.20795107033639143
     }
   ]
 }
