@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-30T20:03:53.272458Z",
+  "generated_at": "2026-07-30T20:47:48.766523Z",
   "as_of_date": "2026-07-29",
   "team": {
     "month_splits": {
@@ -19,30 +19,30 @@
         "slg": 0.392
       },
       "July (to date)": {
-        "avg": 0.224,
-        "obp": 0.284,
-        "slg": 0.386
+        "avg": 0.223,
+        "obp": 0.283,
+        "slg": 0.383
       }
     },
     "season": {
-      "avg": 0.234,
+      "avg": 0.233,
       "obp": 0.312,
       "slg": 0.414
     },
     "last_30_days": {
-      "avg": 0.224,
-      "obp": 0.284,
-      "slg": 0.386
+      "avg": 0.223,
+      "obp": 0.283,
+      "slg": 0.383
     },
     "last_15_days": {
-      "avg": 0.208,
-      "obp": 0.272,
-      "slg": 0.34
-    },
-    "last_7_days": {
       "avg": 0.206,
       "obp": 0.271,
       "slg": 0.335
+    },
+    "last_7_days": {
+      "avg": 0.202,
+      "obp": 0.268,
+      "slg": 0.326
     }
   },
   "players": {
@@ -66,28 +66,28 @@
         },
         "July (to date)": {
           "avg": 0.275,
-          "obp": 0.365,
+          "obp": 0.371,
           "slg": 0.604
         }
       },
       "season": {
         "avg": 0.27,
-        "obp": 0.359,
+        "obp": 0.36,
         "slg": 0.573
       },
       "last_30_games": {
         "avg": 0.23,
-        "obp": 0.31,
+        "obp": 0.315,
         "slg": 0.522
       },
       "last_15_games": {
         "avg": 0.241,
-        "obp": 0.313,
+        "obp": 0.323,
         "slg": 0.448
       },
       "last_7_games": {
         "avg": 0.179,
-        "obp": 0.258,
+        "obp": 0.281,
         "slg": 0.357
       }
     },
@@ -110,30 +110,30 @@
           "slg": 0.564
         },
         "July (to date)": {
-          "avg": 0.186,
-          "obp": 0.25,
-          "slg": 0.286
+          "avg": 0.183,
+          "obp": 0.247,
+          "slg": 0.282
         }
       },
       "season": {
-        "avg": 0.255,
-        "obp": 0.317,
-        "slg": 0.468
+        "avg": 0.254,
+        "obp": 0.316,
+        "slg": 0.466
       },
       "last_30_games": {
-        "avg": 0.194,
-        "obp": 0.252,
-        "slg": 0.33
+        "avg": 0.192,
+        "obp": 0.25,
+        "slg": 0.327
       },
       "last_15_games": {
-        "avg": 0.25,
-        "obp": 0.328,
-        "slg": 0.385
+        "avg": 0.245,
+        "obp": 0.322,
+        "slg": 0.377
       },
       "last_7_games": {
-        "avg": 0.259,
-        "obp": 0.355,
-        "slg": 0.37
+        "avg": 0.25,
+        "obp": 0.344,
+        "slg": 0.357
       }
     },
     "Jose Caballero": {
@@ -200,30 +200,30 @@
           "slg": 0.43
         },
         "July (to date)": {
-          "avg": 0.237,
-          "obp": 0.28,
-          "slg": 0.447
+          "avg": 0.234,
+          "obp": 0.277,
+          "slg": 0.442
         }
       },
       "season": {
-        "avg": 0.223,
-        "obp": 0.299,
+        "avg": 0.224,
+        "obp": 0.3,
         "slg": 0.407
       },
       "last_30_games": {
-        "avg": 0.223,
-        "obp": 0.264,
-        "slg": 0.408
+        "avg": 0.221,
+        "obp": 0.261,
+        "slg": 0.404
       },
       "last_15_games": {
-        "avg": 0.232,
-        "obp": 0.267,
-        "slg": 0.5
+        "avg": 0.228,
+        "obp": 0.262,
+        "slg": 0.491
       },
       "last_7_games": {
-        "avg": 0.192,
-        "obp": 0.25,
-        "slg": 0.231
+        "avg": 0.185,
+        "obp": 0.241,
+        "slg": 0.222
       }
     },
     "Cody Bellinger": {
@@ -290,30 +290,30 @@
           "slg": 0.417
         },
         "July (to date)": {
-          "avg": 0.247,
-          "obp": 0.286,
-          "slg": 0.387
+          "avg": 0.245,
+          "obp": 0.283,
+          "slg": 0.383
         }
       },
       "season": {
-        "avg": 0.235,
-        "obp": 0.275,
-        "slg": 0.393
+        "avg": 0.234,
+        "obp": 0.273,
+        "slg": 0.391
       },
       "last_30_games": {
-        "avg": 0.239,
-        "obp": 0.283,
-        "slg": 0.363
+        "avg": 0.237,
+        "obp": 0.281,
+        "slg": 0.36
       },
       "last_15_games": {
-        "avg": 0.22,
-        "obp": 0.258,
-        "slg": 0.322
+        "avg": 0.217,
+        "obp": 0.254,
+        "slg": 0.317
       },
       "last_7_games": {
-        "avg": 0.25,
-        "obp": 0.3,
-        "slg": 0.393
+        "avg": 0.241,
+        "obp": 0.29,
+        "slg": 0.379
       }
     },
     "Anthony Volpe": {
@@ -330,30 +330,30 @@
           "slg": 0.307
         },
         "July (to date)": {
-          "avg": 0.273,
-          "obp": 0.327,
-          "slg": 0.341
+          "avg": 0.261,
+          "obp": 0.314,
+          "slg": 0.326
         }
       },
       "season": {
-        "avg": 0.253,
-        "obp": 0.341,
-        "slg": 0.34
+        "avg": 0.25,
+        "obp": 0.337,
+        "slg": 0.335
       },
       "last_30_games": {
-        "avg": 0.265,
-        "obp": 0.34,
-        "slg": 0.325
+        "avg": 0.259,
+        "obp": 0.333,
+        "slg": 0.318
       },
       "last_15_games": {
-        "avg": 0.278,
-        "obp": 0.341,
-        "slg": 0.361
+        "avg": 0.263,
+        "obp": 0.326,
+        "slg": 0.342
       },
       "last_7_games": {
-        "avg": 0.316,
-        "obp": 0.333,
-        "slg": 0.474
+        "avg": 0.286,
+        "obp": 0.304,
+        "slg": 0.429
       }
     },
     "Trent Grisham": {
@@ -375,30 +375,30 @@
           "slg": 0.556
         },
         "July (to date)": {
-          "avg": 0.152,
-          "obp": 0.236,
-          "slg": 0.304
+          "avg": 0.163,
+          "obp": 0.244,
+          "slg": 0.313
         }
       },
       "season": {
-        "avg": 0.211,
-        "obp": 0.314,
-        "slg": 0.38
+        "avg": 0.214,
+        "obp": 0.316,
+        "slg": 0.382
       },
       "last_30_games": {
-        "avg": 0.22,
-        "obp": 0.289,
-        "slg": 0.394
+        "avg": 0.227,
+        "obp": 0.295,
+        "slg": 0.4
       },
       "last_15_games": {
-        "avg": 0.098,
-        "obp": 0.207,
-        "slg": 0.216
+        "avg": 0.115,
+        "obp": 0.22,
+        "slg": 0.231
       },
       "last_7_games": {
-        "avg": 0.045,
-        "obp": 0.125,
-        "slg": 0.045
+        "avg": 0.087,
+        "obp": 0.16,
+        "slg": 0.087
       }
     },
     "Ryan McMahon": {
@@ -420,30 +420,30 @@
           "slg": 0.389
         },
         "July (to date)": {
-          "avg": 0.204,
-          "obp": 0.264,
-          "slg": 0.388
+          "avg": 0.2,
+          "obp": 0.259,
+          "slg": 0.38
         }
       },
       "season": {
-        "avg": 0.209,
-        "obp": 0.268,
-        "slg": 0.366
+        "avg": 0.208,
+        "obp": 0.267,
+        "slg": 0.364
       },
       "last_30_games": {
-        "avg": 0.203,
-        "obp": 0.272,
-        "slg": 0.365
+        "avg": 0.2,
+        "obp": 0.268,
+        "slg": 0.36
       },
       "last_15_games": {
-        "avg": 0.171,
-        "obp": 0.216,
-        "slg": 0.343
+        "avg": 0.167,
+        "obp": 0.211,
+        "slg": 0.333
       },
       "last_7_games": {
-        "avg": 0.071,
-        "obp": 0.133,
-        "slg": 0.071
+        "avg": 0.067,
+        "obp": 0.125,
+        "slg": 0.067
       }
     },
     "Amed Rosario": {
@@ -465,25 +465,25 @@
           "slg": 0.362
         },
         "July (to date)": {
-          "avg": 0.161,
-          "obp": 0.188,
-          "slg": 0.29
+          "avg": 0.156,
+          "obp": 0.182,
+          "slg": 0.281
         }
       },
       "season": {
-        "avg": 0.235,
-        "obp": 0.278,
-        "slg": 0.44
+        "avg": 0.234,
+        "obp": 0.276,
+        "slg": 0.437
       },
       "last_30_games": {
-        "avg": 0.203,
-        "obp": 0.244,
-        "slg": 0.351
+        "avg": 0.197,
+        "obp": 0.24,
+        "slg": 0.352
       },
       "last_15_games": {
-        "avg": 0.161,
-        "obp": 0.188,
-        "slg": 0.29
+        "avg": 0.148,
+        "obp": 0.179,
+        "slg": 0.185
       },
       "last_7_games": {
         "avg": 0.2,
@@ -552,25 +552,25 @@
         "whip": 1.23
       },
       "July (to date)": {
-        "era": 3.43,
-        "whip": 1.14
+        "era": 3.38,
+        "whip": 1.13
       }
     },
     "season": {
-      "era": 3.38,
+      "era": 3.36,
       "whip": 1.18
     },
     "last_30_days": {
-      "era": 3.43,
-      "whip": 1.14
+      "era": 3.38,
+      "whip": 1.13
     },
     "last_15_days": {
-      "era": 3.25,
-      "whip": 1.12
+      "era": 3.17,
+      "whip": 1.1
     },
     "last_7_days": {
-      "era": 3.23,
-      "whip": 1.14
+      "era": 3.08,
+      "whip": 1.1
     }
   },
   "starting_pitchers": {
@@ -581,33 +581,33 @@
           "whip": 0.987
         },
         "May": {
-          "era": 3.222,
-          "whip": 1.153
+          "era": 3.207,
+          "whip": 1.127
         },
         "June": {
-          "era": 4.629,
-          "whip": 1.403
+          "era": 4.99,
+          "whip": 1.455
         },
         "July (to date)": {
-          "era": 3.61,
-          "whip": 1.108
+          "era": 3.579,
+          "whip": 1.098
         }
       },
       "season": {
-        "era": 3.371,
-        "whip": 1.144
+        "era": 3.37,
+        "whip": 1.132
       },
       "last_10_games": {
-        "era": 3.952,
-        "whip": 1.253
+        "era": 4.05,
+        "whip": 1.249
       },
       "last_5_games": {
-        "era": 3.857,
-        "whip": 1.177
+        "era": 3.946,
+        "whip": 1.162
       },
       "last_3_games": {
-        "era": 3.464,
-        "whip": 1.143
+        "era": 3.405,
+        "whip": 1.081
       }
     },
     "Max Fried": {
@@ -750,35 +750,6 @@
         "whip": 1.85
       }
     },
-    "Carlos Rod\u00f3n": {
-      "mlb_id": 607074,
-      "month_splits": {
-        "May": {
-          "era": 3.32,
-          "whip": 1.32
-        },
-        "June": {
-          "era": 3.29,
-          "whip": 1.21
-        }
-      },
-      "season": {
-        "era": 3.3,
-        "whip": 1.25
-      },
-      "last_10_games": {
-        "era": 3.3,
-        "whip": 1.25
-      },
-      "last_5_games": {
-        "era": 3.29,
-        "whip": 1.21
-      },
-      "last_3_games": {
-        "era": 3.52,
-        "whip": 1.37
-      }
-    },
     "Ryan Weathers": {
       "mlb_id": 677960,
       "month_splits": {
@@ -795,25 +766,25 @@
           "whip": 1.4
         },
         "July (to date)": {
-          "era": 3.86,
-          "whip": 1.4
+          "era": 3.71,
+          "whip": 1.35
         }
       },
       "season": {
-        "era": 4.03,
-        "whip": 1.25
+        "era": 3.99,
+        "whip": 1.24
       },
       "last_10_games": {
-        "era": 4.68,
-        "whip": 1.4
+        "era": 4.59,
+        "whip": 1.37
       },
       "last_5_games": {
-        "era": 3.86,
-        "whip": 1.4
+        "era": 3.71,
+        "whip": 1.35
       },
       "last_3_games": {
-        "era": 3.31,
-        "whip": 1.35
+        "era": 3.12,
+        "whip": 1.27
       }
     }
   },
@@ -833,25 +804,25 @@
           "whip": 0.993
         },
         "July (to date)": {
-          "era": 2.896,
-          "whip": 1.163
+          "era": 2.837,
+          "whip": 1.149
         }
       },
       "season": {
-        "era": 3.172,
-        "whip": 1.197
+        "era": 3.155,
+        "whip": 1.194
       },
       "last_10_games": {
-        "era": 3.081,
-        "whip": 1.198
+        "era": 3.091,
+        "whip": 1.202
       },
       "last_5_games": {
-        "era": 3.83,
-        "whip": 1.447
+        "era": 3.857,
+        "whip": 1.457
       },
       "last_3_games": {
-        "era": 6.181,
-        "whip": 1.627
+        "era": 5.965,
+        "whip": 1.535
       }
     },
     "David Bednar": {
@@ -907,25 +878,25 @@
           "whip": 0.92
         },
         "July (to date)": {
-          "era": 0.63,
-          "whip": 0.7
+          "era": 0.59,
+          "whip": 0.72
         }
       },
       "season": {
-        "era": 1.33,
-        "whip": 1.09
+        "era": 1.3,
+        "whip": 1.08
       },
       "last_10_games": {
         "era": 0.82,
-        "whip": 0.91
+        "whip": 1.0
       },
       "last_5_games": {
         "era": 0.0,
-        "whip": 0.8
+        "whip": 1.0
       },
       "last_3_games": {
         "era": 0.0,
-        "whip": 1.33
+        "whip": 1.2
       }
     },
     "Angel Chivilli": {
@@ -937,7 +908,7 @@
         },
         "July (to date)": {
           "era": 0.0,
-          "whip": 0.53
+          "whip": 0.49
         }
       },
       "season": {
@@ -946,15 +917,15 @@
       },
       "last_10_games": {
         "era": 0.0,
-        "whip": 0.53
+        "whip": 0.45
       },
       "last_5_games": {
         "era": 0.0,
-        "whip": 0.86
+        "whip": 0.69
       },
       "last_3_games": {
         "era": 0.0,
-        "whip": 0.86
+        "whip": 0.33
       }
     },
     "Paul Blackburn": {
@@ -1068,7 +1039,7 @@
         "whip": 1.71
       }
     },
-    "Camilo Doval": {
+    "Doval": {
       "mlb_id": 666808,
       "month_splits": {
         "April": {
@@ -1105,7 +1076,7 @@
         "whip": 1.13
       }
     },
-    "Ryan Yarbrough": {
+    "Yarbrough": {
       "mlb_id": 642232,
       "month_splits": {
         "April": {
@@ -3594,6 +3565,1018 @@
       "runs_allowed_per_game": 4.3,
       "run_diff": -0.3,
       "avg": 0.20588235294117646
+    }
+  ],
+  "pitching_rolling10": [
+    {
+      "game_num": 10,
+      "date": "2026-04-07",
+      "starters_era": 2.14,
+      "starters_whip": 0.896,
+      "bullpen_era": 2.856,
+      "bullpen_whip": 1.212,
+      "all_era": 2.418,
+      "all_whip": 1.019
+    },
+    {
+      "game_num": 11,
+      "date": "2026-04-08",
+      "starters_era": 2.547,
+      "starters_whip": 1.019,
+      "bullpen_era": 2.972,
+      "bullpen_whip": 1.211,
+      "all_era": 2.72,
+      "all_whip": 1.097
+    },
+    {
+      "game_num": 12,
+      "date": "2026-04-09",
+      "starters_era": 2.587,
+      "starters_whip": 1.078,
+      "bullpen_era": 3.208,
+      "bullpen_whip": 1.277,
+      "all_era": 2.821,
+      "all_whip": 1.153
+    },
+    {
+      "game_num": 13,
+      "date": "2026-04-10",
+      "starters_era": 2.928,
+      "starters_whip": 1.066,
+      "bullpen_era": 3.545,
+      "bullpen_whip": 1.394,
+      "all_era": 3.158,
+      "all_whip": 1.189
+    },
+    {
+      "game_num": 14,
+      "date": "2026-04-11",
+      "starters_era": 3.051,
+      "starters_whip": 1.0,
+      "bullpen_era": 3.857,
+      "bullpen_whip": 1.451,
+      "all_era": 3.325,
+      "all_whip": 1.153
+    },
+    {
+      "game_num": 15,
+      "date": "2026-04-12",
+      "starters_era": 3.632,
+      "starters_whip": 1.105,
+      "bullpen_era": 4.309,
+      "bullpen_whip": 1.5,
+      "all_era": 3.872,
+      "all_whip": 1.245
+    },
+    {
+      "game_num": 16,
+      "date": "2026-04-13",
+      "starters_era": 3.81,
+      "starters_whip": 1.196,
+      "bullpen_era": 4.765,
+      "bullpen_whip": 1.529,
+      "all_era": 4.177,
+      "all_whip": 1.325
+    },
+    {
+      "game_num": 17,
+      "date": "2026-04-14",
+      "starters_era": 4.36,
+      "starters_whip": 1.267,
+      "bullpen_era": 5.192,
+      "bullpen_whip": 1.817,
+      "all_era": 4.687,
+      "all_whip": 1.483
+    },
+    {
+      "game_num": 18,
+      "date": "2026-04-15",
+      "starters_era": 4.418,
+      "starters_whip": 1.2,
+      "bullpen_era": 4.59,
+      "bullpen_whip": 1.62,
+      "all_era": 4.483,
+      "all_whip": 1.358
+    },
+    {
+      "game_num": 19,
+      "date": "2026-04-16",
+      "starters_era": 4.863,
+      "starters_whip": 1.193,
+      "bullpen_era": 4.933,
+      "bullpen_whip": 1.731,
+      "all_era": 4.891,
+      "all_whip": 1.404
+    },
+    {
+      "game_num": 20,
+      "date": "2026-04-17",
+      "starters_era": 4.28,
+      "starters_whip": 1.171,
+      "bullpen_era": 5.347,
+      "bullpen_whip": 1.693,
+      "all_era": 4.687,
+      "all_whip": 1.37
+    },
+    {
+      "game_num": 21,
+      "date": "2026-04-18",
+      "starters_era": 4.105,
+      "starters_whip": 1.07,
+      "bullpen_era": 6.032,
+      "bullpen_whip": 1.787,
+      "all_era": 4.789,
+      "all_whip": 1.325
+    },
+    {
+      "game_num": 22,
+      "date": "2026-04-19",
+      "starters_era": 3.994,
+      "starters_whip": 1.065,
+      "bullpen_era": 5.906,
+      "bullpen_whip": 1.781,
+      "all_era": 4.687,
+      "all_whip": 1.325
+    },
+    {
+      "game_num": 23,
+      "date": "2026-04-21",
+      "starters_era": 3.375,
+      "starters_whip": 1.006,
+      "bullpen_era": 5.87,
+      "bullpen_whip": 1.663,
+      "all_era": 4.231,
+      "all_whip": 1.231
+    },
+    {
+      "game_num": 24,
+      "date": "2026-04-22",
+      "starters_era": 2.915,
+      "starters_whip": 0.989,
+      "bullpen_era": 5.934,
+      "bullpen_whip": 1.615,
+      "all_era": 3.944,
+      "all_whip": 1.202
+    },
+    {
+      "game_num": 25,
+      "date": "2026-04-23",
+      "starters_era": 2.481,
+      "starters_whip": 0.892,
+      "bullpen_era": 5.718,
+      "bullpen_whip": 1.588,
+      "all_era": 3.5,
+      "all_whip": 1.111
+    },
+    {
+      "game_num": 26,
+      "date": "2026-04-24",
+      "starters_era": 2.672,
+      "starters_whip": 0.922,
+      "bullpen_era": 4.846,
+      "bullpen_whip": 1.5,
+      "all_era": 3.3,
+      "all_whip": 1.089
+    },
+    {
+      "game_num": 27,
+      "date": "2026-04-25",
+      "starters_era": 2.238,
+      "starters_whip": 0.902,
+      "bullpen_era": 4.558,
+      "bullpen_whip": 1.208,
+      "all_era": 2.9,
+      "all_whip": 0.989
+    },
+    {
+      "game_num": 28,
+      "date": "2026-04-26",
+      "starters_era": 2.558,
+      "starters_whip": 0.932,
+      "bullpen_era": 4.909,
+      "bullpen_whip": 1.208,
+      "all_era": 3.236,
+      "all_whip": 1.011
+    },
+    {
+      "game_num": 29,
+      "date": "2026-04-27",
+      "starters_era": 1.828,
+      "starters_whip": 0.922,
+      "bullpen_era": 3.24,
+      "bullpen_whip": 1.04,
+      "all_era": 2.225,
+      "all_whip": 0.955
+    },
+    {
+      "game_num": 30,
+      "date": "2026-04-28",
+      "starters_era": 1.828,
+      "starters_whip": 0.922,
+      "bullpen_era": 3.24,
+      "bullpen_whip": 1.2,
+      "all_era": 2.225,
+      "all_whip": 1.0
+    },
+    {
+      "game_num": 31,
+      "date": "2026-04-29",
+      "starters_era": 1.918,
+      "starters_whip": 1.016,
+      "bullpen_era": 2.667,
+      "bullpen_whip": 1.111,
+      "all_era": 2.148,
+      "all_whip": 1.045
+    },
+    {
+      "game_num": 32,
+      "date": "2026-05-01",
+      "starters_era": 2.1,
+      "starters_whip": 1.0,
+      "bullpen_era": 2.571,
+      "bullpen_whip": 1.036,
+      "all_era": 2.25,
+      "all_whip": 1.011
+    },
+    {
+      "game_num": 33,
+      "date": "2026-05-02",
+      "starters_era": 2.301,
+      "starters_whip": 1.023,
+      "bullpen_era": 2.761,
+      "bullpen_whip": 1.057,
+      "all_era": 2.455,
+      "all_whip": 1.034
+    },
+    {
+      "game_num": 34,
+      "date": "2026-05-03",
+      "starters_era": 2.893,
+      "starters_whip": 1.143,
+      "bullpen_era": 2.25,
+      "bullpen_whip": 1.0,
+      "all_era": 2.659,
+      "all_whip": 1.091
+    },
+    {
+      "game_num": 35,
+      "date": "2026-05-04",
+      "starters_era": 3.019,
+      "starters_whip": 1.286,
+      "bullpen_era": 2.097,
+      "bullpen_whip": 1.019,
+      "all_era": 2.659,
+      "all_whip": 1.182
+    },
+    {
+      "game_num": 36,
+      "date": "2026-05-05",
+      "starters_era": 3.268,
+      "starters_whip": 1.357,
+      "bullpen_era": 1.766,
+      "bullpen_whip": 0.981,
+      "all_era": 2.659,
+      "all_whip": 1.205
+    },
+    {
+      "game_num": 37,
+      "date": "2026-05-06",
+      "starters_era": 4.059,
+      "starters_whip": 1.471,
+      "bullpen_era": 1.459,
+      "bullpen_whip": 0.946,
+      "all_era": 2.966,
+      "all_whip": 1.25
+    },
+    {
+      "game_num": 38,
+      "date": "2026-05-07",
+      "starters_era": 3.188,
+      "starters_whip": 1.438,
+      "bullpen_era": 1.537,
+      "bullpen_whip": 1.073,
+      "all_era": 2.427,
+      "all_whip": 1.27
+    },
+    {
+      "game_num": 39,
+      "date": "2026-05-08",
+      "starters_era": 4.125,
+      "starters_whip": 1.5,
+      "bullpen_era": 1.575,
+      "bullpen_whip": 1.025,
+      "all_era": 2.966,
+      "all_whip": 1.284
+    },
+    {
+      "game_num": 40,
+      "date": "2026-05-09",
+      "starters_era": 4.125,
+      "starters_whip": 1.438,
+      "bullpen_era": 1.992,
+      "bullpen_whip": 1.008,
+      "all_era": 3.147,
+      "all_whip": 1.241
+    },
+    {
+      "game_num": 41,
+      "date": "2026-05-10",
+      "starters_era": 4.283,
+      "starters_whip": 1.407,
+      "bullpen_era": 1.976,
+      "bullpen_whip": 1.049,
+      "all_era": 3.224,
+      "all_whip": 1.243
+    },
+    {
+      "game_num": 42,
+      "date": "2026-05-11",
+      "starters_era": 4.469,
+      "starters_whip": 1.407,
+      "bullpen_era": 2.25,
+      "bullpen_whip": 1.1,
+      "all_era": 3.464,
+      "all_whip": 1.268
+    },
+    {
+      "game_num": 43,
+      "date": "2026-05-12",
+      "starters_era": 4.592,
+      "starters_whip": 1.388,
+      "bullpen_era": 2.059,
+      "bullpen_whip": 1.068,
+      "all_era": 3.464,
+      "all_whip": 1.245
+    },
+    {
+      "game_num": 44,
+      "date": "2026-05-13",
+      "starters_era": 4.821,
+      "starters_whip": 1.393,
+      "bullpen_era": 2.877,
+      "bullpen_whip": 1.131,
+      "all_era": 3.916,
+      "all_whip": 1.271
+    },
+    {
+      "game_num": 45,
+      "date": "2026-05-15",
+      "starters_era": 4.72,
+      "starters_whip": 1.238,
+      "bullpen_era": 3.176,
+      "bullpen_whip": 1.185,
+      "all_era": 4.019,
+      "all_whip": 1.214
+    },
+    {
+      "game_num": 46,
+      "date": "2026-05-16",
+      "starters_era": 4.629,
+      "starters_whip": 1.179,
+      "bullpen_era": 3.63,
+      "bullpen_whip": 1.235,
+      "all_era": 4.17,
+      "all_whip": 1.205
+    },
+    {
+      "game_num": 47,
+      "date": "2026-05-17",
+      "starters_era": 3.638,
+      "starters_whip": 1.085,
+      "bullpen_era": 4.765,
+      "bullpen_whip": 1.387,
+      "all_era": 4.154,
+      "all_whip": 1.223
+    },
+    {
+      "game_num": 48,
+      "date": "2026-05-18",
+      "starters_era": 4.208,
+      "starters_whip": 1.091,
+      "bullpen_era": 5.094,
+      "bullpen_whip": 1.387,
+      "all_era": 4.569,
+      "all_whip": 1.212
+    },
+    {
+      "game_num": 49,
+      "date": "2026-05-19",
+      "starters_era": 3.934,
+      "starters_whip": 1.073,
+      "bullpen_era": 4.821,
+      "bullpen_whip": 1.393,
+      "all_era": 4.312,
+      "all_whip": 1.209
+    },
+    {
+      "game_num": 50,
+      "date": "2026-05-20",
+      "starters_era": 4.291,
+      "starters_whip": 1.232,
+      "bullpen_era": 4.173,
+      "bullpen_whip": 1.255,
+      "all_era": 4.241,
+      "all_whip": 1.241
+    },
+    {
+      "game_num": 51,
+      "date": "2026-05-21",
+      "starters_era": 3.882,
+      "starters_whip": 1.196,
+      "bullpen_era": 4.211,
+      "bullpen_whip": 1.239,
+      "all_era": 4.019,
+      "all_whip": 1.214
+    },
+    {
+      "game_num": 52,
+      "date": "2026-05-22",
+      "starters_era": 3.553,
+      "starters_whip": 1.224,
+      "bullpen_era": 4.54,
+      "bullpen_whip": 1.327,
+      "all_era": 3.974,
+      "all_whip": 1.268
+    },
+    {
+      "game_num": 54,
+      "date": "2026-05-24",
+      "starters_era": 3.115,
+      "starters_whip": 1.231,
+      "bullpen_era": 4.706,
+      "bullpen_whip": 1.459,
+      "all_era": 3.77,
+      "all_whip": 1.325
+    },
+    {
+      "game_num": 55,
+      "date": "2026-05-25",
+      "starters_era": 2.782,
+      "starters_whip": 1.164,
+      "bullpen_era": 4.194,
+      "bullpen_whip": 1.456,
+      "all_era": 3.325,
+      "all_whip": 1.276
+    },
+    {
+      "game_num": 56,
+      "date": "2026-05-26",
+      "starters_era": 2.816,
+      "starters_whip": 1.178,
+      "bullpen_era": 3.857,
+      "bullpen_whip": 1.4,
+      "all_era": 3.224,
+      "all_whip": 1.265
+    },
+    {
+      "game_num": 57,
+      "date": "2026-05-27",
+      "starters_era": 2.355,
+      "starters_whip": 1.081,
+      "bullpen_era": 3.273,
+      "bullpen_whip": 1.273,
+      "all_era": 2.69,
+      "all_whip": 1.151
+    },
+    {
+      "game_num": 58,
+      "date": "2026-05-29",
+      "starters_era": 2.288,
+      "starters_whip": 1.051,
+      "bullpen_era": 2.323,
+      "bullpen_whip": 1.258,
+      "all_era": 2.3,
+      "all_whip": 1.122
+    },
+    {
+      "game_num": 59,
+      "date": "2026-05-30",
+      "starters_era": 2.238,
+      "starters_whip": 1.061,
+      "bullpen_era": 2.512,
+      "bullpen_whip": 1.256,
+      "all_era": 2.326,
+      "all_whip": 1.124
+    },
+    {
+      "game_num": 60,
+      "date": "2026-05-31",
+      "starters_era": 1.761,
+      "starters_whip": 1.076,
+      "bullpen_era": 3.904,
+      "bullpen_whip": 1.41,
+      "all_era": 2.427,
+      "all_whip": 1.18
+    },
+    {
+      "game_num": 61,
+      "date": "2026-06-02",
+      "starters_era": 2.112,
+      "starters_whip": 1.022,
+      "bullpen_era": 4.909,
+      "bullpen_whip": 1.636,
+      "all_era": 3.034,
+      "all_whip": 1.225
+    },
+    {
+      "game_num": 62,
+      "date": "2026-06-03",
+      "starters_era": 2.55,
+      "starters_whip": 1.033,
+      "bullpen_era": 4.966,
+      "bullpen_whip": 1.621,
+      "all_era": 3.337,
+      "all_whip": 1.225
+    },
+    {
+      "game_num": 63,
+      "date": "2026-06-04",
+      "starters_era": 2.7,
+      "starters_whip": 1.033,
+      "bullpen_era": 4.034,
+      "bullpen_whip": 1.414,
+      "all_era": 3.135,
+      "all_whip": 1.157
+    },
+    {
+      "game_num": 64,
+      "date": "2026-06-05",
+      "starters_era": 3.508,
+      "starters_whip": 1.068,
+      "bullpen_era": 3.9,
+      "bullpen_whip": 1.2,
+      "all_era": 3.64,
+      "all_whip": 1.112
+    },
+    {
+      "game_num": 66,
+      "date": "2026-06-07",
+      "starters_era": 3.375,
+      "starters_whip": 1.057,
+      "bullpen_era": 3.56,
+      "bullpen_whip": 1.121,
+      "all_era": 3.438,
+      "all_whip": 1.079
+    },
+    {
+      "game_num": 67,
+      "date": "2026-06-08",
+      "starters_era": 3.789,
+      "starters_whip": 1.123,
+      "bullpen_era": 3.818,
+      "bullpen_whip": 1.182,
+      "all_era": 3.8,
+      "all_whip": 1.144
+    },
+    {
+      "game_num": 68,
+      "date": "2026-06-09",
+      "starters_era": 4.307,
+      "starters_whip": 1.233,
+      "bullpen_era": 3.533,
+      "bullpen_whip": 1.29,
+      "all_era": 4.0,
+      "all_whip": 1.256
+    },
+    {
+      "game_num": 69,
+      "date": "2026-06-10",
+      "starters_era": 4.638,
+      "starters_whip": 1.252,
+      "bullpen_era": 3.533,
+      "bullpen_whip": 1.206,
+      "all_era": 4.2,
+      "all_whip": 1.233
+    },
+    {
+      "game_num": 70,
+      "date": "2026-06-12",
+      "starters_era": 5.019,
+      "starters_whip": 1.25,
+      "bullpen_era": 3.553,
+      "bullpen_whip": 1.289,
+      "all_era": 4.4,
+      "all_whip": 1.267
+    },
+    {
+      "game_num": 71,
+      "date": "2026-06-13",
+      "starters_era": 5.094,
+      "starters_whip": 1.245,
+      "bullpen_era": 2.432,
+      "bullpen_whip": 1.189,
+      "all_era": 4.0,
+      "all_whip": 1.222
+    },
+    {
+      "game_num": 72,
+      "date": "2026-06-14",
+      "starters_era": 4.785,
+      "starters_whip": 1.367,
+      "bullpen_era": 1.688,
+      "bullpen_whip": 1.018,
+      "all_era": 3.5,
+      "all_whip": 1.222
+    },
+    {
+      "game_num": 73,
+      "date": "2026-06-16",
+      "starters_era": 4.388,
+      "starters_whip": 1.312,
+      "bullpen_era": 1.473,
+      "bullpen_whip": 0.982,
+      "all_era": 3.2,
+      "all_whip": 1.178
+    },
+    {
+      "game_num": 74,
+      "date": "2026-06-17",
+      "starters_era": 4.815,
+      "starters_whip": 1.395,
+      "bullpen_era": 1.912,
+      "bullpen_whip": 1.062,
+      "all_era": 3.6,
+      "all_whip": 1.256
+    },
+    {
+      "game_num": 75,
+      "date": "2026-06-18",
+      "starters_era": 4.101,
+      "starters_whip": 1.31,
+      "bullpen_era": 2.893,
+      "bullpen_whip": 1.152,
+      "all_era": 3.6,
+      "all_whip": 1.244
+    },
+    {
+      "game_num": 76,
+      "date": "2026-06-19",
+      "starters_era": 3.906,
+      "starters_whip": 1.283,
+      "bullpen_era": 2.919,
+      "bullpen_whip": 1.135,
+      "all_era": 3.5,
+      "all_whip": 1.222
+    },
+    {
+      "game_num": 77,
+      "date": "2026-06-20",
+      "starters_era": 3.644,
+      "starters_whip": 1.325,
+      "bullpen_era": 3.635,
+      "bullpen_whip": 1.212,
+      "all_era": 3.64,
+      "all_whip": 1.281
+    },
+    {
+      "game_num": 78,
+      "date": "2026-06-21",
+      "starters_era": 3.81,
+      "starters_whip": 1.307,
+      "bullpen_era": 3.635,
+      "bullpen_whip": 1.125,
+      "all_era": 3.742,
+      "all_whip": 1.236
+    },
+    {
+      "game_num": 79,
+      "date": "2026-06-22",
+      "starters_era": 4.272,
+      "starters_whip": 1.405,
+      "bullpen_era": 3.311,
+      "bullpen_whip": 1.075,
+      "all_era": 3.886,
+      "all_whip": 1.273
+    },
+    {
+      "game_num": 80,
+      "date": "2026-06-23",
+      "starters_era": 3.689,
+      "starters_whip": 1.416,
+      "bullpen_era": 2.802,
+      "bullpen_whip": 0.934,
+      "all_era": 3.337,
+      "all_whip": 1.225
+    },
+    {
+      "game_num": 81,
+      "date": "2026-06-24",
+      "starters_era": 3.759,
+      "starters_whip": 1.405,
+      "bullpen_era": 2.725,
+      "bullpen_whip": 0.908,
+      "all_era": 3.337,
+      "all_whip": 1.202
+    },
+    {
+      "game_num": 82,
+      "date": "2026-06-25",
+      "starters_era": 3.354,
+      "starters_whip": 1.304,
+      "bullpen_era": 2.621,
+      "bullpen_whip": 0.961,
+      "all_era": 3.068,
+      "all_whip": 1.17
+    },
+    {
+      "game_num": 83,
+      "date": "2026-06-26",
+      "starters_era": 3.881,
+      "starters_whip": 1.406,
+      "bullpen_era": 2.941,
+      "bullpen_whip": 1.04,
+      "all_era": 3.517,
+      "all_whip": 1.264
+    },
+    {
+      "game_num": 84,
+      "date": "2026-06-27",
+      "starters_era": 4.025,
+      "starters_whip": 1.398,
+      "bullpen_era": 2.505,
+      "bullpen_whip": 0.959,
+      "all_era": 3.453,
+      "all_whip": 1.233
+    },
+    {
+      "game_num": 85,
+      "date": "2026-06-28",
+      "starters_era": 3.955,
+      "starters_whip": 1.452,
+      "bullpen_era": 1.853,
+      "bullpen_whip": 0.971,
+      "all_era": 3.127,
+      "all_whip": 1.263
+    },
+    {
+      "game_num": 86,
+      "date": "2026-06-29",
+      "starters_era": 4.688,
+      "starters_whip": 1.667,
+      "bullpen_era": 1.643,
+      "bullpen_whip": 0.965,
+      "all_era": 3.336,
+      "all_whip": 1.355
+    },
+    {
+      "game_num": 87,
+      "date": "2026-06-30",
+      "starters_era": 5.633,
+      "starters_whip": 1.683,
+      "bullpen_era": 1.125,
+      "bullpen_whip": 0.825,
+      "all_era": 3.544,
+      "all_whip": 1.286
+    },
+    {
+      "game_num": 88,
+      "date": "2026-07-01",
+      "starters_era": 5.287,
+      "starters_whip": 1.615,
+      "bullpen_era": 1.549,
+      "bullpen_whip": 0.836,
+      "all_era": 3.566,
+      "all_whip": 1.257
+    },
+    {
+      "game_num": 89,
+      "date": "2026-07-03",
+      "starters_era": 4.655,
+      "starters_whip": 1.49,
+      "bullpen_era": 1.537,
+      "bullpen_whip": 0.854,
+      "all_era": 3.224,
+      "all_whip": 1.198
+    },
+    {
+      "game_num": 90,
+      "date": "2026-07-04",
+      "starters_era": 5.207,
+      "starters_whip": 1.521,
+      "bullpen_era": 1.898,
+      "bullpen_whip": 0.961,
+      "all_era": 3.627,
+      "all_whip": 1.254
+    },
+    {
+      "game_num": 91,
+      "date": "2026-07-05",
+      "starters_era": 6.045,
+      "starters_whip": 1.59,
+      "bullpen_era": 2.216,
+      "bullpen_whip": 1.052,
+      "all_era": 4.131,
+      "all_whip": 1.321
+    },
+    {
+      "game_num": 92,
+      "date": "2026-07-06",
+      "starters_era": 5.853,
+      "starters_whip": 1.427,
+      "bullpen_era": 2.32,
+      "bullpen_whip": 1.031,
+      "all_era": 4.185,
+      "all_whip": 1.24
+    },
+    {
+      "game_num": 93,
+      "date": "2026-07-07",
+      "starters_era": 6.261,
+      "starters_whip": 1.457,
+      "bullpen_era": 2.03,
+      "bullpen_whip": 0.97,
+      "all_era": 4.185,
+      "all_whip": 1.218
+    },
+    {
+      "game_num": 94,
+      "date": "2026-07-08",
+      "starters_era": 5.936,
+      "starters_whip": 1.426,
+      "bullpen_era": 2.077,
+      "bullpen_whip": 0.992,
+      "all_era": 4.085,
+      "all_whip": 1.218
+    },
+    {
+      "game_num": 95,
+      "date": "2026-07-09",
+      "starters_era": 6.545,
+      "starters_whip": 1.455,
+      "bullpen_era": 2.152,
+      "bullpen_whip": 1.043,
+      "all_era": 4.3,
+      "all_whip": 1.244
+    },
+    {
+      "game_num": 96,
+      "date": "2026-07-10",
+      "starters_era": 5.853,
+      "starters_whip": 1.301,
+      "bullpen_era": 2.764,
+      "bullpen_whip": 1.063,
+      "all_era": 4.4,
+      "all_whip": 1.189
+    },
+    {
+      "game_num": 97,
+      "date": "2026-07-11",
+      "starters_era": 4.828,
+      "starters_whip": 1.232,
+      "bullpen_era": 2.496,
+      "bullpen_whip": 1.134,
+      "all_era": 3.8,
+      "all_whip": 1.189
+    },
+    {
+      "game_num": 98,
+      "date": "2026-07-12",
+      "starters_era": 4.68,
+      "starters_whip": 1.26,
+      "bullpen_era": 2.368,
+      "bullpen_whip": 1.132,
+      "all_era": 3.682,
+      "all_whip": 1.205
+    },
+    {
+      "game_num": 99,
+      "date": "2026-07-17",
+      "starters_era": 4.588,
+      "starters_whip": 1.235,
+      "bullpen_era": 2.432,
+      "bullpen_whip": 1.135,
+      "all_era": 3.682,
+      "all_whip": 1.193
+    },
+    {
+      "game_num": 100,
+      "date": "2026-07-18",
+      "starters_era": 4.181,
+      "starters_whip": 1.2,
+      "bullpen_era": 3.22,
+      "bullpen_whip": 1.211,
+      "all_era": 3.784,
+      "all_whip": 1.205
+    },
+    {
+      "game_num": 101,
+      "date": "2026-07-19",
+      "starters_era": 3.576,
+      "starters_whip": 1.113,
+      "bullpen_era": 2.867,
+      "bullpen_whip": 1.088,
+      "all_era": 3.273,
+      "all_whip": 1.102
+    },
+    {
+      "game_num": 102,
+      "date": "2026-07-19",
+      "starters_era": 4.243,
+      "starters_whip": 1.243,
+      "bullpen_era": 3.702,
+      "bullpen_whip": 1.258,
+      "all_era": 3.989,
+      "all_whip": 1.25
+    },
+    {
+      "game_num": 103,
+      "date": "2026-07-20",
+      "starters_era": 3.993,
+      "starters_whip": 1.225,
+      "bullpen_era": 3.672,
+      "bullpen_whip": 1.272,
+      "all_era": 3.843,
+      "all_whip": 1.247
+    },
+    {
+      "game_num": 104,
+      "date": "2026-07-21",
+      "starters_era": 3.522,
+      "starters_whip": 1.13,
+      "bullpen_era": 3.477,
+      "bullpen_whip": 1.273,
+      "all_era": 3.5,
+      "all_whip": 1.2
+    },
+    {
+      "game_num": 105,
+      "date": "2026-07-22",
+      "starters_era": 3.529,
+      "starters_whip": 1.059,
+      "bullpen_era": 3.375,
+      "bullpen_whip": 1.3,
+      "all_era": 3.462,
+      "all_whip": 1.165
+    },
+    {
+      "game_num": 106,
+      "date": "2026-07-22",
+      "starters_era": 3.375,
+      "starters_whip": 0.987,
+      "bullpen_era": 2.901,
+      "bullpen_whip": 1.339,
+      "all_era": 3.165,
+      "all_whip": 1.143
+    },
+    {
+      "game_num": 107,
+      "date": "2026-07-24",
+      "starters_era": 2.981,
+      "starters_whip": 0.877,
+      "bullpen_era": 2.95,
+      "bullpen_whip": 1.286,
+      "all_era": 2.967,
+      "all_whip": 1.055
+    },
+    {
+      "game_num": 108,
+      "date": "2026-07-25",
+      "starters_era": 2.942,
+      "starters_whip": 0.885,
+      "bullpen_era": 2.769,
+      "bullpen_whip": 1.282,
+      "all_era": 2.868,
+      "all_whip": 1.055
+    },
+    {
+      "game_num": 109,
+      "date": "2026-07-26",
+      "starters_era": 3.857,
+      "starters_whip": 1.0,
+      "bullpen_era": 3.732,
+      "bullpen_whip": 1.415,
+      "all_era": 3.8,
+      "all_whip": 1.189
+    },
+    {
+      "game_num": 110,
+      "date": "2026-07-27",
+      "starters_era": 3.965,
+      "starters_whip": 1.049,
+      "bullpen_era": 2.764,
+      "bullpen_whip": 1.276,
+      "all_era": 3.4,
+      "all_whip": 1.156
+    },
+    {
+      "game_num": 111,
+      "date": "2026-07-28",
+      "starters_era": 3.706,
+      "starters_whip": 1.059,
+      "bullpen_era": 3.231,
+      "bullpen_whip": 1.308,
+      "all_era": 3.5,
+      "all_whip": 1.167
+    },
+    {
+      "game_num": 112,
+      "date": "2026-07-29",
+      "starters_era": 3.226,
+      "starters_whip": 0.962,
+      "bullpen_era": 2.746,
+      "bullpen_whip": 1.195,
+      "all_era": 3.022,
+      "all_whip": 1.061
     }
   ]
 }
