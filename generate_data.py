@@ -19,12 +19,12 @@ PLAYERS = [
 ]
 
 STARTING_PITCHERS = [
-    "Max Fried", "Cam Schlittler", "Gerrit Cole", "Will Warren", "Carlos Rodon", "Ryan Weathers",
+    "Max Fried", "Cam Schlittler", "Gerrit Cole", "Will Warren", "Carlos Rodón", "Ryan Weathers",
 ]
 
 BULLPEN_PITCHERS = [
     "David Bednar", "Brent Headrick", "Angel Chivilli", "Paul Blackburn", "Fernando Cruz",
-    "Tim Hill", "Doval", "Yarbrough", "Jake Bird",
+    "Tim Hill", "Camilo Doval", "Ryan Yarbrough", "Jake Bird",
 ]
 
 MONTH_NAMES = {1: "January", 2: "February", 3: "March", 4: "April", 5: "May", 6: "June",
