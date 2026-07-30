@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-30T20:58:56.918588Z",
-  "as_of_date": "2026-07-29",
+  "generated_at": "2026-07-30T22:01:19.246476Z",
+  "as_of_date": "2026-07-30",
   "team": {
     "month_splits": {
       "April": {
@@ -19,30 +19,30 @@
         "slg": 0.392
       },
       "July (to date)": {
-        "avg": 0.223,
+        "avg": 0.222,
         "obp": 0.283,
-        "slg": 0.382
+        "slg": 0.38
       }
     },
     "season": {
       "avg": 0.233,
       "obp": 0.312,
-      "slg": 0.414
+      "slg": 0.413
     },
     "last_30_days": {
-      "avg": 0.223,
+      "avg": 0.222,
       "obp": 0.283,
-      "slg": 0.382
+      "slg": 0.38
     },
     "last_15_days": {
-      "avg": 0.206,
+      "avg": 0.205,
       "obp": 0.272,
-      "slg": 0.334
+      "slg": 0.332
     },
     "last_7_days": {
-      "avg": 0.203,
+      "avg": 0.201,
       "obp": 0.27,
-      "slg": 0.325
+      "slg": 0.321
     }
   },
   "players": {
@@ -110,30 +110,30 @@
           "slg": 0.564
         },
         "July (to date)": {
-          "avg": 0.183,
-          "obp": 0.247,
-          "slg": 0.282
+          "avg": 0.181,
+          "obp": 0.244,
+          "slg": 0.278
         }
       },
       "season": {
         "avg": 0.254,
-        "obp": 0.316,
-        "slg": 0.466
+        "obp": 0.315,
+        "slg": 0.465
       },
       "last_30_games": {
-        "avg": 0.192,
-        "obp": 0.25,
-        "slg": 0.327
+        "avg": 0.19,
+        "obp": 0.248,
+        "slg": 0.324
       },
       "last_15_games": {
-        "avg": 0.245,
-        "obp": 0.322,
-        "slg": 0.377
+        "avg": 0.241,
+        "obp": 0.317,
+        "slg": 0.37
       },
       "last_7_games": {
-        "avg": 0.25,
-        "obp": 0.344,
-        "slg": 0.357
+        "avg": 0.241,
+        "obp": 0.333,
+        "slg": 0.345
       }
     },
     "Jose Caballero": {
@@ -166,19 +166,19 @@
         "slg": 0.376
       },
       "last_30_games": {
-        "avg": 0.186,
+        "avg": 0.192,
         "obp": 0.229,
-        "slg": 0.294
+        "slg": 0.303
       },
       "last_15_games": {
-        "avg": 0.189,
-        "obp": 0.214,
-        "slg": 0.226
+        "avg": 0.204,
+        "obp": 0.231,
+        "slg": 0.245
       },
       "last_7_games": {
-        "avg": 0.185,
-        "obp": 0.214,
-        "slg": 0.259
+        "avg": 0.13,
+        "obp": 0.167,
+        "slg": 0.174
       }
     },
     "Jazz Chisholm Jr.": {
@@ -201,28 +201,28 @@
         },
         "July (to date)": {
           "avg": 0.234,
-          "obp": 0.277,
+          "obp": 0.286,
           "slg": 0.442
         }
       },
       "season": {
         "avg": 0.224,
-        "obp": 0.3,
+        "obp": 0.301,
         "slg": 0.407
       },
       "last_30_games": {
         "avg": 0.221,
-        "obp": 0.261,
+        "obp": 0.268,
         "slg": 0.404
       },
       "last_15_games": {
         "avg": 0.228,
-        "obp": 0.262,
+        "obp": 0.274,
         "slg": 0.491
       },
       "last_7_games": {
         "avg": 0.185,
-        "obp": 0.241,
+        "obp": 0.267,
         "slg": 0.222
       }
     },
@@ -330,30 +330,30 @@
           "slg": 0.307
         },
         "July (to date)": {
-          "avg": 0.261,
-          "obp": 0.314,
-          "slg": 0.326
+          "avg": 0.255,
+          "obp": 0.308,
+          "slg": 0.319
         }
       },
       "season": {
-        "avg": 0.25,
-        "obp": 0.337,
-        "slg": 0.335
+        "avg": 0.248,
+        "obp": 0.335,
+        "slg": 0.333
       },
       "last_30_games": {
-        "avg": 0.259,
-        "obp": 0.333,
-        "slg": 0.318
+        "avg": 0.256,
+        "obp": 0.33,
+        "slg": 0.314
       },
       "last_15_games": {
-        "avg": 0.263,
-        "obp": 0.326,
-        "slg": 0.342
+        "avg": 0.256,
+        "obp": 0.318,
+        "slg": 0.333
       },
       "last_7_games": {
-        "avg": 0.286,
-        "obp": 0.304,
-        "slg": 0.429
+        "avg": 0.273,
+        "obp": 0.292,
+        "slg": 0.409
       }
     },
     "Trent Grisham": {
@@ -552,8 +552,8 @@
         "whip": 1.23
       },
       "July (to date)": {
-        "era": 3.38,
-        "whip": 1.13
+        "era": 3.35,
+        "whip": 1.15
       }
     },
     "season": {
@@ -561,16 +561,16 @@
       "whip": 1.18
     },
     "last_30_days": {
-      "era": 3.38,
-      "whip": 1.13
+      "era": 3.35,
+      "whip": 1.15
     },
     "last_15_days": {
-      "era": 3.17,
-      "whip": 1.1
+      "era": 3.12,
+      "whip": 1.12
     },
     "last_7_days": {
-      "era": 3.08,
-      "whip": 1.1
+      "era": 3.0,
+      "whip": 1.15
     }
   },
   "starting_pitchers": {
@@ -804,25 +804,25 @@
           "whip": 0.993
         },
         "July (to date)": {
-          "era": 2.837,
-          "whip": 1.149
+          "era": 2.79,
+          "whip": 1.18
         }
       },
       "season": {
-        "era": 3.155,
-        "whip": 1.194
-      },
-      "last_10_games": {
-        "era": 3.091,
+        "era": 3.141,
         "whip": 1.202
       },
+      "last_10_games": {
+        "era": 3.07,
+        "whip": 1.214
+      },
       "last_5_games": {
-        "era": 3.857,
-        "whip": 1.457
+        "era": 3.562,
+        "whip": 1.458
       },
       "last_3_games": {
-        "era": 5.965,
-        "whip": 1.535
+        "era": 5.4,
+        "whip": 1.5
       }
     },
     "David Bednar": {
@@ -908,24 +908,24 @@
         },
         "July (to date)": {
           "era": 0.0,
-          "whip": 0.49
+          "whip": 0.63
         }
       },
       "season": {
-        "era": 0.61,
-        "whip": 0.75
+        "era": 0.6,
+        "whip": 0.87
       },
       "last_10_games": {
         "era": 0.0,
-        "whip": 0.45
+        "whip": 0.62
       },
       "last_5_games": {
         "era": 0.0,
-        "whip": 0.69
+        "whip": 1.07
       },
       "last_3_games": {
         "era": 0.0,
-        "whip": 0.33
+        "whip": 0.9
       }
     },
     "Paul Blackburn": {
@@ -981,25 +981,25 @@
           "whip": 1.26
         },
         "July (to date)": {
-          "era": 2.61,
-          "whip": 1.35
+          "era": 2.31,
+          "whip": 1.46
         }
       },
       "season": {
-        "era": 2.58,
-        "whip": 1.3
+        "era": 2.51,
+        "whip": 1.33
       },
       "last_10_games": {
-        "era": 3.12,
-        "whip": 1.62
+        "era": 3.0,
+        "whip": 1.56
       },
       "last_5_games": {
-        "era": 6.23,
-        "whip": 2.08
+        "era": 3.38,
+        "whip": 1.69
       },
       "last_3_games": {
-        "era": 6.75,
-        "whip": 2.25
+        "era": 2.45,
+        "whip": 1.36
       }
     },
     "Tim Hill": {
@@ -2771,6 +2771,21 @@
       "cum_avg": 0.234,
       "cum_obp": 0.312,
       "cum_slg": 0.415
+    },
+    {
+      "gamePk": 824568,
+      "date": "2026-07-30",
+      "opponent": "CWS",
+      "home_away": "@",
+      "result": "L",
+      "runs_scored": 1,
+      "runs_allowed": 2,
+      "game_num": 109,
+      "AB": 37,
+      "H": 6,
+      "cum_avg": 0.233,
+      "cum_obp": 0.312,
+      "cum_slg": 0.413
     }
   ],
   "rolling10": [
@@ -3565,6 +3580,14 @@
       "runs_allowed_per_game": 4.3,
       "run_diff": -0.3,
       "avg": 0.20588235294117646
+    },
+    {
+      "game_num": 109,
+      "date": "2026-07-30",
+      "runs_per_game": 3.9,
+      "runs_allowed_per_game": 3.7,
+      "run_diff": 0.2,
+      "avg": 0.207492795389049
     }
   ],
   "pitching_rolling10": [
@@ -4577,6 +4600,16 @@
       "bullpen_whip": 1.195,
       "all_era": 3.022,
       "all_whip": 1.061
+    },
+    {
+      "game_num": 113,
+      "date": "2026-07-30",
+      "starters_era": 2.277,
+      "starters_whip": 0.867,
+      "bullpen_era": 2.793,
+      "bullpen_whip": 1.293,
+      "all_era": 2.489,
+      "all_whip": 1.043
     }
   ]
 }
