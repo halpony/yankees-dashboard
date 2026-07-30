@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-30T19:07:47.634185Z",
+  "generated_at": "2026-07-30T19:25:09.967098Z",
   "as_of_date": "2026-07-29",
   "team": {
     "month_splits": {
@@ -20,8 +20,8 @@
       },
       "July (to date)": {
         "avg": 0.222,
-        "obp": 0.282,
-        "slg": 0.384
+        "obp": 0.283,
+        "slg": 0.383
       }
     },
     "season": {
@@ -31,18 +31,18 @@
     },
     "last_30_days": {
       "avg": 0.222,
-      "obp": 0.282,
-      "slg": 0.384
+      "obp": 0.283,
+      "slg": 0.383
     },
     "last_15_days": {
       "avg": 0.204,
-      "obp": 0.269,
-      "slg": 0.335
+      "obp": 0.27,
+      "slg": 0.334
     },
     "last_7_days": {
-      "avg": 0.199,
-      "obp": 0.264,
-      "slg": 0.326
+      "avg": 0.2,
+      "obp": 0.267,
+      "slg": 0.324
     }
   },
   "players": {
@@ -110,30 +110,30 @@
           "slg": 0.564
         },
         "July (to date)": {
-          "avg": 0.191,
-          "obp": 0.257,
-          "slg": 0.294
+          "avg": 0.188,
+          "obp": 0.253,
+          "slg": 0.29
         }
       },
       "season": {
-        "avg": 0.257,
-        "obp": 0.319,
-        "slg": 0.471
+        "avg": 0.256,
+        "obp": 0.318,
+        "slg": 0.47
       },
       "last_30_games": {
-        "avg": 0.198,
-        "obp": 0.257,
-        "slg": 0.337
+        "avg": 0.196,
+        "obp": 0.255,
+        "slg": 0.333
       },
       "last_15_games": {
-        "avg": 0.26,
-        "obp": 0.339,
-        "slg": 0.4
+        "avg": 0.255,
+        "obp": 0.333,
+        "slg": 0.392
       },
       "last_7_games": {
-        "avg": 0.28,
-        "obp": 0.379,
-        "slg": 0.4
+        "avg": 0.269,
+        "obp": 0.367,
+        "slg": 0.385
       }
     },
     "Jose Caballero": {
@@ -201,28 +201,28 @@
         },
         "July (to date)": {
           "avg": 0.227,
-          "obp": 0.263,
+          "obp": 0.272,
           "slg": 0.44
         }
       },
       "season": {
         "avg": 0.223,
-        "obp": 0.297,
+        "obp": 0.299,
         "slg": 0.407
       },
       "last_30_games": {
         "avg": 0.216,
-        "obp": 0.25,
+        "obp": 0.257,
         "slg": 0.402
       },
       "last_15_games": {
         "avg": 0.218,
-        "obp": 0.241,
+        "obp": 0.254,
         "slg": 0.491
       },
       "last_7_games": {
         "avg": 0.16,
-        "obp": 0.192,
+        "obp": 0.222,
         "slg": 0.2
       }
     },
@@ -290,30 +290,30 @@
           "slg": 0.417
         },
         "July (to date)": {
-          "avg": 0.242,
-          "obp": 0.281,
-          "slg": 0.374
+          "avg": 0.239,
+          "obp": 0.278,
+          "slg": 0.37
         }
       },
       "season": {
-        "avg": 0.232,
-        "obp": 0.272,
-        "slg": 0.387
+        "avg": 0.231,
+        "obp": 0.271,
+        "slg": 0.385
       },
       "last_30_games": {
-        "avg": 0.234,
-        "obp": 0.28,
-        "slg": 0.351
+        "avg": 0.232,
+        "obp": 0.277,
+        "slg": 0.348
       },
       "last_15_games": {
-        "avg": 0.211,
-        "obp": 0.25,
-        "slg": 0.298
+        "avg": 0.207,
+        "obp": 0.246,
+        "slg": 0.293
       },
       "last_7_games": {
-        "avg": 0.231,
-        "obp": 0.286,
-        "slg": 0.346
+        "avg": 0.222,
+        "obp": 0.276,
+        "slg": 0.333
       }
     },
     "Anthony Volpe": {
@@ -330,30 +330,30 @@
           "slg": 0.307
         },
         "July (to date)": {
-          "avg": 0.279,
-          "obp": 0.333,
-          "slg": 0.349
+          "avg": 0.273,
+          "obp": 0.327,
+          "slg": 0.341
         }
       },
       "season": {
-        "avg": 0.255,
-        "obp": 0.342,
-        "slg": 0.342
+        "avg": 0.253,
+        "obp": 0.341,
+        "slg": 0.34
       },
       "last_30_games": {
-        "avg": 0.268,
-        "obp": 0.344,
-        "slg": 0.329
+        "avg": 0.265,
+        "obp": 0.34,
+        "slg": 0.325
       },
       "last_15_games": {
-        "avg": 0.286,
-        "obp": 0.35,
-        "slg": 0.371
+        "avg": 0.278,
+        "obp": 0.341,
+        "slg": 0.361
       },
       "last_7_games": {
-        "avg": 0.333,
-        "obp": 0.35,
-        "slg": 0.5
+        "avg": 0.316,
+        "obp": 0.333,
+        "slg": 0.474
       }
     },
     "Trent Grisham": {
@@ -553,7 +553,7 @@
       },
       "July (to date)": {
         "era": 3.48,
-        "whip": 1.14
+        "whip": 1.15
       }
     },
     "season": {
@@ -562,18 +562,54 @@
     },
     "last_30_days": {
       "era": 3.48,
-      "whip": 1.14
+      "whip": 1.15
     },
     "last_15_days": {
       "era": 3.34,
-      "whip": 1.12
+      "whip": 1.13
     },
     "last_7_days": {
       "era": 3.39,
-      "whip": 1.15
+      "whip": 1.17
     }
   },
   "starting_pitchers": {
+    "New York Yankees (Team)": {
+      "month_splits": {
+        "April": {
+          "era": 2.629,
+          "whip": 0.987
+        },
+        "May": {
+          "era": 3.207,
+          "whip": 1.127
+        },
+        "June": {
+          "era": 4.99,
+          "whip": 1.455
+        },
+        "July (to date)": {
+          "era": 3.707,
+          "whip": 1.119
+        }
+      },
+      "season": {
+        "era": 3.398,
+        "whip": 1.135
+      },
+      "last_30_days": {
+        "era": 3.707,
+        "whip": 1.119
+      },
+      "last_15_days": {
+        "era": 3.484,
+        "whip": 1.065
+      },
+      "last_7_days": {
+        "era": 2.883,
+        "whip": 1.107
+      }
+    },
     "Max Fried": {
       "mlb_id": 608331,
       "month_splits": {
@@ -731,28 +767,64 @@
         },
         "July (to date)": {
           "era": 4.37,
-          "whip": 1.46
+          "whip": 1.5
         }
       },
       "season": {
-        "era": 4.15,
-        "whip": 1.27
-      },
-      "last_30_games": {
         "era": 4.14,
         "whip": 1.26
       },
+      "last_30_games": {
+        "era": 4.14,
+        "whip": 1.27
+      },
       "last_15_games": {
         "era": 4.54,
-        "whip": 1.28
+        "whip": 1.29
       },
       "last_7_games": {
         "era": 4.15,
-        "whip": 1.62
+        "whip": 1.65
       }
     }
   },
   "bullpen_pitchers": {
+    "New York Yankees (Team)": {
+      "month_splits": {
+        "April": {
+          "era": 4.481,
+          "whip": 1.417
+        },
+        "May": {
+          "era": 3.464,
+          "whip": 1.302
+        },
+        "June": {
+          "era": 2.553,
+          "whip": 0.993
+        },
+        "July (to date)": {
+          "era": 2.896,
+          "whip": 1.163
+        }
+      },
+      "season": {
+        "era": 3.172,
+        "whip": 1.197
+      },
+      "last_30_days": {
+        "era": 2.896,
+        "whip": 1.163
+      },
+      "last_15_days": {
+        "era": 3.197,
+        "whip": 1.224
+      },
+      "last_7_days": {
+        "era": 4.125,
+        "whip": 1.25
+      }
+    },
     "David Bednar": {
       "mlb_id": 670280,
       "month_splits": {
