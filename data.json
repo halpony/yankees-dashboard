@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-30T19:25:09.967098Z",
+  "generated_at": "2026-07-30T19:29:54.600015Z",
   "as_of_date": "2026-07-29",
   "team": {
     "month_splits": {
@@ -552,29 +552,29 @@
         "whip": 1.23
       },
       "July (to date)": {
-        "era": 3.48,
+        "era": 3.47,
         "whip": 1.15
       }
     },
     "season": {
-      "era": 3.39,
+      "era": 3.38,
       "whip": 1.18
     },
     "last_30_days": {
-      "era": 3.48,
+      "era": 3.47,
       "whip": 1.15
     },
     "last_15_days": {
-      "era": 3.34,
-      "whip": 1.13
+      "era": 3.32,
+      "whip": 1.12
     },
     "last_7_days": {
-      "era": 3.39,
-      "whip": 1.17
+      "era": 3.36,
+      "whip": 1.15
     }
   },
   "starting_pitchers": {
-    "New York Yankees (Team)": {
+    "New York Yankees (Selected)": {
       "month_splits": {
         "April": {
           "era": 2.629,
@@ -589,25 +589,25 @@
           "whip": 1.455
         },
         "July (to date)": {
-          "era": 3.707,
-          "whip": 1.119
+          "era": 3.685,
+          "whip": 1.113
         }
       },
       "season": {
         "era": 3.398,
-        "whip": 1.135
+        "whip": 1.137
       },
       "last_30_days": {
-        "era": 3.707,
-        "whip": 1.119
+        "era": 3.685,
+        "whip": 1.113
       },
       "last_15_days": {
-        "era": 3.484,
-        "whip": 1.065
+        "era": 3.447,
+        "whip": 1.053
       },
       "last_7_days": {
-        "era": 2.883,
-        "whip": 1.107
+        "era": 2.829,
+        "whip": 1.086
       }
     },
     "Max Fried": {
@@ -766,30 +766,30 @@
           "whip": 1.4
         },
         "July (to date)": {
-          "era": 4.37,
-          "whip": 1.5
+          "era": 4.24,
+          "whip": 1.46
         }
       },
       "season": {
         "era": 4.14,
-        "whip": 1.26
-      },
-      "last_30_games": {
-        "era": 4.14,
         "whip": 1.27
       },
+      "last_30_games": {
+        "era": 4.11,
+        "whip": 1.26
+      },
       "last_15_games": {
-        "era": 4.54,
+        "era": 4.52,
         "whip": 1.29
       },
       "last_7_games": {
-        "era": 4.15,
-        "whip": 1.65
+        "era": 4.06,
+        "whip": 1.61
       }
     }
   },
   "bullpen_pitchers": {
-    "New York Yankees (Team)": {
+    "New York Yankees (Selected)": {
       "month_splits": {
         "April": {
           "era": 4.481,
