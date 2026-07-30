@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-30T22:09:50.706285Z",
+  "generated_at": "2026-07-30T22:21:08.024311Z",
   "as_of_date": "2026-07-30",
   "team": {
     "month_splits": {
@@ -581,12 +581,12 @@
           "whip": 0.987
         },
         "May": {
-          "era": 3.207,
-          "whip": 1.127
+          "era": 3.222,
+          "whip": 1.153
         },
         "June": {
-          "era": 4.99,
-          "whip": 1.455
+          "era": 4.629,
+          "whip": 1.403
         },
         "July (to date)": {
           "era": 3.579,
@@ -594,20 +594,20 @@
         }
       },
       "season": {
-        "era": 3.37,
-        "whip": 1.132
+        "era": 3.365,
+        "whip": 1.142
       },
       "last_10_games": {
-        "era": 4.05,
+        "era": 3.939,
         "whip": 1.249
       },
       "last_5_games": {
-        "era": 3.946,
-        "whip": 1.162
+        "era": 3.833,
+        "whip": 1.169
       },
       "last_3_games": {
-        "era": 3.405,
-        "whip": 1.081
+        "era": 3.425,
+        "whip": 1.131
       }
     },
     "Max Fried": {
@@ -748,6 +748,35 @@
       "last_3_games": {
         "era": 7.27,
         "whip": 1.85
+      }
+    },
+    "Carlos Rod\u00f3n": {
+      "mlb_id": 607074,
+      "month_splits": {
+        "May": {
+          "era": 3.32,
+          "whip": 1.32
+        },
+        "June": {
+          "era": 3.29,
+          "whip": 1.21
+        }
+      },
+      "season": {
+        "era": 3.3,
+        "whip": 1.25
+      },
+      "last_10_games": {
+        "era": 3.3,
+        "whip": 1.25
+      },
+      "last_5_games": {
+        "era": 3.29,
+        "whip": 1.21
+      },
+      "last_3_games": {
+        "era": 3.52,
+        "whip": 1.37
       }
     },
     "Ryan Weathers": {
@@ -1039,7 +1068,7 @@
         "whip": 1.71
       }
     },
-    "Doval": {
+    "Camilo Doval": {
       "mlb_id": 666808,
       "month_splits": {
         "April": {
@@ -1076,7 +1105,7 @@
         "whip": 1.13
       }
     },
-    "Yarbrough": {
+    "Ryan Yarbrough": {
       "mlb_id": 642232,
       "month_splits": {
         "April": {
