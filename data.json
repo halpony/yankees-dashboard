@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-30T22:21:08.024311Z",
+  "generated_at": "2026-07-31T03:14:37.445896Z",
   "as_of_date": "2026-07-30",
   "team": {
     "month_splits": {
@@ -30,9 +30,9 @@
       "slg": 0.413
     },
     "last_30_days": {
-      "avg": 0.222,
-      "obp": 0.283,
-      "slg": 0.38
+      "avg": 0.223,
+      "obp": 0.286,
+      "slg": 0.384
     },
     "last_15_days": {
       "avg": 0.205,
@@ -40,9 +40,9 @@
       "slg": 0.332
     },
     "last_7_days": {
-      "avg": 0.201,
-      "obp": 0.27,
-      "slg": 0.321
+      "avg": 0.209,
+      "obp": 0.277,
+      "slg": 0.332
     }
   },
   "players": {
@@ -552,25 +552,25 @@
         "whip": 1.23
       },
       "July (to date)": {
-        "era": 3.35,
+        "era": 3.15,
         "whip": 1.15
       }
     },
     "season": {
-      "era": 3.36,
+      "era": 3.31,
       "whip": 1.18
     },
     "last_30_days": {
-      "era": 3.35,
-      "whip": 1.15
+      "era": 3.14,
+      "whip": 1.16
     },
     "last_15_days": {
-      "era": 3.12,
+      "era": 2.75,
       "whip": 1.12
     },
     "last_7_days": {
-      "era": 3.0,
-      "whip": 1.15
+      "era": 2.68,
+      "whip": 1.26
     }
   },
   "starting_pitchers": {
@@ -833,24 +833,24 @@
           "whip": 0.993
         },
         "July (to date)": {
-          "era": 2.79,
+          "era": 2.34,
           "whip": 1.18
         }
       },
       "season": {
-        "era": 3.141,
+        "era": 3.021,
         "whip": 1.202
       },
       "last_10_games": {
-        "era": 3.07,
+        "era": 2.619,
         "whip": 1.214
       },
       "last_5_games": {
-        "era": 3.562,
+        "era": 2.625,
         "whip": 1.458
       },
       "last_3_games": {
-        "era": 5.4,
+        "era": 3.9,
         "whip": 1.5
       }
     },
@@ -1085,24 +1085,24 @@
         },
         "July (to date)": {
           "era": 4.5,
-          "whip": 2.25
+          "whip": 2.38
         }
       },
       "season": {
         "era": 4.54,
-        "whip": 1.39
+        "whip": 1.41
       },
       "last_10_games": {
         "era": 3.72,
-        "whip": 1.86
+        "whip": 1.97
       },
       "last_5_games": {
         "era": 0.0,
-        "whip": 1.4
+        "whip": 1.6
       },
       "last_3_games": {
         "era": 0.0,
-        "whip": 1.13
+        "whip": 1.5
       }
     },
     "Ryan Yarbrough": {
@@ -1121,25 +1121,25 @@
           "whip": 1.26
         },
         "July (to date)": {
-          "era": 6.0,
-          "whip": 1.78
+          "era": 1.0,
+          "whip": 1.67
         }
       },
       "season": {
-        "era": 4.6,
-        "whip": 1.3
+        "era": 3.56,
+        "whip": 1.28
       },
       "last_10_games": {
-        "era": 5.93,
-        "whip": 1.61
+        "era": 2.63,
+        "whip": 1.54
       },
       "last_5_games": {
-        "era": 6.14,
-        "whip": 1.91
+        "era": 0.0,
+        "whip": 1.77
       },
       "last_3_games": {
-        "era": 7.5,
-        "whip": 1.83
+        "era": 0.0,
+        "whip": 1.67
       }
     },
     "Jake Bird": {
@@ -2767,7 +2767,7 @@
       "game_num": 106,
       "AB": 37,
       "H": 10,
-      "cum_avg": 0.234,
+      "cum_avg": 0.235,
       "cum_obp": 0.313,
       "cum_slg": 0.418
     },
@@ -4595,19 +4595,19 @@
       "date": "2026-07-26",
       "starters_era": 3.857,
       "starters_whip": 1.0,
-      "bullpen_era": 3.732,
-      "bullpen_whip": 1.415,
-      "all_era": 3.8,
-      "all_whip": 1.189
+      "bullpen_era": 2.634,
+      "bullpen_whip": 1.39,
+      "all_era": 3.3,
+      "all_whip": 1.178
     },
     {
       "game_num": 110,
       "date": "2026-07-27",
       "starters_era": 3.965,
       "starters_whip": 1.049,
-      "bullpen_era": 2.764,
+      "bullpen_era": 1.701,
       "bullpen_whip": 1.276,
-      "all_era": 3.4,
+      "all_era": 2.9,
       "all_whip": 1.156
     },
     {
@@ -4615,9 +4615,9 @@
       "date": "2026-07-28",
       "starters_era": 3.706,
       "starters_whip": 1.059,
-      "bullpen_era": 3.231,
+      "bullpen_era": 2.077,
       "bullpen_whip": 1.308,
-      "all_era": 3.5,
+      "all_era": 3.0,
       "all_whip": 1.167
     },
     {
@@ -4625,9 +4625,9 @@
       "date": "2026-07-29",
       "starters_era": 3.226,
       "starters_whip": 0.962,
-      "bullpen_era": 2.746,
+      "bullpen_era": 1.602,
       "bullpen_whip": 1.195,
-      "all_era": 3.022,
+      "all_era": 2.534,
       "all_whip": 1.061
     },
     {
@@ -4635,9 +4635,9 @@
       "date": "2026-07-30",
       "starters_era": 2.277,
       "starters_whip": 0.867,
-      "bullpen_era": 2.793,
+      "bullpen_era": 1.629,
       "bullpen_whip": 1.293,
-      "all_era": 2.489,
+      "all_era": 2.011,
       "all_whip": 1.043
     }
   ]
