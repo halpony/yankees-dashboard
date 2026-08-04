@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-04T20:40:09.298710Z",
+  "generated_at": "2026-08-04T21:47:36.660341Z",
   "as_of_date": "2026-08-03",
   "team": {
     "month_splits": {
@@ -518,6 +518,24 @@
     },
     "Luis Garcia Jr.": {
       "mlb_id": 671277,
+      "month_splits": {
+        "August (to date)": {
+          "avg": 0.5,
+          "obp": 0.5,
+          "slg": 1.25
+        }
+      },
+      "season": {
+        "avg": 0.5,
+        "obp": 0.5,
+        "slg": 1.25
+      },
+      "last_30_games": null,
+      "last_15_games": null,
+      "last_7_games": null
+    },
+    "Heliot Ramos": {
+      "mlb_id": 671218,
       "month_splits": {},
       "season": {
         "avg": 0.0,
@@ -528,8 +546,8 @@
       "last_15_games": null,
       "last_7_games": null
     },
-    "Heliot Ramos": {
-      "mlb_id": 671218,
+    "George Lombard Jr.": {
+      "mlb_id": 806146,
       "month_splits": {},
       "season": {
         "avg": 0.0,
