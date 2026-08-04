@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-04T02:44:16.541568Z",
+  "generated_at": "2026-08-04T19:38:03.137138Z",
   "as_of_date": "2026-08-03",
   "team": {
     "month_splits": {
@@ -797,37 +797,37 @@
     "New York Yankees (Selected)": {
       "month_splits": {
         "May": {
-          "era": 3.464,
-          "whip": 1.302
+          "era": 3.556,
+          "whip": 1.361
         },
         "June": {
-          "era": 2.553,
-          "whip": 0.993
+          "era": 2.342,
+          "whip": 0.904
         },
         "July": {
-          "era": 2.287,
-          "whip": 1.163
+          "era": 1.494,
+          "whip": 0.963
         },
         "August (to date)": {
-          "era": 10.324,
-          "whip": 1.676
+          "era": 11.571,
+          "whip": 1.929
         }
       },
       "season": {
-        "era": 3.216,
-        "whip": 1.211
+        "era": 2.782,
+        "whip": 1.158
       },
       "last_10_games": {
-        "era": 3.673,
-        "whip": 1.224
+        "era": 3.176,
+        "whip": 1.172
       },
       "last_5_games": {
-        "era": 5.318,
-        "whip": 1.5
+        "era": 4.263,
+        "whip": 1.368
       },
       "last_3_games": {
-        "era": 8.544,
-        "whip": 1.899
+        "era": 6.75,
+        "whip": 1.765
       }
     },
     "David Bednar": {
@@ -1044,43 +1044,6 @@
         "whip": 1.5
       }
     },
-    "Camilo Doval": {
-      "mlb_id": 666808,
-      "month_splits": {
-        "May": {
-          "era": 3.27,
-          "whip": 0.91
-        },
-        "June": {
-          "era": 3.48,
-          "whip": 1.45
-        },
-        "July": {
-          "era": 4.5,
-          "whip": 2.38
-        },
-        "August (to date)": {
-          "era": 4.5,
-          "whip": 0.5
-        }
-      },
-      "season": {
-        "era": 4.54,
-        "whip": 1.37
-      },
-      "last_10_games": {
-        "era": 4.5,
-        "whip": 0.5
-      },
-      "last_5_games": {
-        "era": 4.5,
-        "whip": 0.5
-      },
-      "last_3_games": {
-        "era": 4.5,
-        "whip": 0.5
-      }
-    },
     "Ryan Yarbrough": {
       "mlb_id": 642232,
       "month_splits": {
@@ -1116,39 +1079,6 @@
       "last_3_games": {
         "era": 2.08,
         "whip": 2.08
-      }
-    },
-    "Jake Bird": {
-      "mlb_id": 656234,
-      "month_splits": {
-        "May": {
-          "era": 3.0,
-          "whip": 1.33
-        },
-        "June": {
-          "era": 3.24,
-          "whip": 1.2
-        },
-        "July": {
-          "era": 15.75,
-          "whip": 3.25
-        }
-      },
-      "season": {
-        "era": 5.93,
-        "whip": 1.55
-      },
-      "last_10_games": {
-        "era": 7.71,
-        "whip": 1.82
-      },
-      "last_5_games": {
-        "era": 15.75,
-        "whip": 3.25
-      },
-      "last_3_games": {
-        "era": 37.8,
-        "whip": 5.4
       }
     }
   },
@@ -2709,7 +2639,7 @@
       "game_num": 104,
       "AB": 34,
       "H": 7,
-      "cum_avg": 0.235,
+      "cum_avg": 0.234,
       "cum_obp": 0.313,
       "cum_slg": 0.418
     },
