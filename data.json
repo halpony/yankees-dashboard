@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-04T20:16:46.078590Z",
+  "generated_at": "2026-08-04T20:28:49.110527Z",
   "as_of_date": "2026-08-03",
   "team": {
     "month_splits": {
@@ -2651,7 +2651,7 @@
       "game_num": 104,
       "AB": 34,
       "H": 7,
-      "cum_avg": 0.235,
+      "cum_avg": 0.234,
       "cum_obp": 0.313,
       "cum_slg": 0.418
     },
