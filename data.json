@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-04T19:38:03.137138Z",
+  "generated_at": "2026-08-04T20:16:46.078590Z",
   "as_of_date": "2026-08-03",
   "team": {
     "month_splits": {
@@ -515,6 +515,18 @@
         "obp": 0.278,
         "slg": 0.438
       }
+    },
+    "Luis Garcia Jr.": {
+      "mlb_id": 671277,
+      "month_splits": {},
+      "season": {
+        "avg": 0.0,
+        "obp": 0.0,
+        "slg": 0.0
+      },
+      "last_30_games": null,
+      "last_15_games": null,
+      "last_7_games": null
     }
   },
   "team_pitching": {
@@ -2639,7 +2651,7 @@
       "game_num": 104,
       "AB": 34,
       "H": 7,
-      "cum_avg": 0.234,
+      "cum_avg": 0.235,
       "cum_obp": 0.313,
       "cum_slg": 0.418
     },
