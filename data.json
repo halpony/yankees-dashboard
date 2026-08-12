@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-12T02:07:05.051451Z",
-  "as_of_date": "2026-08-09",
+  "generated_at": "2026-08-12T03:54:53.535206Z",
+  "as_of_date": "2026-08-11",
   "team": {
     "month_splits": {
       "May": {
@@ -601,25 +601,25 @@
         "whip": 1.12
       },
       "August (to date)": {
-        "era": 3.32,
-        "whip": 1.13
+        "era": 3.29,
+        "whip": 1.12
       }
     },
     "season": {
-      "era": 3.29,
+      "era": 3.28,
       "whip": 1.17
     },
     "last_30_days": {
-      "era": 2.85,
+      "era": 2.84,
       "whip": 1.1
     },
     "last_15_days": {
-      "era": 2.72,
-      "whip": 1.06
+      "era": 2.71,
+      "whip": 1.05
     },
     "last_7_days": {
-      "era": 1.93,
-      "whip": 0.78
+      "era": 1.89,
+      "whip": 0.76
     }
   },
   "starting_pitchers": {
@@ -886,25 +886,25 @@
           "whip": 0.963
         },
         "August (to date)": {
-          "era": 5.684,
-          "whip": 1.382
+          "era": 5.61,
+          "whip": 1.364
         }
       },
       "season": {
-        "era": 2.76,
-        "whip": 1.151
+        "era": 2.754,
+        "whip": 1.152
       },
       "last_10_games": {
-        "era": 3.33,
-        "whip": 1.295
+        "era": 3.316,
+        "whip": 1.289
       },
       "last_5_games": {
-        "era": 3.522,
-        "whip": 1.304
+        "era": 3.491,
+        "whip": 1.293
       },
       "last_3_games": {
-        "era": 4.5,
-        "whip": 1.5
+        "era": 4.433,
+        "whip": 1.478
       }
     },
     "David Bednar": {
@@ -923,25 +923,25 @@
           "whip": 0.58
         },
         "August (to date)": {
-          "era": 1.69,
-          "whip": 0.94
+          "era": 1.59,
+          "whip": 0.88
         }
       },
       "season": {
-        "era": 2.6,
+        "era": 2.56,
         "whip": 1.04
       },
       "last_10_games": {
-        "era": 2.79,
-        "whip": 0.83
+        "era": 2.7,
+        "whip": 0.8
       },
       "last_5_games": {
-        "era": 1.69,
-        "whip": 0.94
+        "era": 1.59,
+        "whip": 0.88
       },
       "last_3_games": {
-        "era": 3.38,
-        "whip": 1.13
+        "era": 3.0,
+        "whip": 1.0
       }
     },
     "Brent Headrick": {
@@ -2929,6 +2929,21 @@
       "cum_avg": 0.23,
       "cum_obp": 0.309,
       "cum_slg": 0.411
+    },
+    {
+      "gamePk": 823512,
+      "date": "2026-08-11",
+      "opponent": "SEA",
+      "home_away": "",
+      "result": "W",
+      "runs_scored": 4,
+      "runs_allowed": 1,
+      "game_num": 119,
+      "AB": 30,
+      "H": 8,
+      "cum_avg": 0.23,
+      "cum_obp": 0.31,
+      "cum_slg": 0.41
     }
   ],
   "rolling10": [
@@ -3803,6 +3818,14 @@
       "runs_allowed_per_game": 3.2,
       "run_diff": -0.6,
       "avg": 0.1882716049382716
+    },
+    {
+      "game_num": 119,
+      "date": "2026-08-11",
+      "runs_per_game": 2.9,
+      "runs_allowed_per_game": 3.1,
+      "run_diff": -0.2,
+      "avg": 0.19873817034700317
     }
   ],
   "pitching_rolling10": [
@@ -4915,6 +4938,16 @@
       "bullpen_whip": 1.41,
       "all_era": 2.817,
       "all_whip": 1.112
+    },
+    {
+      "game_num": 123,
+      "date": "2026-08-11",
+      "starters_era": 2.017,
+      "starters_whip": 0.948,
+      "bullpen_era": 4.636,
+      "bullpen_whip": 1.273,
+      "all_era": 2.967,
+      "all_whip": 1.066
     }
   ]
 }
