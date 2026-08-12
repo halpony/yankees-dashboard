@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-11T01:54:41.268391Z",
+  "generated_at": "2026-08-12T02:07:05.051451Z",
   "as_of_date": "2026-08-09",
   "team": {
     "month_splits": {
@@ -19,30 +19,30 @@
         "slg": 0.379
       },
       "August (to date)": {
-        "avg": 0.198,
-        "obp": 0.285,
-        "slg": 0.384
+        "avg": 0.205,
+        "obp": 0.29,
+        "slg": 0.382
       }
     },
     "season": {
       "avg": 0.23,
-      "obp": 0.309,
-      "slg": 0.411
+      "obp": 0.31,
+      "slg": 0.41
     },
     "last_30_days": {
-      "avg": 0.199,
-      "obp": 0.275,
+      "avg": 0.202,
+      "obp": 0.277,
       "slg": 0.351
     },
     "last_15_days": {
-      "avg": 0.19,
-      "obp": 0.276,
-      "slg": 0.348
+      "avg": 0.196,
+      "obp": 0.278,
+      "slg": 0.357
     },
     "last_7_days": {
-      "avg": 0.181,
-      "obp": 0.314,
-      "slg": 0.331
+      "avg": 0.213,
+      "obp": 0.313,
+      "slg": 0.37
     }
   },
   "players": {
@@ -65,30 +65,30 @@
           "slg": 0.583
         },
         "August (to date)": {
-          "avg": 0.077,
-          "obp": 0.226,
-          "slg": 0.192
+          "avg": 0.069,
+          "obp": 0.229,
+          "slg": 0.172
         }
       },
       "season": {
-        "avg": 0.257,
-        "obp": 0.35,
-        "slg": 0.545
+        "avg": 0.255,
+        "obp": 0.349,
+        "slg": 0.541
       },
       "last_30_games": {
-        "avg": 0.23,
+        "avg": 0.223,
         "obp": 0.315,
-        "slg": 0.496
+        "slg": 0.491
       },
       "last_15_games": {
-        "avg": 0.145,
-        "obp": 0.266,
-        "slg": 0.291
+        "avg": 0.148,
+        "obp": 0.281,
+        "slg": 0.296
       },
       "last_7_games": {
-        "avg": 0.08,
-        "obp": 0.233,
-        "slg": 0.2
+        "avg": 0.083,
+        "obp": 0.267,
+        "slg": 0.208
       }
     },
     "Paul Goldschmidt": {
@@ -200,30 +200,30 @@
           "slg": 0.442
         },
         "August (to date)": {
-          "avg": 0.087,
-          "obp": 0.192,
-          "slg": 0.217
+          "avg": 0.115,
+          "obp": 0.233,
+          "slg": 0.231
         }
       },
       "season": {
-        "avg": 0.216,
-        "obp": 0.295,
-        "slg": 0.396
+        "avg": 0.217,
+        "obp": 0.297,
+        "slg": 0.395
       },
       "last_30_games": {
-        "avg": 0.192,
-        "obp": 0.254,
-        "slg": 0.375
+        "avg": 0.202,
+        "obp": 0.27,
+        "slg": 0.385
       },
       "last_15_games": {
-        "avg": 0.167,
+        "avg": 0.151,
         "obp": 0.25,
-        "slg": 0.352
+        "slg": 0.226
       },
       "last_7_games": {
-        "avg": 0.087,
-        "obp": 0.192,
-        "slg": 0.217
+        "avg": 0.136,
+        "obp": 0.269,
+        "slg": 0.273
       }
     },
     "Cody Bellinger": {
@@ -370,30 +370,30 @@
           "slg": 0.306
         },
         "August (to date)": {
-          "avg": 0.207,
-          "obp": 0.233,
-          "slg": 0.517
+          "avg": 0.242,
+          "obp": 0.265,
+          "slg": 0.545
         }
       },
       "season": {
-        "avg": 0.213,
-        "obp": 0.308,
-        "slg": 0.391
+        "avg": 0.216,
+        "obp": 0.31,
+        "slg": 0.395
       },
       "last_30_games": {
-        "avg": 0.165,
-        "obp": 0.229,
-        "slg": 0.33
+        "avg": 0.174,
+        "obp": 0.237,
+        "slg": 0.339
       },
       "last_15_games": {
-        "avg": 0.167,
-        "obp": 0.211,
-        "slg": 0.333
+        "avg": 0.204,
+        "obp": 0.246,
+        "slg": 0.389
       },
       "last_7_games": {
-        "avg": 0.207,
-        "obp": 0.207,
-        "slg": 0.517
+        "avg": 0.276,
+        "obp": 0.276,
+        "slg": 0.621
       }
     },
     "Ryan McMahon": {
@@ -415,30 +415,30 @@
           "slg": 0.373
         },
         "August (to date)": {
-          "avg": 0.3,
-          "obp": 0.4,
-          "slg": 0.5
+          "avg": 0.304,
+          "obp": 0.393,
+          "slg": 0.478
         }
       },
       "season": {
-        "avg": 0.214,
-        "obp": 0.28,
-        "slg": 0.374
+        "avg": 0.215,
+        "obp": 0.281,
+        "slg": 0.373
       },
       "last_30_games": {
-        "avg": 0.219,
-        "obp": 0.301,
-        "slg": 0.397
+        "avg": 0.23,
+        "obp": 0.31,
+        "slg": 0.405
       },
       "last_15_games": {
-        "avg": 0.212,
-        "obp": 0.325,
+        "avg": 0.222,
+        "obp": 0.31,
         "slg": 0.333
       },
       "last_7_games": {
-        "avg": 0.3,
-        "obp": 0.4,
-        "slg": 0.5
+        "avg": 0.316,
+        "obp": 0.417,
+        "slg": 0.526
       }
     },
     "Amed Rosario": {
@@ -506,44 +506,44 @@
         },
         "August (to date)": {
           "avg": 0.333,
-          "obp": 0.4,
-          "slg": 0.611
+          "obp": 0.391,
+          "slg": 0.571
         }
       },
       "season": {
-        "avg": 0.175,
-        "obp": 0.273,
-        "slg": 0.299
+        "avg": 0.177,
+        "obp": 0.274,
+        "slg": 0.3
       },
       "last_30_games": {
-        "avg": 0.2,
-        "obp": 0.286,
-        "slg": 0.4
+        "avg": 0.213,
+        "obp": 0.298,
+        "slg": 0.413
       },
       "last_15_games": {
-        "avg": 0.306,
-        "obp": 0.405,
-        "slg": 0.556
+        "avg": 0.286,
+        "obp": 0.39,
+        "slg": 0.543
       },
       "last_7_games": {
-        "avg": 0.333,
-        "obp": 0.4,
-        "slg": 0.611
+        "avg": 0.35,
+        "obp": 0.381,
+        "slg": 0.6
       }
     },
     "Luis Garcia Jr.": {
       "mlb_id": 671277,
       "month_splits": {
         "August (to date)": {
-          "avg": 0.211,
-          "obp": 0.286,
-          "slg": 0.368
+          "avg": 0.261,
+          "obp": 0.32,
+          "slg": 0.478
         }
       },
       "season": {
-        "avg": 0.211,
-        "obp": 0.286,
-        "slg": 0.368
+        "avg": 0.261,
+        "obp": 0.32,
+        "slg": 0.478
       },
       "last_30_games": null,
       "last_15_games": null,
@@ -553,15 +553,15 @@
       "mlb_id": 671218,
       "month_splits": {
         "August (to date)": {
-          "avg": 0.118,
-          "obp": 0.286,
-          "slg": 0.235
+          "avg": 0.095,
+          "obp": 0.24,
+          "slg": 0.19
         }
       },
       "season": {
-        "avg": 0.118,
-        "obp": 0.286,
-        "slg": 0.235
+        "avg": 0.095,
+        "obp": 0.24,
+        "slg": 0.19
       },
       "last_30_games": null,
       "last_15_games": null,
@@ -571,15 +571,15 @@
       "mlb_id": 806146,
       "month_splits": {
         "August (to date)": {
-          "avg": 0.294,
-          "obp": 0.4,
-          "slg": 0.647
+          "avg": 0.286,
+          "obp": 0.375,
+          "slg": 0.571
         }
       },
       "season": {
-        "avg": 0.294,
-        "obp": 0.4,
-        "slg": 0.647
+        "avg": 0.286,
+        "obp": 0.375,
+        "slg": 0.571
       },
       "last_30_games": null,
       "last_15_games": null,
@@ -601,25 +601,25 @@
         "whip": 1.12
       },
       "August (to date)": {
-        "era": 3.58,
-        "whip": 1.18
+        "era": 3.32,
+        "whip": 1.13
       }
     },
     "season": {
-      "era": 3.3,
-      "whip": 1.18
+      "era": 3.29,
+      "whip": 1.17
     },
     "last_30_days": {
-      "era": 2.93,
-      "whip": 1.12
+      "era": 2.85,
+      "whip": 1.1
     },
     "last_15_days": {
-      "era": 2.79,
-      "whip": 1.08
+      "era": 2.72,
+      "whip": 1.06
     },
     "last_7_days": {
-      "era": 2.37,
-      "whip": 0.92
+      "era": 1.93,
+      "whip": 0.78
     }
   },
   "starting_pitchers": {
@@ -638,25 +638,25 @@
           "whip": 1.071
         },
         "August (to date)": {
-          "era": 2.365,
-          "whip": 1.007
+          "era": 2.279,
+          "whip": 0.994
         }
       },
       "season": {
-        "era": 3.249,
-        "whip": 1.125
+        "era": 3.233,
+        "whip": 1.123
       },
       "last_10_games": {
-        "era": 3.66,
-        "whip": 1.201
+        "era": 3.501,
+        "whip": 1.192
       },
       "last_5_games": {
-        "era": 2.887,
-        "whip": 1.063
+        "era": 2.881,
+        "whip": 1.054
       },
       "last_3_games": {
         "era": 2.645,
-        "whip": 1.095
+        "whip": 1.074
       }
     },
     "Max Fried": {
@@ -848,25 +848,25 @@
           "whip": 1.35
         },
         "August (to date)": {
-          "era": 0.0,
-          "whip": 0.83
+          "era": 0.77,
+          "whip": 0.86
         }
       },
       "season": {
-        "era": 3.79,
-        "whip": 1.22
+        "era": 3.69,
+        "whip": 1.21
       },
       "last_10_games": {
-        "era": 3.71,
-        "whip": 1.31
+        "era": 2.75,
+        "whip": 1.26
       },
       "last_5_games": {
-        "era": 2.2,
-        "whip": 1.15
+        "era": 2.17,
+        "whip": 1.1
       },
       "last_3_games": {
         "era": 0.48,
-        "whip": 0.96
+        "whip": 0.86
       }
     }
   },
@@ -886,25 +886,25 @@
           "whip": 0.963
         },
         "August (to date)": {
-          "era": 6.448,
-          "whip": 1.522
+          "era": 5.684,
+          "whip": 1.382
         }
       },
       "season": {
-        "era": 2.782,
-        "whip": 1.161
+        "era": 2.76,
+        "whip": 1.151
       },
       "last_10_games": {
-        "era": 3.465,
-        "whip": 1.327
+        "era": 3.33,
+        "whip": 1.295
       },
       "last_5_games": {
-        "era": 4.135,
-        "whip": 1.459
+        "era": 3.522,
+        "whip": 1.304
       },
       "last_3_games": {
-        "era": 5.162,
-        "whip": 1.632
+        "era": 4.5,
+        "whip": 1.5
       }
     },
     "David Bednar": {
@@ -923,25 +923,25 @@
           "whip": 0.58
         },
         "August (to date)": {
-          "era": 1.93,
-          "whip": 0.86
+          "era": 1.69,
+          "whip": 0.94
         }
       },
       "season": {
-        "era": 2.61,
-        "whip": 1.05
+        "era": 2.6,
+        "whip": 1.04
       },
       "last_10_games": {
-        "era": 2.7,
-        "whip": 0.9
+        "era": 2.79,
+        "whip": 0.83
       },
       "last_5_games": {
-        "era": 1.59,
-        "whip": 0.88
+        "era": 1.69,
+        "whip": 0.94
       },
       "last_3_games": {
-        "era": 2.7,
-        "whip": 0.9
+        "era": 3.38,
+        "whip": 1.13
       }
     },
     "Brent Headrick": {
@@ -960,25 +960,25 @@
           "whip": 0.72
         },
         "August (to date)": {
-          "era": 4.5,
-          "whip": 2.0
+          "era": 3.6,
+          "whip": 1.6
         }
       },
       "season": {
-        "era": 1.52,
-        "whip": 1.15
+        "era": 1.49,
+        "whip": 1.13
       },
       "last_10_games": {
         "era": 2.0,
         "whip": 1.44
       },
       "last_5_games": {
-        "era": 4.5,
-        "whip": 2.0
+        "era": 1.93,
+        "whip": 1.29
       },
       "last_3_games": {
         "era": 3.86,
-        "whip": 2.57
+        "whip": 1.71
       }
     },
     "Angel Chivilli": {
@@ -1100,25 +1100,25 @@
           "whip": 1.61
         },
         "August (to date)": {
-          "era": 9.0,
-          "whip": 1.0
+          "era": 6.23,
+          "whip": 0.69
         }
       },
       "season": {
-        "era": 4.53,
-        "whip": 1.17
+        "era": 4.4,
+        "whip": 1.13
       },
       "last_10_games": {
-        "era": 5.4,
-        "whip": 1.44
+        "era": 4.0,
+        "whip": 1.22
       },
       "last_5_games": {
-        "era": 8.31,
-        "whip": 1.15
+        "era": 5.06,
+        "whip": 0.56
       },
       "last_3_games": {
-        "era": 9.0,
-        "whip": 1.0
+        "era": 3.0,
+        "whip": 0.33
       }
     },
     "Ryan Yarbrough": {
