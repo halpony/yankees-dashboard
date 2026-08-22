@@ -16,7 +16,7 @@ PLAYERS = [
     "Ben Rice", "Paul Goldschmidt", "Jose Caballero", "Jazz Chisholm Jr.",
     "Cody Bellinger", "Jasson Dominguez", "Anthony Volpe", "Trent Grisham",
     "Ryan McMahon", "Amed Rosario", "Austin Wells",
-    "Luis Garcia Jr.", "Heliot Ramos", "George Lombard Jr.",
+    "Luis Garcia Jr.", "Heliot Ramos", "George Lombard Jr.", "Spencer Jones",
 ]
 
 # Players acquired mid-season: their stats should ONLY reflect games played
