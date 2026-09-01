@@ -13,7 +13,7 @@ SEASON = 2026
 TEAM_ID = 147
 
 PLAYERS = [
-    "Ben Rice", "Paul Goldschmidt", "Jose Caballero", "Jazz Chisholm Jr.",
+    "Aaron Judge", "Ben Rice", "Paul Goldschmidt", "Jose Caballero", "Jazz Chisholm Jr.",
     "Cody Bellinger", "Jasson Dominguez", "Anthony Volpe", "Trent Grisham",
     "Ryan McMahon", "Amed Rosario", "Austin Wells",
     "Luis Garcia Jr.", "Heliot Ramos", "George Lombard Jr.", "Spencer Jones",
@@ -31,12 +31,12 @@ RECENT_ACQUISITIONS = {
 }
 
 STARTING_PITCHERS = [
-    "Max Fried", "Cam Schlittler", "Gerrit Cole", "Will Warren", "Carlos Rodón", "Ryan Weathers",
+    "Max Fried", "Cam Schlittler", "Gerrit Cole", "Will Warren", "Carlos Rodón", "Ryan Weathers", "Elmer Rodriguez"
 ]
 
 BULLPEN_PITCHERS = [
     "David Bednar", "Brent Headrick", "Angel Chivilli", "Paul Blackburn", "Fernando Cruz",
-    "Tim Hill", "Ryan Yarbrough",
+    "Tim Hill", "Ryan Yarbrough", "Luis Gil"
 ]
 
 MONTH_NAMES = {1: "January", 2: "February", 3: "March", 4: "April", 5: "May", 6: "June",
