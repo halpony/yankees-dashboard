@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-01T18:36:02.722492Z",
+  "generated_at": "2026-09-01T18:50:24.901870Z",
   "as_of_date": "2026-08-31",
   "team": {
     "month_splits": {
@@ -41,6 +41,30 @@
     }
   },
   "players": {
+    "Aaron Judge": {
+      "mlb_id": 592450,
+      "month_splits": {},
+      "season": {
+        "avg": 0.248,
+        "obp": 0.375,
+        "slg": 0.533
+      },
+      "last_30_games": {
+        "avg": 0.243,
+        "obp": 0.361,
+        "slg": 0.45
+      },
+      "last_15_games": {
+        "avg": 0.193,
+        "obp": 0.288,
+        "slg": 0.298
+      },
+      "last_7_games": {
+        "avg": 0.269,
+        "obp": 0.355,
+        "slg": 0.462
+      }
+    },
     "Ben Rice": {
       "mlb_id": 700250,
       "month_splits": {
@@ -631,33 +655,33 @@
     "New York Yankees (Selected)": {
       "month_splits": {
         "June": {
-          "era": 4.629,
-          "whip": 1.403
+          "era": 4.693,
+          "whip": 1.406
         },
         "July": {
           "era": 3.384,
           "whip": 1.071
         },
         "August": {
-          "era": 2.537,
-          "whip": 1.171
+          "era": 2.797,
+          "whip": 1.176
         }
       },
       "season": {
-        "era": 3.164,
-        "whip": 1.143
+        "era": 3.248,
+        "whip": 1.159
       },
       "last_10_games": {
-        "era": 3.079,
-        "whip": 1.175
+        "era": 3.26,
+        "whip": 1.206
       },
       "last_5_games": {
-        "era": 2.553,
-        "whip": 1.185
+        "era": 2.928,
+        "whip": 1.224
       },
       "last_3_games": {
-        "era": 2.084,
-        "whip": 1.168
+        "era": 2.65,
+        "whip": 1.187
       }
     },
     "Max Fried": {
@@ -849,6 +873,35 @@
         "era": 2.2,
         "whip": 1.22
       }
+    },
+    "Elmer Rodriguez": {
+      "mlb_id": 695684,
+      "month_splits": {
+        "June": {
+          "era": 6.75,
+          "whip": 1.5
+        },
+        "August": {
+          "era": 6.52,
+          "whip": 1.24
+        }
+      },
+      "season": {
+        "era": 5.4,
+        "whip": 1.58
+      },
+      "last_10_games": {
+        "era": 5.4,
+        "whip": 1.58
+      },
+      "last_5_games": {
+        "era": 5.56,
+        "whip": 1.5
+      },
+      "last_3_games": {
+        "era": 6.59,
+        "whip": 1.32
+      }
     }
   },
   "bullpen_pitchers": {
@@ -863,25 +916,25 @@
           "whip": 0.963
         },
         "August": {
-          "era": 4.117,
-          "whip": 1.211
+          "era": 4.127,
+          "whip": 1.205
         }
       },
       "season": {
-        "era": 2.827,
-        "whip": 1.149
+        "era": 2.99,
+        "whip": 1.158
       },
       "last_10_games": {
-        "era": 3.432,
-        "whip": 1.182
+        "era": 3.96,
+        "whip": 1.21
       },
       "last_5_games": {
-        "era": 4.714,
-        "whip": 1.143
+        "era": 5.116,
+        "whip": 1.2
       },
       "last_3_games": {
-        "era": 7.087,
-        "whip": 1.537
+        "era": 6.462,
+        "whip": 1.436
       }
     },
     "David Bednar": {
@@ -1109,6 +1162,31 @@
       "last_3_games": {
         "era": 5.87,
         "whip": 1.04
+      }
+    },
+    "Luis Gil": {
+      "mlb_id": 661563,
+      "month_splits": {
+        "August": {
+          "era": 4.5,
+          "whip": 1.0
+        }
+      },
+      "season": {
+        "era": 5.91,
+        "whip": 1.31
+      },
+      "last_10_games": {
+        "era": 5.91,
+        "whip": 1.31
+      },
+      "last_5_games": {
+        "era": 5.91,
+        "whip": 1.31
+      },
+      "last_3_games": {
+        "era": 5.11,
+        "whip": 1.22
       }
     }
   },
