@@ -14,8 +14,8 @@ TEAM_ID = 147
 
 PLAYERS = [
     "Ben Rice", "Cody Bellinger", "Spencer Jones", "Jazz Chisholm Jr.", 
-    "Paul Goldschmidt", "Austin Wells", "Amed Rosario", 
-    "Ryan McMahon",   "Jose Caballero", "Jasson Dominguez", "Heliot Ramos",  
+    "Paul Goldschmidt", "Austin Wells", "Amed Rosario", "Heliot Ramos",
+    "Jose Caballero", "Ryan McMahon", "Jasson Dominguez",   
     "Luis Garcia Jr.", "George Lombard Jr.", "Trent Grisham", "Aaron Judge",
        
 ]
