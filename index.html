@@ -594,7 +594,8 @@ function setupPitchingSection(ids, pitcherMap) {
         labels: ['ERA', 'WHIP'],
         datasets: periodKeys.map((k, i) => {
           const s = entity[k];
-          return { label: periodLabels[i], data: [s.era, s.whip], backgroundColor: periodColors[i] };
+          const data = s ? [s.era, s.whip] : [null, null];
+          return { label: periodLabels[i], data, backgroundColor: periodColors[i] };
         })
       },
       options: chartOptions(v => v.toFixed(2))
@@ -611,6 +612,7 @@ function setupPitchingSection(ids, pitcherMap) {
       <thead><tr><th>Period</th><th>ERA</th><th>WHIP</th></tr></thead>
       <tbody>${periodKeys.map((k, i) => {
         const s = entity[k];
+        if (!s) return `<tr><td>${periodLabels[i]}</td><td>—</td><td>—</td></tr>`;
         return `<tr><td>${periodLabels[i]}</td><td>${dec2(s.era)}</td><td>${dec2(s.whip)}</td></tr>`;
       }).join('')}</tbody>`;
   }

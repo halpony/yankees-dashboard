@@ -31,6 +31,13 @@ RECENT_ACQUISITIONS = {
     "George Lombard Jr.": date(2026, 8, 4),
 }
 
+# Same idea, but for pitchers -- affects both their individual dropdown
+# entry AND the "New York Yankees (Selected)" cohort aggregate they belong to.
+RECENT_PITCHER_ACQUISITIONS = {
+    "Michael Fulmer": date(2026, 8, 26),
+    "John Schreiber": date(2026, 9, 1),
+}
+
 STARTING_PITCHERS = [
     "Max Fried", "Cam Schlittler", "Gerrit Cole", "Will Warren", "Carlos Rodón", "Ryan Weathers", "Elmer Rodriguez"
 ]
@@ -131,21 +138,59 @@ def build_pitcher_section(name, person_id, today):
     }
 
 
+def build_recently_acquired_pitcher_section(person_id, acquisition_date, today):
+    """Pitching equivalent of build_recently_acquired_player_section: every
+    window bounded to start no earlier than acquisition_date, and last
+    10/5/3 games counted only from games pitched since joining (blank/None
+    if they haven't pitched that many games yet as a Yankee)."""
+    month_splits = {}
+    for year, month, start, end in mlb_data._recent_month_windows(today):
+        clipped_start = max(start, acquisition_date)
+        if clipped_start > end:
+            continue
+        counts = mlb_data.get_pitcher_counts_daterange(person_id, clipped_start, end)
+        if counts["outs"]:
+            month_splits[f"{month:02d}"] = mlb_data._counts_to_era_whip(counts)
+    month_splits = month_splits_to_named(month_splits, today)
+
+    season_counts = mlb_data.get_pitcher_counts_daterange(person_id, acquisition_date, today)
+
+    return {
+        "mlb_id": person_id,
+        "month_splits": month_splits,
+        "season": mlb_data._counts_to_era_whip(season_counts),
+        "last_10_games": mlb_data.get_pitcher_recent_games_since(person_id, SEASON, acquisition_date, 10),
+        "last_5_games": mlb_data.get_pitcher_recent_games_since(person_id, SEASON, acquisition_date, 5),
+        "last_3_games": mlb_data.get_pitcher_recent_games_since(person_id, SEASON, acquisition_date, 3),
+    }
+
+
 def build_pitcher_group(names, roster, today):
     section = {}
     ids = []
+    acquisition_dates = {}
     for name in names:
         pid = mlb_data.find_player_id(name, roster)
+        if pid is None and name in RECENT_PITCHER_ACQUISITIONS:
+            print(f"  '{name}' not in roster feed yet (common right after a trade/call-up) -- trying player search instead...")
+            pid = mlb_data.find_player_id_by_search(name)
         if pid is None:
             print(f"  WARNING: couldn't find '{name}' on roster, skipping (check spelling/roster status)")
             continue
-        print(f"Fetching {name} (pitching)...")
-        section[name] = build_pitcher_section(name, pid, today)
+
+        if name in RECENT_PITCHER_ACQUISITIONS:
+            acq_date = RECENT_PITCHER_ACQUISITIONS[name]
+            print(f"Fetching {name} (pitching, Yankees stats only since {acq_date.isoformat()})...")
+            section[name] = build_recently_acquired_pitcher_section(pid, acq_date, today)
+            acquisition_dates[pid] = acq_date
+        else:
+            print(f"Fetching {name} (pitching)...")
+            section[name] = build_pitcher_section(name, pid, today)
         ids.append(pid)
 
     if ids:
         print(f"  Computing combined aggregate across {len(ids)} pitcher(s)...")
-        aggregate = mlb_data.build_cohort_pitching_aggregate(ids, SEASON, today)
+        aggregate = mlb_data.build_cohort_pitching_aggregate(ids, SEASON, today, acquisition_dates)
         aggregate["month_splits"] = month_splits_to_named(aggregate["month_splits"], today)
         # Put the team aggregate first in the dict so it's the default-selected option.
         section = {"New York Yankees (Selected)": aggregate, **section}

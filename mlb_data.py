@@ -460,24 +460,76 @@ def _counts_to_era_whip(counts):
     return {"era": round(era, 3), "whip": round(whip, 3)}
 
 
-def build_cohort_pitching_aggregate(person_ids, season, today):
+def get_pitcher_recent_games_counts_since(person_id, season, since_date, n):
+    """Raw counts (not era/whip) over a pitcher's last n games pitched on or
+    after since_date -- i.e. games with the new team only, following a trade
+    or call-up. Returns None if they haven't pitched in at least n such
+    games yet, so the caller can show/aggregate nothing rather than a
+    misleading partial window."""
+    data = _get(f"/people/{person_id}/stats", stats="gameLog", group="pitching", season=season)
+    games = []
+    for group in data.get("stats", []):
+        games.extend(group.get("splits", []))
+    games = [g for g in games if g.get("date", "") >= since_date.isoformat()]
+    games.sort(key=lambda g: g.get("date", ""))
+    games = [g for g in games if _innings_str_to_outs(g["stat"].get("inningsPitched", "0.0")) > 0]
+    if len(games) < n:
+        return None
+    last_n = games[-n:]
+    return _sum_counts([_pitching_counts(g) for g in last_n])
+
+
+def get_pitcher_recent_games_since(person_id, season, since_date, n):
+    counts = get_pitcher_recent_games_counts_since(person_id, season, since_date, n)
+    return _counts_to_era_whip(counts) if counts is not None else None
+
+
+def build_cohort_pitching_aggregate(person_ids, season, today, acquisition_dates=None):
     """Aggregates ERA/WHIP across a specific group of pitchers (e.g. your
     tracked starters or tracked bullpen arms) for month-by-month splits, the
     season total, and each pitcher's own last 10/5/3 game appearances
     (summed across the cohort, then ERA/WHIP recomputed from the totals --
     NOT a calendar-day window, since that would mix in games some of these
-    pitchers didn't even appear in)."""
+    pitchers didn't even appear in).
+
+    acquisition_dates: optional {person_id: date} for anyone in the cohort
+    who joined mid-season -- their contribution to every window is bounded
+    to start no earlier than that date, so a recent addition's prior-team
+    stats never leak into the aggregate. Pitchers not in this dict are
+    treated as full-season Yankees as before."""
+    acquisition_dates = acquisition_dates or {}
+
     month_splits = {}
     for year, month, start, end in _recent_month_windows(today):
-        per_pitcher = [get_pitcher_counts_daterange(pid, start, end) for pid in person_ids]
+        per_pitcher = []
+        for pid in person_ids:
+            acq = acquisition_dates.get(pid)
+            clipped_start = max(start, acq) if acq else start
+            if clipped_start > end:
+                continue  # not on the team yet during this month
+            per_pitcher.append(get_pitcher_counts_daterange(pid, clipped_start, end))
         total = _sum_counts(per_pitcher)
         if total["outs"]:
             month_splits[f"{month:02d}"] = _counts_to_era_whip(total)
 
-    season_counts = _sum_counts([get_pitcher_counts_season(pid, season) for pid in person_ids])
-    g10_counts = _sum_counts([get_pitcher_last_n_games_counts(pid, season, 10) for pid in person_ids])
-    g5_counts = _sum_counts([get_pitcher_last_n_games_counts(pid, season, 5) for pid in person_ids])
-    g3_counts = _sum_counts([get_pitcher_last_n_games_counts(pid, season, 3) for pid in person_ids])
+    season_parts = []
+    for pid in person_ids:
+        acq = acquisition_dates.get(pid)
+        season_parts.append(get_pitcher_counts_daterange(pid, acq, today) if acq else get_pitcher_counts_season(pid, season))
+    season_counts = _sum_counts(season_parts)
+
+    def last_n_counts(n):
+        parts = []
+        for pid in person_ids:
+            acq = acquisition_dates.get(pid)
+            c = get_pitcher_recent_games_counts_since(pid, season, acq, n) if acq else get_pitcher_last_n_games_counts(pid, season, n)
+            if c:
+                parts.append(c)
+        return _sum_counts(parts) if parts else {"earned_runs": 0, "outs": 0, "hits": 0, "walks": 0}
+
+    g10_counts = last_n_counts(10)
+    g5_counts = last_n_counts(5)
+    g3_counts = last_n_counts(3)
 
     return {
         "month_splits": month_splits,
