@@ -13,10 +13,10 @@ SEASON = 2026
 TEAM_ID = 147
 
 PLAYERS = [
-    "Aaron Judge", "Ben Rice", "Paul Goldschmidt", "Jose Caballero", "Jazz Chisholm Jr.",
-    "Cody Bellinger", "Jasson Dominguez", "Anthony Volpe", "Trent Grisham",
-    "Ryan McMahon", "Amed Rosario", "Austin Wells",
-    "Luis Garcia Jr.", "Heliot Ramos", "George Lombard Jr.", "Spencer Jones",
+    "Aaron Judge", "Ben Rice", "Paul Goldschmidt", "Spencer Jones", 
+    "Jose Caballero", "Jazz Chisholm Jr.", "Cody Bellinger", "Austin Wells",
+    "Luis Garcia Jr.", "Jasson Dominguez", "Anthony Volpe", "Trent Grisham",
+    "Ryan McMahon", "Amed Rosario",  "Heliot Ramos", "George Lombard Jr.", 
 ]
 
 # Players acquired mid-season: their stats should ONLY reflect games played
