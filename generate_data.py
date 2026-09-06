@@ -35,8 +35,8 @@ STARTING_PITCHERS = [
 ]
 
 BULLPEN_PITCHERS = [
-    "David Bednar", "Brent Headrick", "Angel Chivilli", "Paul Blackburn", "Fernando Cruz",
-    "Tim Hill", "Ryan Yarbrough", "Luis Gil"
+    "David Bednar", "Brent Headrick", "Paul Blackburn", "Fernando Cruz",
+    "Tim Hill", "Ryan Yarbrough", "Luis Gil", "Michael Fulmer", "John Schreiber", 
 ]
 
 MONTH_NAMES = {1: "January", 2: "February", 3: "March", 4: "April", 5: "May", 6: "June",
