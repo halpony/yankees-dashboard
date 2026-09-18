@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-17T04:01:21.160804Z",
+  "generated_at": "2026-09-18T03:48:01.516913Z",
   "as_of_date": "2026-09-16",
   "team": {
     "month_splits": {
@@ -30,9 +30,9 @@
       "slg": 0.409
     },
     "last_30_days": {
-      "avg": 0.264,
-      "obp": 0.331,
-      "slg": 0.421
+      "avg": 0.263,
+      "obp": 0.329,
+      "slg": 0.422
     },
     "last_15_days": {
       "avg": 0.251,
@@ -40,9 +40,9 @@
       "slg": 0.411
     },
     "last_7_days": {
-      "avg": 0.256,
-      "obp": 0.306,
-      "slg": 0.419
+      "avg": 0.232,
+      "obp": 0.289,
+      "slg": 0.392
     }
   },
   "players": {
@@ -746,7 +746,7 @@
     },
     "last_7_days": {
       "era": 3.0,
-      "whip": 1.14
+      "whip": 1.1
     }
   },
   "starting_pitchers": {
