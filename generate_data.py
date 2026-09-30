@@ -12,11 +12,18 @@ import mlb_data
 SEASON = 2026
 TEAM_ID = 147
 
+# The Yankees' first 2026 postseason game. Games from this date forward get
+# their own "Postseason" bucket alongside the calendar-month buckets, and
+# also count toward every "last N games" rolling window (see mlb_data.py --
+# those windows are reconstructed from the full game log specifically so
+# postseason games extend the same rolling count rather than resetting it).
+POSTSEASON_START = date(2026, 9, 29)
+
 PLAYERS = [
-    "Aaron Judge", "Ben Rice", "Cody Bellinger", "Spencer Jones",
-    "Jazz Chisholm Jr.", "Paul Goldschmidt", "Austin Wells", "Amed Rosario", 
-    "Heliot Ramos", "Jose Caballero", "Ryan McMahon", "Jasson Dominguez",   
-    "Luis Garcia Jr.", "George Lombard Jr.", "Trent Grisham", "Anthony Volpe"
+    "Ben Rice", "Cody Bellinger", "Spencer Jones", "Jazz Chisholm Jr.", 
+    "Paul Goldschmidt", "Austin Wells", "Amed Rosario", "Heliot Ramos",
+    "Jose Caballero", "Ryan McMahon", "Jasson Dominguez",   
+    "Luis Garcia Jr.", "George Lombard Jr.", "Trent Grisham", "Aaron Judge",
        
 ]
 
@@ -44,7 +51,7 @@ STARTING_PITCHERS = [
 
 BULLPEN_PITCHERS = [
     "David Bednar", "Brent Headrick", "Paul Blackburn", "Fernando Cruz",
-    "Tim Hill", "Ryan Yarbrough", "Luis Gil", "Michael Fulmer", "John Schreiber", "Clarke Schmidt"
+    "Tim Hill", "Ryan Yarbrough", "Luis Gil", "Michael Fulmer", "John Schreiber", 
 ]
 
 MONTH_NAMES = {1: "January", 2: "February", 3: "March", 4: "April", 5: "May", 6: "June",
@@ -62,20 +69,37 @@ def month_splits_to_named(month_splits, today):
     return out
 
 
+def _add_postseason_batting_bucket(month_splits, postseason_stat):
+    if POSTSEASON_START <= date.today() and (postseason_stat["avg"] or postseason_stat["obp"] or postseason_stat["slg"]):
+        month_splits["Postseason"] = postseason_stat
+    return month_splits
+
+
+def _add_postseason_pitching_bucket(month_splits, postseason_stat):
+    if POSTSEASON_START <= date.today() and (postseason_stat["era"] or postseason_stat["whip"]):
+        month_splits["Postseason"] = postseason_stat
+    return month_splits
+
+
 def build_team_section(today):
     month_splits = month_splits_to_named(mlb_data.get_team_month_splits(TEAM_ID, SEASON), today)
+    _add_postseason_batting_bucket(month_splits, mlb_data.get_team_postseason_split(TEAM_ID, POSTSEASON_START, today))
     windows = mlb_data.current_month_windows(today)
+    # "last N days" are calendar-day windows -- widened to ALL_GAME_TYPES so
+    # any postseason games that fall within the window count too, same
+    # continuation logic as everything else here.
     return {
         "month_splits": month_splits,
         "season": mlb_data.get_team_season_split(TEAM_ID, SEASON),
-        "last_30_days": mlb_data.get_team_daterange_split(TEAM_ID, windows[30], today),
-        "last_15_days": mlb_data.get_team_daterange_split(TEAM_ID, windows[15], today),
-        "last_7_days": mlb_data.get_team_daterange_split(TEAM_ID, windows[7], today),
+        "last_30_days": mlb_data.get_team_daterange_split(TEAM_ID, windows[30], today, game_type=mlb_data.ALL_GAME_TYPES),
+        "last_15_days": mlb_data.get_team_daterange_split(TEAM_ID, windows[15], today, game_type=mlb_data.ALL_GAME_TYPES),
+        "last_7_days": mlb_data.get_team_daterange_split(TEAM_ID, windows[7], today, game_type=mlb_data.ALL_GAME_TYPES),
     }
 
 
 def build_player_section(name, person_id, today):
     month_splits = month_splits_to_named(mlb_data.get_player_month_splits(person_id, SEASON), today)
+    _add_postseason_batting_bucket(month_splits, mlb_data.get_player_postseason_split(person_id, POSTSEASON_START, today))
     return {
         "mlb_id": person_id,
         "month_splits": month_splits,
@@ -101,6 +125,7 @@ def build_recently_acquired_player_section(person_id, acquisition_date, today):
         if stat["avg"] or stat["obp"] or stat["slg"]:
             month_splits[f"{month:02d}"] = stat
     month_splits = month_splits_to_named(month_splits, today)
+    _add_postseason_batting_bucket(month_splits, mlb_data.get_player_postseason_split(person_id, POSTSEASON_START, today))
 
     season = mlb_data.get_player_daterange_split(person_id, acquisition_date, today)
 
@@ -116,18 +141,20 @@ def build_recently_acquired_player_section(person_id, acquisition_date, today):
 
 def build_team_pitching_section(today):
     month_splits = month_splits_to_named(mlb_data.get_team_pitching_month_splits(TEAM_ID, SEASON), today)
+    _add_postseason_pitching_bucket(month_splits, mlb_data.get_team_pitching_postseason_split(TEAM_ID, POSTSEASON_START, today))
     windows = mlb_data.current_month_windows(today)
     return {
         "month_splits": month_splits,
         "season": mlb_data.get_team_pitching_season_split(TEAM_ID, SEASON),
-        "last_30_days": mlb_data.get_team_pitching_daterange_split(TEAM_ID, windows[30], today),
-        "last_15_days": mlb_data.get_team_pitching_daterange_split(TEAM_ID, windows[15], today),
-        "last_7_days": mlb_data.get_team_pitching_daterange_split(TEAM_ID, windows[7], today),
+        "last_30_days": mlb_data.get_team_pitching_daterange_split(TEAM_ID, windows[30], today, game_type=mlb_data.ALL_GAME_TYPES),
+        "last_15_days": mlb_data.get_team_pitching_daterange_split(TEAM_ID, windows[15], today, game_type=mlb_data.ALL_GAME_TYPES),
+        "last_7_days": mlb_data.get_team_pitching_daterange_split(TEAM_ID, windows[7], today, game_type=mlb_data.ALL_GAME_TYPES),
     }
 
 
 def build_pitcher_section(name, person_id, today):
     month_splits = month_splits_to_named(mlb_data.get_pitcher_month_splits(person_id, SEASON), today)
+    _add_postseason_pitching_bucket(month_splits, mlb_data.get_pitcher_postseason_split(person_id, POSTSEASON_START, today))
     return {
         "mlb_id": person_id,
         "month_splits": month_splits,
@@ -152,6 +179,7 @@ def build_recently_acquired_pitcher_section(person_id, acquisition_date, today):
         if counts["outs"]:
             month_splits[f"{month:02d}"] = mlb_data._counts_to_era_whip(counts)
     month_splits = month_splits_to_named(month_splits, today)
+    _add_postseason_pitching_bucket(month_splits, mlb_data.get_pitcher_postseason_split(person_id, POSTSEASON_START, today))
 
     season_counts = mlb_data.get_pitcher_counts_daterange(person_id, acquisition_date, today)
 
@@ -190,8 +218,11 @@ def build_pitcher_group(names, roster, today):
 
     if ids:
         print(f"  Computing combined aggregate across {len(ids)} pitcher(s)...")
-        aggregate = mlb_data.build_cohort_pitching_aggregate(ids, SEASON, today, acquisition_dates)
+        aggregate = mlb_data.build_cohort_pitching_aggregate(ids, SEASON, today, acquisition_dates, POSTSEASON_START)
         aggregate["month_splits"] = month_splits_to_named(aggregate["month_splits"], today)
+        postseason_split = aggregate.pop("postseason", None)
+        if postseason_split:
+            aggregate["month_splits"]["Postseason"] = postseason_split
         # Put the team aggregate first in the dict so it's the default-selected option.
         section = {"New York Yankees (Selected)": aggregate, **section}
     return section

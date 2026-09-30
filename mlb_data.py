@@ -12,6 +12,14 @@ import requests
 
 BASE = "https://statsapi.mlb.com/api/v1"
 
+# MLB's gameType codes. Every endpoint below defaults to regular season
+# only unless a gameType is passed explicitly -- confirmed live against the
+# 2026 AL Wild Card round: a player who went 4-for-5 with 2 HR in the
+# 9/29/26 Wild Card game showed up as 0 games/0 at-bats in the plain
+# season/byDateRange/lastXGames/gameLog calls until gameType=F was added.
+POSTSEASON_TYPES = "F,D,L,W"          # Wild Card, Division Series, League Championship, World Series
+ALL_GAME_TYPES = "R," + POSTSEASON_TYPES
+
 
 def _get(path, **params):
     r = requests.get(f"{BASE}{path}", params=params, timeout=20)
@@ -90,11 +98,12 @@ def _recent_month_windows(today=None):
     return windows
 
 
-def get_team_daterange_split(team_id, start_date, end_date):
-    data = _get(
-        f"/teams/{team_id}/stats", stats="byDateRange", group="hitting",
-        startDate=start_date.isoformat(), endDate=end_date.isoformat(),
-    )
+def get_team_daterange_split(team_id, start_date, end_date, game_type=None):
+    params = dict(stats="byDateRange", group="hitting",
+                  startDate=start_date.isoformat(), endDate=end_date.isoformat())
+    if game_type:
+        params["gameType"] = game_type
+    data = _get(f"/teams/{team_id}/stats", **params)
     for group in data.get("stats", []):
         for split in group.get("splits", []):
             return _hitting_stat(split)
@@ -126,35 +135,45 @@ def get_team_month_splits(team_id, season):
     return out
 
 
-def get_player_daterange_split(person_id, start_date, end_date):
-    data = _get(
-        f"/people/{person_id}/stats", stats="byDateRange", group="hitting",
-        startDate=start_date.isoformat(), endDate=end_date.isoformat(),
-    )
+def get_player_daterange_split(person_id, start_date, end_date, game_type=None):
+    params = dict(stats="byDateRange", group="hitting",
+                  startDate=start_date.isoformat(), endDate=end_date.isoformat())
+    if game_type:
+        params["gameType"] = game_type
+    data = _get(f"/people/{person_id}/stats", **params)
     for group in data.get("stats", []):
         for split in group.get("splits", []):
             return _hitting_stat(split)
     return {"avg": 0.0, "obp": 0.0, "slg": 0.0}
 
 
-def get_player_recent_games_since(person_id, season, since_date, n):
-    """Returns the player's stat line over their last n games played on or
-    after since_date (i.e., games with the new team only, following a
-    trade) -- or None if they haven't played at least n such games yet,
-    so the caller can show nothing rather than a misleading partial window."""
-    data = _get(f"/people/{person_id}/stats", stats="gameLog", group="hitting", season=season)
+# ---------------------------------------------------------------------------
+# Per-game hitting logs -- the shared foundation for "last N games" and
+# "since acquisition date" windows. Pulled once per player as a flat,
+# chronologically-sortable list of individual game lines (each already
+# tagged with its own date and gameType by MLB), so both kinds of windows
+# can be reconstructed locally instead of relying on the API's own
+# aggregation, which does NOT blend across game types (see
+# get_player_last_n_games_split for why that matters).
+# ---------------------------------------------------------------------------
+
+def _player_hitting_games(person_id, season, game_types=ALL_GAME_TYPES):
+    data = _get(f"/people/{person_id}/stats", stats="gameLog", group="hitting",
+                season=season, gameType=game_types)
     games = []
     for group in data.get("stats", []):
         games.extend(group.get("splits", []))
-    games = [g for g in games if g.get("date", "") >= since_date.isoformat()]
-    games = [g for g in games if int(g["stat"].get("atBats", 0) or 0) > 0 or int(g["stat"].get("plateAppearances", 0) or 0) > 0]
-    games.sort(key=lambda g: g.get("date", ""))
-    if len(games) < n:
-        return None
+    return games
 
-    last_n = games[-n:]
+
+def _hitting_game_played(g):
+    s = g["stat"]
+    return int(s.get("atBats", 0) or 0) > 0 or int(s.get("plateAppearances", 0) or 0) > 0
+
+
+def _sum_hitting_games(games):
     ab = h = bb = hbp = sf = tb = 0
-    for g in last_n:
+    for g in games:
         s = g["stat"]
         ab += int(s.get("atBats", 0) or 0)
         h += int(s.get("hits", 0) or 0)
@@ -167,6 +186,27 @@ def get_player_recent_games_since(person_id, season, since_date, n):
     obp = (h + bb + hbp) / obp_denom if obp_denom else 0.0
     slg = tb / ab if ab else 0.0
     return {"avg": avg, "obp": obp, "slg": slg}
+
+
+def _sort_games(games):
+    games.sort(key=lambda g: (g.get("date", ""), g.get("game", {}).get("gamePk", 0)))
+    return games
+
+
+def get_player_recent_games_since(person_id, season, since_date, n):
+    """Returns the player's stat line over their last n games played on or
+    after since_date (i.e., games with the new team only, following a
+    trade) -- or None if they haven't played at least n such games yet,
+    so the caller can show nothing rather than a misleading partial window.
+    Spans regular season AND postseason, so a recently-acquired player's
+    postseason games count toward this too."""
+    games = _player_hitting_games(person_id, season)
+    games = [g for g in games if g.get("date", "") >= since_date.isoformat()]
+    games = [g for g in games if _hitting_game_played(g)]
+    _sort_games(games)
+    if len(games) < n:
+        return None
+    return _sum_hitting_games(games[-n:])
 
 
 def get_player_month_splits(person_id, season):
@@ -191,16 +231,27 @@ def current_month_windows(today=None):
 
 
 def get_player_last_n_games_split(person_id, season, n):
-    """Uses MLB's own 'lastXGames' stat type -- guaranteed to match mlb.com
-    exactly since it's the same source (validated earlier against Paul
-    Goldschmidt, Jose Caballero, and Ryan McMahon)."""
-    data = _get(f"/people/{person_id}/stats", stats="lastXGames", group="hitting", season=season, limit=n)
-    for group in data.get("stats", []):
-        for split in group.get("splits", []):
-            s = split["stat"]
-            return {"avg": float(s.get("avg", 0) or 0), "obp": float(s.get("obp", 0) or 0),
-                     "slg": float(s.get("slg", 0) or 0)}
-    return {"avg": 0.0, "obp": 0.0, "slg": 0.0}
+    """Last n games with a plate appearance, continuous across the
+    regular-season/postseason boundary -- postseason games are just more
+    games in the same rolling count, not a separate or reset period.
+
+    Reconstructed from the full per-game log rather than MLB's own
+    'lastXGames' stat type: that endpoint matches mlb.com exactly for a
+    single game type (validated earlier against Goldschmidt/Caballero/
+    McMahon), but once postseason games are in the mix and you ask it for
+    multiple game types at once, it returns one separate last-N window PER
+    game type instead of blending them into one true rolling window --
+    confirmed live during the 2026 Wild Card round (asking for 'last 1
+    regular+postseason game' returned the last regular season game AND the
+    last postseason game as two separate 1-game splits, not one 2-game
+    combined split). Summing raw counts ourselves and recomputing the rate
+    stats avoids that entirely."""
+    games = _player_hitting_games(person_id, season)
+    games = [g for g in games if _hitting_game_played(g)]
+    _sort_games(games)
+    if not games:
+        return {"avg": 0.0, "obp": 0.0, "slg": 0.0}
+    return _sum_hitting_games(games[-n:])
 
 
 def get_most_recent_completed_game_date(team_id, season, today=None):
@@ -222,6 +273,21 @@ def get_most_recent_completed_game_date(team_id, season, today=None):
 
 
 # ---------------------------------------------------------------------------
+# Postseason splits -- a dedicated "Postseason" bucket alongside the
+# calendar-month buckets, covering games from the postseason start date
+# onward. Kept as its own bucket (rather than folded into "September") so
+# regular-season month totals aren't mixed with postseason games.
+# ---------------------------------------------------------------------------
+
+def get_team_postseason_split(team_id, postseason_start, today):
+    return get_team_daterange_split(team_id, postseason_start, today, game_type=POSTSEASON_TYPES)
+
+
+def get_player_postseason_split(person_id, postseason_start, today):
+    return get_player_daterange_split(person_id, postseason_start, today, game_type=POSTSEASON_TYPES)
+
+
+# ---------------------------------------------------------------------------
 # Full-season game log + rolling 10-game trends (for the score/pitching chart)
 # ---------------------------------------------------------------------------
 
@@ -230,10 +296,15 @@ def get_full_season_game_log(team_id, season):
     score/result plus the team's batting line and cumulative rate stats
     through that game (all from one box score call per game -- MLB's box
     score endpoint conveniently already computes cumulative avg/obp/slg for
-    us, confirmed against real data earlier this season)."""
+    us, confirmed against real data earlier this season).
+
+    Includes postseason games (gameType=ALL_GAME_TYPES) once the team
+    reaches the playoffs, so the rolling-10-game trend charts treat them as
+    a seamless continuation of the regular season rather than stopping at
+    game 162."""
     season_start = date(season, 3, 1)  # safely before opening day
     today = date.today()
-    sched = _get("/schedule", teamId=team_id, sportId=1, gameType="R",
+    sched = _get("/schedule", teamId=team_id, sportId=1, gameType=ALL_GAME_TYPES,
                  startDate=season_start.isoformat(), endDate=today.isoformat(),
                  hydrate="linescore,team")
 
@@ -307,11 +378,12 @@ def _pitching_stat(split):
     }
 
 
-def get_team_pitching_daterange_split(team_id, start_date, end_date):
-    data = _get(
-        f"/teams/{team_id}/stats", stats="byDateRange", group="pitching",
-        startDate=start_date.isoformat(), endDate=end_date.isoformat(),
-    )
+def get_team_pitching_daterange_split(team_id, start_date, end_date, game_type=None):
+    params = dict(stats="byDateRange", group="pitching",
+                  startDate=start_date.isoformat(), endDate=end_date.isoformat())
+    if game_type:
+        params["gameType"] = game_type
+    data = _get(f"/teams/{team_id}/stats", **params)
     for group in data.get("stats", []):
         for split in group.get("splits", []):
             return _pitching_stat(split)
@@ -333,6 +405,10 @@ def get_team_pitching_month_splits(team_id, season):
         if stat["era"] or stat["whip"]:
             out[f"{month:02d}"] = stat
     return out
+
+
+def get_team_pitching_postseason_split(team_id, postseason_start, today):
+    return get_team_pitching_daterange_split(team_id, postseason_start, today, game_type=POSTSEASON_TYPES)
 
 
 def get_pitcher_season_split(person_id, season):
@@ -359,29 +435,44 @@ def get_pitcher_month_splits(person_id, season):
     return out
 
 
-def get_pitcher_last_n_games_split(person_id, season, n):
-    """Same 'lastXGames' approach validated for hitters -- should be equally
-    authoritative for pitchers, but PLEASE double check the first real
-    numbers against mlb.com once this is deployed (untested against live
-    pitching data as of writing)."""
-    data = _get(f"/people/{person_id}/stats", stats="lastXGames", group="pitching", season=season, limit=n)
+# ---------------------------------------------------------------------------
+# Per-game pitching logs -- pitching equivalent of _player_hitting_games,
+# same rationale (see get_player_last_n_games_split).
+# ---------------------------------------------------------------------------
+
+def _pitcher_games(person_id, season, game_types=ALL_GAME_TYPES):
+    data = _get(f"/people/{person_id}/stats", stats="gameLog", group="pitching",
+                season=season, gameType=game_types)
+    games = []
     for group in data.get("stats", []):
-        for split in group.get("splits", []):
-            s = split["stat"]
-            return {"era": float(s.get("era", 0) or 0), "whip": float(s.get("whip", 0) or 0)}
-    return {"era": 0.0, "whip": 0.0}
+        games.extend(group.get("splits", []))
+    return games
+
+
+def _pitcher_game_appeared(g):
+    return _innings_str_to_outs(g["stat"].get("inningsPitched", "0.0")) > 0
+
+
+def get_pitcher_last_n_games_split(person_id, season, n):
+    """Same continuation logic as get_player_last_n_games_split, for a
+    pitcher's last n game appearances (starts or relief outings) --
+    postseason appearances just extend the same rolling count rather than
+    starting a new window."""
+    return _counts_to_era_whip(get_pitcher_last_n_games_counts(person_id, season, n))
 
 
 def get_pitcher_last_n_games_counts(person_id, season, n):
-    """Same lastXGames endpoint as above, but returns raw counting stats
-    (earned runs, outs, hits, walks) instead of ERA/WHIP -- needed so a
-    cohort of multiple pitchers' last-N-appearances stats can be properly
-    summed before recomputing ERA/WHIP from the totals."""
-    data = _get(f"/people/{person_id}/stats", stats="lastXGames", group="pitching", season=season, limit=n)
-    for group in data.get("stats", []):
-        for split in group.get("splits", []):
-            return _pitching_counts(split)
-    return {"earned_runs": 0, "outs": 0, "hits": 0, "walks": 0}
+    """Same lastXGames-replacement approach as get_player_last_n_games_split,
+    but returns raw counting stats (earned runs, outs, hits, walks) instead
+    of ERA/WHIP -- needed so a cohort of multiple pitchers' last-N-
+    appearances stats can be properly summed before recomputing ERA/WHIP
+    from the totals."""
+    games = _pitcher_games(person_id, season)
+    games = [g for g in games if _pitcher_game_appeared(g)]
+    _sort_games(games)
+    if not games:
+        return {"earned_runs": 0, "outs": 0, "hits": 0, "walks": 0}
+    return _sum_counts([_pitching_counts(g) for g in games[-n:]])
 
 
 # ---------------------------------------------------------------------------
@@ -412,15 +503,24 @@ def _pitching_counts(split):
     }
 
 
-def get_pitcher_counts_daterange(person_id, start_date, end_date):
-    data = _get(
-        f"/people/{person_id}/stats", stats="byDateRange", group="pitching",
-        startDate=start_date.isoformat(), endDate=end_date.isoformat(),
-    )
+def get_pitcher_counts_daterange(person_id, start_date, end_date, game_type=None):
+    params = dict(stats="byDateRange", group="pitching",
+                  startDate=start_date.isoformat(), endDate=end_date.isoformat())
+    if game_type:
+        params["gameType"] = game_type
+    data = _get(f"/people/{person_id}/stats", **params)
     for group in data.get("stats", []):
         for split in group.get("splits", []):
             return _pitching_counts(split)
     return {"earned_runs": 0, "outs": 0, "hits": 0, "walks": 0}
+
+
+def get_pitcher_postseason_counts(person_id, postseason_start, today):
+    return get_pitcher_counts_daterange(person_id, postseason_start, today, game_type=POSTSEASON_TYPES)
+
+
+def get_pitcher_postseason_split(person_id, postseason_start, today):
+    return _counts_to_era_whip(get_pitcher_postseason_counts(person_id, postseason_start, today))
 
 
 def get_pitcher_counts_season(person_id, season):
@@ -465,18 +565,15 @@ def get_pitcher_recent_games_counts_since(person_id, season, since_date, n):
     after since_date -- i.e. games with the new team only, following a trade
     or call-up. Returns None if they haven't pitched in at least n such
     games yet, so the caller can show/aggregate nothing rather than a
-    misleading partial window."""
-    data = _get(f"/people/{person_id}/stats", stats="gameLog", group="pitching", season=season)
-    games = []
-    for group in data.get("stats", []):
-        games.extend(group.get("splits", []))
+    misleading partial window. Spans regular season AND postseason, so a
+    recently-acquired pitcher's postseason outings count toward this too."""
+    games = _pitcher_games(person_id, season)
     games = [g for g in games if g.get("date", "") >= since_date.isoformat()]
-    games.sort(key=lambda g: g.get("date", ""))
-    games = [g for g in games if _innings_str_to_outs(g["stat"].get("inningsPitched", "0.0")) > 0]
+    games = [g for g in games if _pitcher_game_appeared(g)]
+    _sort_games(games)
     if len(games) < n:
         return None
-    last_n = games[-n:]
-    return _sum_counts([_pitching_counts(g) for g in last_n])
+    return _sum_counts([_pitching_counts(g) for g in games[-n:]])
 
 
 def get_pitcher_recent_games_since(person_id, season, since_date, n):
@@ -484,7 +581,7 @@ def get_pitcher_recent_games_since(person_id, season, since_date, n):
     return _counts_to_era_whip(counts) if counts is not None else None
 
 
-def build_cohort_pitching_aggregate(person_ids, season, today, acquisition_dates=None):
+def build_cohort_pitching_aggregate(person_ids, season, today, acquisition_dates=None, postseason_start=None):
     """Aggregates ERA/WHIP across a specific group of pitchers (e.g. your
     tracked starters or tracked bullpen arms) for month-by-month splits, the
     season total, and each pitcher's own last 10/5/3 game appearances
@@ -496,7 +593,17 @@ def build_cohort_pitching_aggregate(person_ids, season, today, acquisition_dates
     who joined mid-season -- their contribution to every window is bounded
     to start no earlier than that date, so a recent addition's prior-team
     stats never leak into the aggregate. Pitchers not in this dict are
-    treated as full-season Yankees as before."""
+    treated as full-season Yankees as before.
+
+    postseason_start: optional date -- if given (and reached), the returned
+    dict also gets a "postseason" key (ERA/WHIP, same acquisition-date
+    clipping applied), for the caller to fold into month_splits as a
+    "Postseason" bucket AFTER running month_splits through
+    month_splits_to_named (that function does int() on every key, so a
+    non-numeric "Postseason" key must never be added before it runs).
+    last_10/5/3_games are NOT bounded by this since those are already a
+    seamless rolling window across the regular-season/postseason boundary
+    via get_pitcher_last_n_games_counts / get_pitcher_recent_games_counts_since."""
     acquisition_dates = acquisition_dates or {}
 
     month_splits = {}
@@ -511,6 +618,17 @@ def build_cohort_pitching_aggregate(person_ids, season, today, acquisition_dates
         total = _sum_counts(per_pitcher)
         if total["outs"]:
             month_splits[f"{month:02d}"] = _counts_to_era_whip(total)
+
+    postseason_split = None
+    if postseason_start and postseason_start <= today:
+        per_pitcher = []
+        for pid in person_ids:
+            acq = acquisition_dates.get(pid)
+            clipped_start = max(postseason_start, acq) if acq else postseason_start
+            per_pitcher.append(get_pitcher_counts_daterange(pid, clipped_start, today, game_type=POSTSEASON_TYPES))
+        post_total = _sum_counts(per_pitcher)
+        if post_total["outs"]:
+            postseason_split = _counts_to_era_whip(post_total)
 
     season_parts = []
     for pid in person_ids:
@@ -533,6 +651,7 @@ def build_cohort_pitching_aggregate(person_ids, season, today, acquisition_dates
 
     return {
         "month_splits": month_splits,
+        "postseason": postseason_split,
         "season": _counts_to_era_whip(season_counts),
         "last_10_games": _counts_to_era_whip(g10_counts),
         "last_5_games": _counts_to_era_whip(g5_counts),
@@ -553,6 +672,11 @@ def get_pitching_game_log(team_id, season):
     combined total. Returns one entry per game with counts for each of the
     three groups.
 
+    Includes postseason games (gameType=ALL_GAME_TYPES) once the team
+    reaches the playoffs, same as get_full_season_game_log, so the
+    rolling-10 Starters/Bullpen/All ERA and WHIP charts continue smoothly
+    across the boundary.
+
     NOTE: this relies on the box score's 'pitchers' list being in the order
     pitchers actually appeared (first = starter) and each pitcher's game
     line living under 'players'['ID<personId>']['stats']['pitching'] --
@@ -561,7 +685,7 @@ def get_pitching_game_log(team_id, season):
     it (see the comparison request that comes with this)."""
     season_start = date(season, 3, 1)
     today = date.today()
-    sched = _get("/schedule", teamId=team_id, sportId=1, gameType="R",
+    sched = _get("/schedule", teamId=team_id, sportId=1, gameType=ALL_GAME_TYPES,
                  startDate=season_start.isoformat(), endDate=today.isoformat())
     games = []
     for d in sched.get("dates", []):
