@@ -73,6 +73,32 @@ def _hitting_stat(split):
     }
 
 
+def _hitting_counts(split):
+    s = split["stat"]
+    return {
+        "ab": int(s.get("atBats", 0) or 0),
+        "h": int(s.get("hits", 0) or 0),
+        "bb": int(s.get("baseOnBalls", 0) or 0),
+        "hbp": int(s.get("hitByPitch", 0) or 0),
+        "sf": int(s.get("sacFlies", 0) or 0),
+        "tb": int(s.get("totalBases", 0) or 0),
+    }
+
+
+def _sum_hitting_counts(counts_list):
+    total = {"ab": 0, "h": 0, "bb": 0, "hbp": 0, "sf": 0, "tb": 0}
+    for c in counts_list:
+        for k in total:
+            total[k] += c.get(k, 0)
+    ab, h, bb, hbp, sf, tb = (total["ab"], total["h"], total["bb"],
+                              total["hbp"], total["sf"], total["tb"])
+    avg = h / ab if ab else 0.0
+    obp_denom = ab + bb + hbp + sf
+    obp = (h + bb + hbp) / obp_denom if obp_denom else 0.0
+    slg = tb / ab if ab else 0.0
+    return {"avg": avg, "obp": obp, "slg": slg}
+
+
 def _recent_month_windows(today=None):
     import calendar
     today = today or date.today()
@@ -98,7 +124,7 @@ def _recent_month_windows(today=None):
     return windows
 
 
-def get_team_daterange_split(team_id, start_date, end_date, game_type=None):
+def _team_daterange_hitting_call(team_id, start_date, end_date, game_type):
     params = dict(stats="byDateRange", group="hitting",
                   startDate=start_date.isoformat(), endDate=end_date.isoformat())
     if game_type:
@@ -106,8 +132,31 @@ def get_team_daterange_split(team_id, start_date, end_date, game_type=None):
     data = _get(f"/teams/{team_id}/stats", **params)
     for group in data.get("stats", []):
         for split in group.get("splits", []):
-            return _hitting_stat(split)
-    return {"avg": 0.0, "obp": 0.0, "slg": 0.0}
+            return split
+    return None
+
+
+def get_team_daterange_split(team_id, start_date, end_date, game_type=None):
+    """A single game_type (or None, MLB's default of regular season only)
+    is one direct API call. A comma-separated MULTI-value game_type is
+    deliberately NOT passed through as one call: confirmed live that the
+    TEAM-level byDateRange endpoint is unreliable with a multi-value
+    gameType (an empty result in one date range, and in another range
+    silently ignoring the filter and returning the full unfiltered games
+    instead) -- while a single gameType value, and the equivalent
+    INDIVIDUAL player/pitcher byDateRange endpoint even with a multi-value
+    gameType, both work correctly. So each requested type is queried
+    separately here and the raw counts are summed locally instead."""
+    types = game_type.split(",") if game_type else [None]
+    if len(types) == 1:
+        split = _team_daterange_hitting_call(team_id, start_date, end_date, types[0])
+        return _hitting_stat(split) if split else {"avg": 0.0, "obp": 0.0, "slg": 0.0}
+    counts = []
+    for t in types:
+        split = _team_daterange_hitting_call(team_id, start_date, end_date, t)
+        if split:
+            counts.append(_hitting_counts(split))
+    return _sum_hitting_counts(counts) if counts else {"avg": 0.0, "obp": 0.0, "slg": 0.0}
 
 
 def get_team_season_split(team_id, season):
@@ -254,12 +303,21 @@ def get_player_last_n_games_split(person_id, season, n):
     return _sum_hitting_games(games[-n:])
 
 
-def get_most_recent_completed_game_date(team_id, season, today=None):
+def get_most_recent_completed_game_date(team_id, season, today=None, game_type=None):
+    """game_type=None (default) considers any completed game, postseason
+    included -- used for the dashboard's overall 'as of' date. Pass
+    game_type='R' to get the last completed REGULAR SEASON game instead
+    (used to label the current month's bucket, e.g. 'September (to 9/27)',
+    without a postseason game bleeding into that date once the playoffs
+    start)."""
     today = today or date.today()
     try:
         lookback_start = today - timedelta(days=10)
-        data = _get("/schedule", teamId=team_id, sportId=1,
-                     startDate=lookback_start.isoformat(), endDate=today.isoformat())
+        params = dict(teamId=team_id, sportId=1,
+                      startDate=lookback_start.isoformat(), endDate=today.isoformat())
+        if game_type:
+            params["gameType"] = game_type
+        data = _get("/schedule", **params)
         completed_dates = []
         for d in data.get("dates", []):
             for game in d.get("games", []):
@@ -378,7 +436,7 @@ def _pitching_stat(split):
     }
 
 
-def get_team_pitching_daterange_split(team_id, start_date, end_date, game_type=None):
+def _team_daterange_pitching_call(team_id, start_date, end_date, game_type):
     params = dict(stats="byDateRange", group="pitching",
                   startDate=start_date.isoformat(), endDate=end_date.isoformat())
     if game_type:
@@ -386,8 +444,24 @@ def get_team_pitching_daterange_split(team_id, start_date, end_date, game_type=N
     data = _get(f"/teams/{team_id}/stats", **params)
     for group in data.get("stats", []):
         for split in group.get("splits", []):
-            return _pitching_stat(split)
-    return {"era": 0.0, "whip": 0.0}
+            return split
+    return None
+
+
+def get_team_pitching_daterange_split(team_id, start_date, end_date, game_type=None):
+    """Same multi-value-gameType workaround as get_team_daterange_split --
+    see its docstring. Confirmed live that team-level pitching byDateRange
+    has the identical unreliable-multi-value-gameType behavior."""
+    types = game_type.split(",") if game_type else [None]
+    if len(types) == 1:
+        split = _team_daterange_pitching_call(team_id, start_date, end_date, types[0])
+        return _pitching_stat(split) if split else {"era": 0.0, "whip": 0.0}
+    counts = []
+    for t in types:
+        split = _team_daterange_pitching_call(team_id, start_date, end_date, t)
+        if split:
+            counts.append(_pitching_counts(split))
+    return _counts_to_era_whip(_sum_counts(counts)) if counts else {"era": 0.0, "whip": 0.0}
 
 
 def get_team_pitching_season_split(team_id, season):

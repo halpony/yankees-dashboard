@@ -57,6 +57,14 @@ BULLPEN_PITCHERS = [
 MONTH_NAMES = {1: "January", 2: "February", 3: "March", 4: "April", 5: "May", 6: "June",
                7: "July", 8: "August", 9: "September", 10: "October"}
 
+# Set once per run, in main(), to the last completed REGULAR SEASON game
+# date (not postseason -- that gets its own "Postseason" bucket). Used to
+# label the current calendar month's bucket with an exact cutoff, e.g.
+# "September (to 9/27)", instead of a vague "(to date)" that doesn't say
+# when "date" actually was -- especially once the postseason starts and
+# the regular season stops updating mid-month.
+_REGULAR_SEASON_AS_OF = None
+
 
 def month_splits_to_named(month_splits, today):
     current = today.month
@@ -64,7 +72,10 @@ def month_splits_to_named(month_splits, today):
     for mm, stat in month_splits.items():
         name = MONTH_NAMES[int(mm)]
         if int(mm) == current:
-            name += " (to date)"
+            if _REGULAR_SEASON_AS_OF:
+                name += f" (to {_REGULAR_SEASON_AS_OF.month}/{_REGULAR_SEASON_AS_OF.day})"
+            else:
+                name += " (to date)"
         out[name] = stat
     return out
 
@@ -229,8 +240,12 @@ def build_pitcher_group(names, roster, today):
 
 
 def main():
+    global _REGULAR_SEASON_AS_OF
     today = date.today()
     print(f"Building dashboard data for {today.isoformat()}...")
+
+    _REGULAR_SEASON_AS_OF = mlb_data.get_most_recent_completed_game_date(TEAM_ID, SEASON, today, game_type="R")
+    print(f"Last completed regular season game: {_REGULAR_SEASON_AS_OF.isoformat()}")
 
     print("Fetching roster...")
     roster = mlb_data.get_roster(TEAM_ID, SEASON)
