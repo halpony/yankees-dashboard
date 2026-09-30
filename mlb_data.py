@@ -129,7 +129,14 @@ def _team_daterange_hitting_call(team_id, start_date, end_date, game_type):
                   startDate=start_date.isoformat(), endDate=end_date.isoformat())
     if game_type:
         params["gameType"] = game_type
-    data = _get(f"/teams/{team_id}/stats", **params)
+    try:
+        data = _get(f"/teams/{team_id}/stats", **params)
+    except requests.exceptions.HTTPError:
+        # Confirmed live: a gameType with zero games so far this season
+        # (e.g. 'D' before the Division Series has started) can 404 here
+        # instead of returning an empty splits list -- treat it the same
+        # as "no games of this type yet" rather than failing the whole run.
+        return None
     for group in data.get("stats", []):
         for split in group.get("splits", []):
             return split
@@ -441,7 +448,11 @@ def _team_daterange_pitching_call(team_id, start_date, end_date, game_type):
                   startDate=start_date.isoformat(), endDate=end_date.isoformat())
     if game_type:
         params["gameType"] = game_type
-    data = _get(f"/teams/{team_id}/stats", **params)
+    try:
+        data = _get(f"/teams/{team_id}/stats", **params)
+    except requests.exceptions.HTTPError:
+        # See the identical comment in _team_daterange_hitting_call.
+        return None
     for group in data.get("stats", []):
         for split in group.get("splits", []):
             return split
