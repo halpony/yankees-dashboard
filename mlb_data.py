@@ -191,16 +191,38 @@ def get_team_month_splits(team_id, season):
     return out
 
 
-def get_player_daterange_split(person_id, start_date, end_date, game_type=None):
+def _player_daterange_hitting_call(person_id, start_date, end_date, game_type):
     params = dict(stats="byDateRange", group="hitting",
                   startDate=start_date.isoformat(), endDate=end_date.isoformat())
     if game_type:
         params["gameType"] = game_type
-    data = _get(f"/people/{person_id}/stats", **params)
+    try:
+        data = _get(f"/people/{person_id}/stats", **params)
+    except requests.exceptions.HTTPError:
+        return None
     for group in data.get("stats", []):
         for split in group.get("splits", []):
-            return _hitting_stat(split)
-    return {"avg": 0.0, "obp": 0.0, "slg": 0.0}
+            return split
+    return None
+
+
+def get_player_daterange_split(person_id, start_date, end_date, game_type=None):
+    """With a multi-value game_type, MLB returns one split PER game type
+    (e.g. Wild Card alone, then Division Series alone, then a combined
+    'All' split) and taking the first one silently reports only the first
+    round -- confirmed live: Jazz Chisholm Jr.'s postseason showed .667
+    (his 2-for-3 Wild Card game) instead of his true 2-for-11. So each type
+    is queried separately here and the raw counts summed locally."""
+    types = game_type.split(",") if game_type else [None]
+    if len(types) == 1:
+        split = _player_daterange_hitting_call(person_id, start_date, end_date, types[0])
+        return _hitting_stat(split) if split else {"avg": 0.0, "obp": 0.0, "slg": 0.0}
+    counts = []
+    for t in types:
+        split = _player_daterange_hitting_call(person_id, start_date, end_date, t)
+        if split:
+            counts.append(_hitting_counts(split))
+    return _sum_hitting_counts(counts) if counts else {"avg": 0.0, "obp": 0.0, "slg": 0.0}
 
 
 # ---------------------------------------------------------------------------
@@ -588,16 +610,31 @@ def _pitching_counts(split):
     }
 
 
-def get_pitcher_counts_daterange(person_id, start_date, end_date, game_type=None):
+def _pitcher_daterange_call(person_id, start_date, end_date, game_type):
     params = dict(stats="byDateRange", group="pitching",
                   startDate=start_date.isoformat(), endDate=end_date.isoformat())
     if game_type:
         params["gameType"] = game_type
-    data = _get(f"/people/{person_id}/stats", **params)
+    try:
+        data = _get(f"/people/{person_id}/stats", **params)
+    except requests.exceptions.HTTPError:
+        return None
     for group in data.get("stats", []):
         for split in group.get("splits", []):
-            return _pitching_counts(split)
-    return {"earned_runs": 0, "outs": 0, "hits": 0, "walks": 0}
+            return split
+    return None
+
+
+def get_pitcher_counts_daterange(person_id, start_date, end_date, game_type=None):
+    """Multi-value game_type is split into one call per type and summed --
+    see get_player_daterange_split for why (first-split-only undercounts)."""
+    types = game_type.split(",") if game_type else [None]
+    parts = []
+    for t in types:
+        split = _pitcher_daterange_call(person_id, start_date, end_date, t)
+        if split:
+            parts.append(_pitching_counts(split))
+    return _sum_counts(parts) if parts else {"earned_runs": 0, "outs": 0, "hits": 0, "walks": 0}
 
 
 def get_pitcher_postseason_counts(person_id, postseason_start, today):
