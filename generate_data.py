@@ -22,8 +22,8 @@ POSTSEASON_START = date(2026, 9, 29)
 PLAYERS = [
     "Ben Rice", "Cody Bellinger", "Spencer Jones", "Jazz Chisholm Jr.", 
     "Paul Goldschmidt", "Austin Wells", "Amed Rosario", "Heliot Ramos",
-    "Jose Caballero", "Ryan McMahon", "Jasson Dominguez",   
-    "Luis Garcia Jr.", "George Lombard Jr.", "Trent Grisham", "Aaron Judge",
+    "Jose Caballero", "Ryan McMahon", "Jasson Dominguez", "Luis Garcia Jr.", 
+    "George Lombard Jr.", "Trent Grisham", "Aaron Judge", "Anthony Volpe"
        
 ]
 
