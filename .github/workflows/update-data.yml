@@ -1,11 +1,11 @@
 name: Update dashboard data
 
 on:
-  schedule:
-    # 03:00 UTC = 11:00 PM ET during EDT (summer). If EDT ends (clocks fall
-    # back to EST in November), this will run at 10:00 PM ET instead --
-    # change to '0 4 * * *' at that point if you want to hold exactly at 11 PM.
-    - cron: '0 0 * * *'
+  # Daily schedule paused for the offseason (2026 season ended). To resume in
+  # March 2027, uncomment the three lines below. 03:00 UTC = 11:00 PM ET
+  # during EDT; use '0 4 * * *' to hold 11 PM ET during EST.
+  # schedule:
+  #   - cron: '0 3 * * *'
   workflow_dispatch: {}  # lets you also trigger it manually from the Actions tab
 
 permissions:
