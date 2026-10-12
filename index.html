@@ -491,9 +491,10 @@ function setupBattingSection(teamEntity, playersMap) {
 // ---------------------------------------------------------------------------
 const COMPARE_COLORS = ['#2A5DB0', '#D9622B', '#8A8E98', '#F2A900', '#2E7D5B', '#B3452C', '#7A4FA3', '#1C8C8C', '#C2185B'];
 
-const MONTH_ORDER = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October'];
+const MONTH_ORDER = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'Postseason'];
 function monthSortIndex(label) {
-  const base = label.replace(' (to date)', '');
+  // Strip any trailing parenthetical, e.g. " (to date)" or " (to 9/27)".
+  const base = label.replace(/\s*\(.*\)\s*$/, '');
   const idx = MONTH_ORDER.indexOf(base);
   return idx === -1 ? 999 : idx;
 }
